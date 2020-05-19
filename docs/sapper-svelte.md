@@ -30,7 +30,7 @@ This is the main entry point for your app, where all our components, style refs,
  if it is located in src/routes. Meaning that routes are created with the organisation
  of our project. If we need more complex routing we can use [slug].svelte
  to handle urls with additional content.
- Additionally if we want a route to be ignored by this method, prefixing '_' will achieve this.
+ Additionally, if we want a route to be ignored by this method, prefixing '_' will achieve this.
  
  The basic sapper set-up is as follows:
  

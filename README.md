@@ -1,5 +1,20 @@
 # ADVCLB Template
 
+### Running the project
+
+However you get the code, you can install dependencies and run the project in development mode with:
+
+```bash
+cd my-app
+npm install # or yarn
+npm run dev
+```
+
+Open up [localhost:3000](http://localhost:3000) and start clicking around.
+
+Consult [sapper.svelte.dev](https://sapper.svelte.dev) for help getting started.
+
+
 ## Dependencies
 
 #### Google Sheets 
@@ -10,7 +25,7 @@ Our content is hosted in google sheets, this task will pull the data and load in
 npm run load-sheets
 ```
 
-Sheets URL : ~~https://docs.google.com/spreadsheets/d/1mE_NmwNoyK_as3ENNQo5KGvZQppz2bIELOzF8fs49SA/edit#gid=1855831282~~ 
+Sheets URL : (google sheets link here)
 
 
 #### Localization
@@ -36,7 +51,7 @@ This will create a `__sapper__/export` folder with a production-ready build of y
 npx serve __sapper__/export
 ```
 
-Navigate to [localhost:5000](http://localhost:5000) (or whatever port `serve` picked), and verify that your site works as expected.
+Navigate to [localhost:3000](http://localhost:5000) (or whatever port `serve` picked), and verify that your site works as expected.
 
 
 ### How it works
@@ -45,21 +60,6 @@ When you run `sapper export`, Sapper first builds a production version of your a
 
 Because of this, any pages you want to be included in the exported site must either be reachable by `<a>` elements or added to the `--entry` option of the `sapper export` command. Additionally, any non-page routes should be requested in `preload`, *not* in `onMount` or elsewhere.
 
-
-
-### Running the project
-
-However you get the code, you can install dependencies and run the project in development mode with:
-
-```bash
-cd my-app
-npm install # or yarn
-npm run dev
-```
-
-Open up [localhost:3000](http://localhost:3000) and start clicking around.
-
-Consult [sapper.svelte.dev](https://sapper.svelte.dev) for help getting started.
 
 ### Working with Assets
 
