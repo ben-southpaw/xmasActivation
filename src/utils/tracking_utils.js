@@ -1,5 +1,8 @@
     export let TrackingUtils = {
 
+        //Todo Tommy Template remove if other client!
+
+
     InitializeDigitalData: (market) => {
         window.digitalData = {
             page: {
