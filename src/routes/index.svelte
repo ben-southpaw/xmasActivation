@@ -1,7 +1,28 @@
-<style>
+
+<svelte:head>
+	<title>Sapper project template</title>
+</svelte:head>
+
+<h1>Great success!</h1>
+
+<figure>
+	<img alt='Success Kev' src='successKev.gif'>
+	<figcaption>Happy Boi Fun Times</figcaption>
+</figure>
+
+<p><strong>New AC Project Template</strong></p>
+
+<style type="scss">
+		//import globals to access globals, mixins etc
+		@import '../../scss/global';
+
 	h1, figure, p {
 		text-align: center;
 		margin: 0 auto;
+		font-family: 'Gilroy Regular', Arial, SansSerif;
+		@include respond-to('desktop') {
+			font-family: 'Gilroy Semibold', Arial, SansSerif;
+		}
 	}
 
 	h1 {
@@ -17,30 +38,8 @@
 
 	img {
 		width: 100%;
-		max-width: 400px;
+		max-width: 200px;
 		margin: 0 0 1em 0;
 	}
 
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
 </style>
-
-<svelte:head>
-	<title>Sapper project template</title>
-</svelte:head>
-
-<h1>Great success!</h1>
-
-<figure>
-	<img alt='Success Kev' src='successKev.gif'>
-	<figcaption>Happy Boi Fun Times</figcaption>
-</figure>
-
-<p><strong>New AC Project Template</strong></p>
