@@ -1,17 +1,17 @@
 ADVCLB Template
-##Step 1 : Initial Project Setup
+**##Step 1 : Initial Project Setup**
 
 npx degit "sveltejs/sapper-template#rollup" MyTestApp
 ​
 cd MyTestApp
 ​
-​##Step 2 : Initiailize git​
+**​##Step 2 : Initiailize git​**
 
 git init
 git add .
 git commit -a -m "init"
 ​
-​##Step 3 : Merge Scaffold​
+**​##Step 3 : Merge Scaffold​**
 
 git remote add origin htps://github.com/advclb/advclb_sapper_scaffold
 ​
@@ -19,7 +19,7 @@ git pull origin master --allow-unrelated-histories
 ​
 git mergetool
 ​
-​##Step 4 : Change repo to new project​
+**​##Step 4 : Change repo to new project​**
 
 git remote set-url origin your.git.repo.example.com:user/repository2.git
 ​
