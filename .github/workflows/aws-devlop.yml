@@ -50,7 +50,6 @@ jobs:
 #    - name: deploy
 #      run: ~/.local/bin/eb deploy
 
-      //Update project name
 
     - name: deploy on staging (if master)
       run: ~/.local/bin/eb deploy NewProjectName-staging -l $GITHUB_SHA
