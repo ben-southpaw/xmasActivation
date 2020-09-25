@@ -1,6 +1,6 @@
 ADVCLB Template
 
-Step 1 : Initial Project Setup
+**Step 1 : Initial Project Setup**
 
 npx degit "sveltejs/sapper-template#rollup" MyTestApp ​ cd MyTestApp ​ ​##Step 2 : Initiailize git​
 
