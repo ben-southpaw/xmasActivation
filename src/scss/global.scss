@@ -25,17 +25,17 @@ body {
 }
 
 //For dynamically changing colours via JS
-//#sapper{
+#sapper{
   //--beige : #{$beige-main};
   //--blue : #{$blue-font};
   //--gold : #{$gold-light};
   //--grey : #{$grey-main};
-  //
-  //--mobile : 1;
-  //@include respond-to('desktop') {
-  //  --mobile : 0;
-  //}
-//}
+
+  --mobile : 1;
+  @include respond-to('desktop') {
+    --mobile : 0;
+  }
+}
 
 
 //Font face, add fonts here, < 10 preferable. Can be used as mixins. Gilroy is standard AC font.

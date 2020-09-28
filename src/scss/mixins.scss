@@ -1,5 +1,7 @@
 //Mixin example
 
+@import '../scss/theme';
+
 @mixin mixin-example {
   font-family: "Comic Sans MS";
   font-weight: bold;

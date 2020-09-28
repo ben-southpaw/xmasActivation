@@ -129,7 +129,7 @@ module.exports = async function () {
 
 async function loadMarketMeta(market, language) {
 
-    const siteApiUrl = `https://tommy-campaign-api-production.herokuapp.com/api/${market}/site`;
+    const siteApiUrl = ``;
     let params = {};
 
     // Add language to payload if it is not the markets default language.

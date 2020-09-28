@@ -127,7 +127,7 @@ export class MainView extends BaseView {
 
         new StoresProxy(Object.assign({}, __SAPPER__.preloaded[0].stores));
 
-        new BookingDataModel();
+        //new BookingDataModel();
     }
 
     _initializeViews() {

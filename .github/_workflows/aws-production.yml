@@ -1,9 +1,9 @@
-name: AWS Develop
+name: AWS Production
 
 on:
   push:
-    branches:
-      - master
+    tags:
+      - v*
 
 jobs:
   build:
@@ -53,9 +53,6 @@ jobs:
       #    - name: deploy
       #      run: ~/.local/bin/eb deploy
 
-      - name: deploy on staging (if develop)
-        run: ~/.local/bin/eb deploy Advclb-staging -l $GITHUB_SHA
-        if: github.ref == 'refs/heads/master'
-#      - name: deploy on production (if master)
-#        run: ~/.local/bin/eb deploy Advclb-acdc-dev -l $GITHUB_SHA
-#        if: github.ref == 'refs/heads/master'
+     # - name: deploy on staging (if master)
+     #   run: ~/.local/bin/eb deploy Advclb-acdc-dev -l $GITHUB_SHA
+
