@@ -1,0 +1,11 @@
+//Mixin example
+
+@import '../scss/theme';
+
+@mixin mixin-example {
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+}

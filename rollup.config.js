@@ -1,50 +1,80 @@
-import path from 'path';
 import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 import commonjs from '@rollup/plugin-commonjs';
-import url from '@rollup/plugin-url';
 import svelte from 'rollup-plugin-svelte';
-import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
+import json from '@rollup/plugin-json';
+import sveltePreprocess from 'svelte-preprocess';
+import builtins from 'rollup-plugin-node-builtins-brofs';
+import 'dotenv/config';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
+const exprt = !!process.env.SAPPER_EXPORT;
+
+var baseUrl =  process.env.BASE_URL ? process.env.BASE_URL : '/';
+baseUrl = baseUrl.replace(/\/$/, '');
+baseUrl = baseUrl + "/";
+
+console.log("EXPORT     : " + exprt);
+console.log("MODE       : " + mode);
+console.log("BASE URL   : " + baseUrl);
 
 const onwarn = (warning, onwarn) =>
 	(warning.code === 'MISSING_EXPORT' && /'preload'/.test(warning.message)) ||
 	(warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) ||
 	onwarn(warning);
 
+const preprocess = sveltePreprocess({
+	scss: {
+		includePaths: ['src'],
+		data : "$baseUrl: '" + baseUrl + "';"
+	},
+	postcss: {
+		plugins: [require('autoprefixer')],
+	}
+});
+
 export default {
+
 	client: {
+		preserveEntrySignatures: false,
 		input: config.client.input(),
 		output: config.client.output(),
 		plugins: [
+			json(),
 			replace({
 				'process.browser': true,
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
+				preprocess,
 				dev,
 				hydratable: true,
-				emitCss: true
-			}),
-			url({
-				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
-				publicPath: '/client/'
+				emitCss: true,
+				css :false,
+				onwarn: (warning, handler) => {
+					const { code, frame } = warning;
+					if (code === "css-unused-selector")
+						return;
+
+					handler(warning);
+				},
 			}),
 			resolve({
 				browser: true,
 				dedupe: ['svelte']
 			}),
 			commonjs(),
-
-			legacy && babel({
+			builtins( {
+				fs: true
+			} ),
+			/*legacy && babel({
 				extensions: ['.js', '.mjs', '.html', '.svelte'],
-				babelHelpers: 'runtime',
+				runtimeHelpers: true,
 				exclude: ['node_modules/@babel/**'],
 				presets: [
 					['@babel/preset-env', {
@@ -57,14 +87,13 @@ export default {
 						useESModules: true
 					}]
 				]
-			}),
+			}),*/
 
 			!dev && terser({
 				module: true
 			})
 		],
 
-		preserveEntrySignatures: false,
 		onwarn,
 	},
 
@@ -72,30 +101,32 @@ export default {
 		input: config.server.input(),
 		output: config.server.output(),
 		plugins: [
+			json({
+				compact: true,
+			}),
 			replace({
 				'process.browser': false,
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
+				preprocess,
 				generate: 'ssr',
-				hydratable: true,
 				dev
-			}),
-			url({
-				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
-				publicPath: '/client/',
-				emitFiles: false // already emitted by client build
 			}),
 			resolve({
 				dedupe: ['svelte']
 			}),
+			builtins( {
+				fs: true
+			} ),
 			commonjs()
 		],
-		external: Object.keys(pkg.dependencies).concat(require('module').builtinModules),
+		external: Object.keys(pkg.dependencies).concat(
+			require('module').builtinModules || Object.keys(process.binding('natives'))
+		),
 
-		preserveEntrySignatures: 'strict',
 		onwarn,
-	},
+	}/*,
 
 	serviceworker: {
 		input: config.serviceworker.input(),
@@ -110,7 +141,6 @@ export default {
 			!dev && terser()
 		],
 
-		preserveEntrySignatures: false,
 		onwarn,
-	}
+    },*/
 };

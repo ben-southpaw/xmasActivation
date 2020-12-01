@@ -1,0 +1,61 @@
+name: AWS Develop
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.X]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 10.17.0
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.17.0
+      - run: npm install
+      - run: npm run bundle
+      - run: npm run build
+        env:
+          CI: true
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - name: install eb-cli
+        run: pip install awsebcli --upgrade --user
+      - name: check eb-cli
+        run: ~/.local/bin/eb --version
+
+      - name: deploy.zip
+        run: bash .github/build-package-and-deploy-zip.sh
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+
+      #    - name: write aws config files
+      #      run: bash .github/create-aws-config.sh
+      #      env:
+      #        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      #    - name: deploy
+      #      run: ~/.local/bin/eb deploy
+
+     # - name: deploy on staging (if develop)
+     #   run: ~/.local/bin/eb deploy Advclb-staging -l $GITHUB_SHA
+     #   if: github.ref == 'refs/heads/master'
+#      - name: deploy on production (if master)
+#        run: ~/.local/bin/eb deploy Advclb-acdc-dev -l $GITHUB_SHA
+#        if: github.ref == 'refs/heads/master'
