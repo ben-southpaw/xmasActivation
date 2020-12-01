@@ -1,6 +1,8 @@
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Merry Xmas Ya Filthy Animal</title>
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
 </svelte:head>
 
 <h1>Great success!</h1>
@@ -33,6 +35,9 @@
 
 	figure {
 		margin: 0 0 1em 0;
+		figcaption {
+			background: hotpink;
+		}
 	}
 
 	img {
