@@ -6,7 +6,6 @@
 <h1>Great success!</h1>
 
 <figure>
-	<img alt='Success Kev' src='successKev.gif'>
 	<figcaption>Happy Boi Fun Times</figcaption>
 </figure>
 
@@ -14,7 +13,7 @@
 
 <style type="scss">
 		//import globals to access globals, mixins etc
-		@import '../../scss/global';
+		@import './src/scss/global';
 
 	h1, figure, p {
 		text-align: center;
