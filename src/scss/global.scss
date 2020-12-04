@@ -4,7 +4,7 @@
 @import "config/normalize";
 
 //fonts
-@import 'base/fonts';
+@import "base/fonts";
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 
@@ -18,78 +18,68 @@ body::-webkit-scrollbar {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
- //Uncomment where needed
+//Uncomment where needed
 
 body {
   background-color: #000;
 }
 
 //For dynamically changing colours via JS
-#sapper{
+#sapper {
   //--beige : #{$beige-main};
   //--blue : #{$blue-font};
   //--gold : #{$gold-light};
   //--grey : #{$grey-main};
 
-  --mobile : 1;
-  @include respond-to('desktop') {
-    --mobile : 0;
+  --mobile: 1;
+  @include respond-to("desktop") {
+    --mobile: 0;
   }
 }
-
 
 //Font face, add fonts here, < 10 preferable. Can be used as mixins. Gilroy is standard AC font.
 
 @font-face {
-  font-family: 'Gilroy Regular';
-  src: url('../fonts/Gilroy-Regular.woff') format('woff'),
-  url('../fonts/Gilroy-Regular.woff2') format('woff2'),
-  url('../fonts/Gilroy-Regular.otf') format('otf');
+  font-family: "Gilroy Regular";
+  src: url("../fonts/Gilroy-Regular.woff") format("woff"),
+    url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy-Regular.otf") format("otf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy Medium';
-  src: url('../fonts/Gilroy-Medium.woff') format('woff'),
-  url('../fonts/Gilroy-Medium.woff2') format('woff2'),
-  url('../fonts/Gilroy-Medium.otf') format('otf');
+  font-family: "Gilroy Medium";
+  src: url("../fonts/Gilroy-Medium.woff") format("woff"),
+    url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+    url("../fonts/Gilroy-Medium.otf") format("otf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy Semibold';
-  src: url('../fonts/Gilroy-Semibold.woff') format('woff'),
-  url('../fonts/Gilroy-Semibold.otf') format('otf'),
-  url('./fonts/Gilroy-Semibold.ttf') format('ttf');
+  font-family: "Gilroy Semibold";
+  src: url("../fonts/Gilroy-Semibold.woff") format("woff"),
+    url("../fonts/Gilroy-Semibold.otf") format("otf"),
+    url("./fonts/Gilroy-Semibold.ttf") format("ttf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy Bold';
-  src: url('../fonts/Gilroy-Bold.woff') format('woff'),
-  url('../fonts/Gilroy-Bold.woff2') format('woff2'),
-  url('../fonts/Gilroy-Bold.otf') format('otf');
+  font-family: "Gilroy Bold";
+  src: url("../fonts/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Bold.otf") format("otf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy Extrabold Italic';
-  src: url('../fonts/Gilroy-ExtraboldItalic.woff') format('woff'),
-  url('../fonts/Gilroy-ExtraboldItalic.woff2') format('woff2'),
-  url('../fonts/Gilroy-ExtraboldItalic.otf') format('otf');
+  font-family: "Gilroy Extrabold Italic";
+  src: url("../fonts/Gilroy-ExtraboldItalic.woff") format("woff"),
+    url("../fonts/Gilroy-ExtraboldItalic.woff2") format("woff2"),
+    url("../fonts/Gilroy-ExtraboldItalic.otf") format("otf");
   font-weight: 800;
   font-style: italic;
 }
-
-
-
-
-
-
-
-
-

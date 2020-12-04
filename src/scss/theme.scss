@@ -3,9 +3,9 @@
 //----------------------------BREAKPOINTS---------------------------
 
 $breakpoints: (
-        'min': 375px,
-        'desktop': 767px,
-        'max': 1200px
+  "min": 375px,
+  "desktop": 767px,
+  "max": 1200px,
 ) !default;
 
 @mixin respond-to($breakpoint) {
@@ -16,7 +16,7 @@ $breakpoints: (
       @content;
     }
   }
-    // If the key doesn't exist in the map
+  // If the key doesn't exist in the map
   @else {
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
         + "Available breakpoints are: #{map-keys($breakpoints)}.";
@@ -30,14 +30,15 @@ $article-max: 1400px;
 $screen-width: 100vw;
 
 //------------------cookiewall-------------------------
-$small: '(max-width: 736px)';
-
+$small: "(max-width: 736px)";
 
 //-----------------------COLOURS------------------------------
 
 // Legacy
 /* Primary colors */
-$th-blue: #00174f;
+$primary-bg: #1e3546;
+$mid-blue: #4064d6;
+$violet: #9eb0f6;
 $th-red: #cc0c2f;
 $BLUE_TRANSPARENT: rgba(0, 23, 79, 0.9);
 $TOMMY_BLUE: $th-blue;
@@ -46,16 +47,14 @@ $GREY_LIGHT: #969696;
 $GREY_LIGHTER: #f8f8f8;
 $GREEN: #14be82;
 
-
 //--------------------------TEXT------------------------------
 // *-- use mixins
 //font styles
-$main_font--bold: 'FuturaLTPro-Bold', Arial, Helvetica, sans-serif; // 300, 400, 700
-$main_font--normal: 'FuturaLTPro-Book', Arial, Helvetica, sans-serif; // 300, 400, 700
+$main_font--bold: "FuturaLTPro-Bold", Arial, Helvetica, sans-serif; // 300, 400, 700
+$main_font--normal: "FuturaLTPro-Book", Arial, Helvetica, sans-serif; // 300, 400, 700
 
 //Z-indexing
 $nav-index: 1000;
 $menu-index: 1001;
 
 //@import 'mixins';
-

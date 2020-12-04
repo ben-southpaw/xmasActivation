@@ -1,15 +1,18 @@
+<!--suppress ProblematicWhitespace -->
 <script>
 
 </script>
 
-<style>
+<style lang="scss">
+	@import "../scss/global";
 	* {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+		background: $primary-bg;
 	}
 
-	:root{
+	:root {
 		--base-fontsize: 10;
 		--base-design-width: 740;
 		@include respond-to('desktop') {
