@@ -1,5 +1,3 @@
-//variables all go in here...
-
 //----------------------------BREAKPOINTS---------------------------
 
 $breakpoints: (
@@ -34,24 +32,15 @@ $small: "(max-width: 736px)";
 
 //-----------------------COLOURS------------------------------
 
-// Legacy
 /* Primary colors */
 $primary-bg: #1e3546;
 $mid-blue: #4064d6;
 $violet: #9eb0f6;
-$th-red: #cc0c2f;
-$BLUE_TRANSPARENT: rgba(0, 23, 79, 0.9);
-$TOMMY_BLUE: $th-blue;
-$TOMMY_RED: $th-red;
-$GREY_LIGHT: #969696;
-$GREY_LIGHTER: #f8f8f8;
-$GREEN: #14be82;
 
 //--------------------------TEXT------------------------------
 // *-- use mixins
 //font styles
-$main_font--bold: "FuturaLTPro-Bold", Arial, Helvetica, sans-serif; // 300, 400, 700
-$main_font--normal: "FuturaLTPro-Book", Arial, Helvetica, sans-serif; // 300, 400, 700
+$main_font--normal: "Cako Black", Arial, Helvetica, sans-serif; // 300, 400, 700
 
 //Z-indexing
 $nav-index: 1000;

@@ -6,12 +6,12 @@
     <div class="grid-item the-header"></div>
     <div class="grid-item the-header"></div>
     <div class="grid-item the-header"></div>
+    <div class="grid-item"><h1>TESTING THE FONTs</h1></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
+    <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
@@ -34,7 +34,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
     grid-template-areas:
     "header header header"
     ". . ."
@@ -65,9 +64,9 @@
 
     .grid-item {
       height: 10rem;
-      background: cornflowerblue;
+      //background: cornflowerblue;
       @include respond-to('desktop') {
-        background: hotpink;
+        //background: hotpink;
 
       }
     }
@@ -79,12 +78,16 @@
         background: darkcyan;
       }
     }
-
+    h1 {
+      font-family: $main_font--normal;
+      font-size: 45px;
+      color: $violet;
+      overflow: visible;
+    }
 
 
 
 
   }
-
 
 </style>
