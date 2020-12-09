@@ -29,7 +29,7 @@
       }
       h1 {
       font-family: $main_cako;
-      margin: 0 0 3rem 0;
+      margin: 1rem 0 2rem 0;
       font-size: 4rem;
       color: $violet;
       overflow: visible;
