@@ -1,60 +1,58 @@
 <script>
-	export let segment;
+
 </script>
 
-<style>
-	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
-	}
+<nav>
+	<div class="text-container">
+		<div class="flex-col">
+			<img src="/images/ac-logo.svg" alt="ac-homepage">
+		</div>
+		<div class="flex-col">
+			<p class="xmas-text">Merry Christmas</p>
+		</div>
+	</div>
+	<div class="lights-container">
+		<img src="" alt="lights" class="top-lights">
+	</div>
+</nav>
 
-	ul {
-		margin: 0;
-		padding: 0;
-	}
+<style lang="scss">
+    @import '../scss/global';
 
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
+	nav{
+		height: 25vh;
+		.text-container {
+			display: flex;
+			font-family: $bold_gilroy; //Not working?
+			font-size: 1rem;
+			text-transform: uppercase;
+			color: $font-white;
+			margin: 0 1rem;
+			z-index: $nav-index;
 
-	li {
-		display: block;
-		float: left;
-	}
+			.flex-col {
+				width: 50%;
+				img {
+					width: 10rem;
+					margin: 2rem 0;
+				}
+			}
+			.flex-col:last-of-type {
+				text-align: right;
+				.xmas-text {
+					margin: 2rem 0;
+					justify-content: end;
+				}
+			}
+		}
 
-	[aria-current] {
-		position: relative;
-		display: inline-block;
-	}
+		.lights-container {
 
-	[aria-current]::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
+			.top-lights {
 
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
+			}
+		}
+
+
 	}
 </style>
-
-<nav>
-	<ul>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
-
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
-	</ul>
-</nav>

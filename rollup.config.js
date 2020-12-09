@@ -12,7 +12,7 @@ import "dotenv/config";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
-const legacy = !!process.env.SAPPER_LEGACY_BUILD;
+// const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 const exprt = !!process.env.SAPPER_EXPORT;
 
 var baseUrl = process.env.BASE_URL ? process.env.BASE_URL : "/";

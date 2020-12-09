@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="358px" height="327px" viewBox="0 0 358 327" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>heart</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Start" transform="translate(-541.000000, -7457.000000)" fill="#4064D6">
+            <g id="footer" transform="translate(91.000000, 6469.000000)">
+                <path d="M628.893,1019.11271 C588.105392,978.325098 521.975961,978.325098 481.188353,1019.11271 C440.400745,1059.90031 440.400745,1126.02975 481.188353,1166.81735 L628.893,1314.522 L776.597647,1166.81735 C817.385255,1126.02975 817.385255,1059.90031 776.597647,1019.11271 C735.810039,978.325098 669.680608,978.325098 628.893,1019.11271 Z" id="heart"></path>
+            </g>
+        </g>
+    </g>
+</svg>

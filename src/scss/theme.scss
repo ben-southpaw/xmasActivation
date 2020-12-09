@@ -36,11 +36,14 @@ $small: "(max-width: 736px)";
 $primary-bg: #1e3546;
 $mid-blue: #4064d6;
 $violet: #9eb0f6;
+$font-white: white;
 
 //--------------------------TEXT------------------------------
 // *-- use mixins
 //font styles
-$main_font--normal: "Cako Black", Arial, Helvetica, sans-serif; // 300, 400, 700
+$main_cako: "Cako Black", Arial, Helvetica, sans-serif; // 300, 400, 700
+$main_gilroy: "Gilroy Regular", Arial, Helvetica, sans-serif;
+$bold_gilroy: "Gilroy Semibold", Arial, Helvetica, sans-serif;
 
 //Z-indexing
 $nav-index: 1000;

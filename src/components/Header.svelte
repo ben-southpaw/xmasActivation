@@ -1,23 +1,52 @@
 <script>
+    import Nav from "./Nav.svelte";
+    let groupName = 'adidas';
 
 </script>
-//template header
+
 <header id="js-header">
+    <Nav />
     <div class="header-container">
-        <h1>Header</h1>
+        <h1>Hey, you beautiful <br> people at {groupName} <br>Merry Christmas</h1>
+        <div class="text-container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor illo nam, nemo neque odit possimus quaerat quasi qui sit ut velit veritatis! Animi dicta impedit magnam nihil perspiciatis, veritatis.</p>
+        </div>
     </div>
+
+
 </header>
 
 
 
 <style lang="scss">
-    //Template styles
-    @import '../scss/theme';
+    @import '../scss/global';
+
     header {
         position: relative;
-        @include respond-to('desktop') {
-            background: #00174f;
+        @include respond-to('desktop') {}
+      .header-container {
+        margin: 0 16vw 20vh 16vw;
+      }
+      h1 {
+      font-family: $main_cako;
+      margin: 0 0 3rem 0;
+      font-size: 4rem;
+      color: $violet;
+      overflow: visible;
+    }
+
+      .text-container {
+        display: flex;
+
+        p {
+          font-family: $main_gilroy;
+          font-size: 1.2rem;
+          color: $font-white;
+          @include respond-to('desktop') {
+             margin-left: 50%;
+          }
         }
+      }
     }
 
 </style>

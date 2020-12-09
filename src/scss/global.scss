@@ -21,16 +21,11 @@ body::-webkit-scrollbar {
 //Uncomment where needed
 
 body {
-  background-color: #000;
+  background-color: $primary-bg;
 }
 
 //For dynamically changing colours via JS
 #sapper {
-  //--beige : #{$beige-main};
-  //--blue : #{$blue-font};
-  //--gold : #{$gold-light};
-  //--grey : #{$grey-main};
-
   --mobile: 1;
   @include respond-to("desktop") {
     --mobile: 0;
@@ -41,6 +36,24 @@ body {
 @font-face {
   font-family: "Cako Black";
   src: url("../fonts/Cako Black.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url("../fonts/Gilroy-Regular.woff") format("woff"),
+    url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy-Regular.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Semibold";
+  src: url("../fonts/Gilroy-Semibold.woff") format("woff"),
+    url("../fonts/Gilroy-Semibold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Semibold.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }

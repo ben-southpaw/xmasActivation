@@ -1,12 +1,24 @@
 <script>
+    // import Header from "./Header.svelte";
+
 
 </script>
 
 <section>
-    <div class="grid-item the-header"></div>
-    <div class="grid-item the-header"></div>
-    <div class="grid-item the-header"></div>
-    <div class="grid-item"><h1>TESTING THE FONTs</h1></div>
+<!--    <Header />-->
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
@@ -32,57 +44,46 @@
   section {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "header header header"
-    ". . ."
-    ". . ."
-    ". . ."
-    ". . ."
-    ". . ."
-    ". . ."
-    ". . ."
-    ". . ."
-    ". . .";
+    //grid-template-columns: 1fr 1fr 1fr;
+    //grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    //grid-template-areas:
+    //". . ."
+    //". . ."
+    //". . ."
+    //". . ."
+    //". . ."
+    //". . ."
+    //". . ."
+    //". . ."
+    //". . ."
+    //". . .";
 
-    @include respond-to('desktop') {
+    //@include respond-to('desktop') {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; //6 for desktop
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; //10 for now
       grid-template-areas:
-    "header header header header header header"
-    ". . . . . ."
-    ". . . . . ."
-    ". . . . . ."
-    ". . . . . ."
-    ". . . . . ."
-    ". . . . . ."
-    ". . . . . ."
-    ". . . . . ."
-    ". . . . . .";
-    }
+    "x . . . . ."
+    ". x . . . ."
+    ". . x . . ."
+    ". . . x . ."
+    ". . . . x ."
+    ". . . . . x"
+    "x . . . . ."
+    ". x . . . ."
+    ". . x . . ."
+    ". . . x . .";
+    //}
 
     .grid-item {
+      grid-area:'x';
       height: 10rem;
-      //background: cornflowerblue;
-      @include respond-to('desktop') {
-        //background: hotpink;
-
-      }
-    }
-
-    .the-header {
-      grid-area: header;
-      background: coral;
-      @include respond-to('desktop') {
-        background: darkcyan;
-      }
-    }
-    h1 {
-      font-family: $main_font--normal;
-      font-size: 45px;
       color: $violet;
-      overflow: visible;
+      font-family: $main_cako;
+      background-image: url(/images/ac_wheel_big_fg.svg);
+      background-repeat: no-repeat;
+
+      @include respond-to('desktop') {
+      }
     }
 
 
