@@ -12,8 +12,6 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor illo nam, nemo neque odit possimus quaerat quasi qui sit ut velit veritatis! Animi dicta impedit magnam nihil perspiciatis, veritatis.</p>
         </div>
     </div>
-
-
 </header>
 
 
@@ -29,9 +27,9 @@
       }
       h1 {
       font-family: $main_cako;
-      margin: 1rem 0 2rem 0;
-      font-size: 4rem;
       color: $violet;
+      margin: 1rem 0 2rem 0;
+      font-size: 5rem;
       overflow: visible;
     }
 

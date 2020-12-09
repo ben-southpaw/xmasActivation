@@ -1,8 +1,7 @@
 <script>
-	import Header from "../components/Header.svelte";
+	import Main from "../components/Main.svelte";
+	// import Header from "../components/Header.svelte";
 
-	// import Snow from "../components/Snow.svelte";
-	// import Grid from '../components/Grid.svelte'
 </script>
 <svelte:head>
 	<title>Merry Xmas Ya Filthy Animal</title>
@@ -10,12 +9,13 @@
 	<link rel="icon" href="./favicon.ico" type="image/x-icon">
 </svelte:head>
 
-<Header />
+<!--<Header />-->
+<Main />
 
 <style type="scss">
-		//import globals to access globals, mixins etc
 		@import './src/scss/global';
-		* {
+
+	* {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;

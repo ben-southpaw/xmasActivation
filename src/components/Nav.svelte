@@ -38,22 +38,21 @@
 			width: 100%;
 
 			display: inline-flex;
-			font-family: $bold_gilroy;
-			font-size: 1rem;
-			text-transform: uppercase;
-			color: $font-white;
 
 				a {
-					width: 50%;
-					height: 2rem;
-					margin: 2rem 1rem;
 					background-image: url(/images/ac-logo.svg);
 					background-repeat: no-repeat;
 					background-size: 11rem;
-
+					width: 50%;
+					height: 2rem;
+					margin: 2rem 1rem;
 				}
 
 				.xmas-text {
+					font-family: $bold_gilroy;
+					font-size: 1.1rem;
+					text-transform: uppercase;
+					color: $font-white;
 					width: 50%;
 					height: 4vh;
 					text-align: right;
