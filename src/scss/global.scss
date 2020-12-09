@@ -9,16 +9,38 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
 
 //optional
-body::-webkit-scrollbar {
+:global(body::-webkit-scrollbar) {
+  display: none;
+}
+
+::-webkit-scrollbar {
   display: none;
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
-//Uncomment where needed
+
+:root {
+  background: $primary-bg;
+  --base-fontsize: 10px !important;
+  --base-design-width: 740;
+  @include respond-to("desktop") {
+    --base-fontsize: 10 !important;
+    --base-design-width: 1440; //Desktop width
+  }
+}
+
+:global(html) {
+  /*Base font size based of viewport width (1920px) for using rems*/
+  font-size: calc(var(--base-fontsize) / var(--base-design-width) * 100vw);
+  //font-size: 10px;
+  margin: 0;
+}
 
 body {
   background-color: $primary-bg;

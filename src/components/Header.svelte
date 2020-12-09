@@ -20,17 +20,18 @@
     @import '../scss/global';
 
     header {
-        position: relative;
-        @include respond-to('desktop') {}
-      .header-container {
-        margin: 0 16vw 20vh 16vw;
-      }
       h1 {
       font-family: $main_cako;
       color: $violet;
       margin: 1rem 0 2rem 0;
       font-size: 5rem;
       overflow: visible;
+
+      //position: absolute;
+      //width: 142.1rem;
+      //height: 33.6rem;
+      //left: 23rem;
+      //top: 31.2rem;
     }
 
       .text-container {
