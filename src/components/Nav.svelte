@@ -3,15 +3,15 @@
 </script>
 
 <nav>
-	<div class="lights-container">
-		<img class="top-lights" src="/images/lights/lights_1.1.svg" alt="lights" >
-	</div>
-	<div class="text-container">
+<!--	<div class="lights-container">-->
+<!--		<img class="top-lights" src="/images/lights/lights_1.1.svg" alt="lights" >-->
+<!--	</div>-->
+<!--	<div class="text-container">-->
 
-			<a href="https://acdc.adventureclub.io" target="_blank"></a>
-			<p class="xmas-text">Merry Christmas</p>
+<!--			<a href="https://acdc.adventureclub.io" target="_blank"></a>-->
+<!--			<p class="xmas-text">Merry Christmas</p>-->
 
-	</div>
+<!--	</div>-->
 </nav>
 
 <style lang="scss">
