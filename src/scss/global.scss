@@ -54,6 +54,31 @@ body {
   }
 }
 
+//Globally used styles
+.nav-ac {
+  position: absolute;
+  width: 11rem;
+  height: 1.7rem;
+  left: 1rem;
+  top: 4rem;
+  background-image: url(/images/ac-logo.svg);
+  background-repeat: no-repeat;
+  background-size: 11rem;
+}
+.nav-text {
+  position: absolute;
+  width: 9.6rem;
+  height: 1.1rem;
+  right: 2rem;
+  top: 4.1rem;
+  color: $font-white;
+  font-family: $main_gilroy;
+  font-weight: 900;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  text-transform: uppercase;
+}
+
 //Font face, add fonts here, < 10 preferable. Can be used as mixins..
 @font-face {
   font-family: "Cako Black";
