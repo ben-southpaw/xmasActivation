@@ -40,7 +40,7 @@ export default class Background {
       this.snowflakes.push(obj);
     }
 
-    console.log(this.snowflakes);
+    // console.log(this.snowflakes);
   }
 
   updateSnowFlakes() {
