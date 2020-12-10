@@ -1,0 +1,100 @@
+//Text Blocks/Elements
+@include respond-to("desktop") {
+  .text-blocks {
+    font-family: $main_cako;
+    color: $purple;
+    font-weight: 900;
+    line-height: 10.6rem;
+    height: 10.6rem;
+    text-transform: capitalize;
+
+    .text-three {
+      position: absolute;
+      width: 30.2rem;
+      left: -0.6rem;
+      top: 147.4rem;
+      font-size: 9rem;
+    }
+    .text-four {
+      position: absolute;
+      width: 45.5rem;
+      height: 10.6rem;
+      left: 72rem;
+      top: 207rem;
+      font-size: 9rem;
+      letter-spacing: -0.6px;
+    }
+    .text-five {
+      position: absolute;
+      width: 17.9rem;
+      left: 22.5rem;
+      top: 300rem;
+      font-size: 7.2rem;
+      letter-spacing: -0.48px;
+    }
+    .text-six {
+      position: absolute;
+      width: 22rem;
+      left: 2.4rem;
+      top: 318.8rem;
+      font-size: 7.2rem;
+      letter-spacing: -0.48px;
+    }
+    .text-seven {
+      position: absolute;
+      width: 29.1rem;
+      left: 113.1rem;
+      top: 343rem; //Editted
+      font-size: 5.2rem;
+      letter-spacing: -0.34px;
+    }
+    .text-eight {
+      position: absolute;
+      width: 26.6rem;
+      left: 73rem;
+      top: 396.8rem;
+      font-size: 9rem;
+      letter-spacing: -0.6px;
+    }
+    .text-nine {
+      position: absolute;
+      width: 27.2rem;
+      left: 48.3rem;
+      top: 430.6rem;
+      font-size: 9rem;
+      letter-spacing: -0.6px;
+    }
+    .text-ten {
+      position: absolute;
+      width: 31rem;
+      left: 96.6rem;
+      top: 471.1rem;
+      font-size: 16rem;
+      letter-spacing: -1.06px;
+    }
+    .text-eleven {
+      position: absolute;
+      width: 20.6rem;
+      left: 122.1rem;
+      top: 487.7rem;
+      font-size: 16rem;
+      letter-spacing: -1.06px;
+    }
+    .text-twelve {
+      position: absolute;
+      width: 34.2rem;
+      left: 2.2rem;
+      top: 541rem;
+      font-size: 11rem;
+      letter-spacing: -0.73px;
+    }
+    .text-thirteen {
+      position: absolute;
+      width: 36.3rem;
+      left: 97rem;
+      top: 547.1rem;
+      font-size: 11rem;
+      letter-spacing: -0.73px;
+    }
+  }
+}

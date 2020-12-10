@@ -1,0 +1,33 @@
+@include respond-to("desktop") {
+  .trees {
+    .trees-one {
+      position: absolute;
+      width: 22rem;
+      height: 52.7rem;
+      left: 73rem;
+      top: 266.6rem;
+    }
+
+    .tree-top {
+      position: absolute;
+      width: 21.7rem;
+      height: 15rem;
+      left: 49.4rem; //70.9rem; <- figma values
+      top: 414rem; //429.0rem;
+    }
+    .tree-mid {
+      position: absolute;
+      width: 21.7rem;
+      height: 17.7rem;
+      left: 49.2rem; //70.6rem;
+      top: 450.5rem; //468.2rem;
+    }
+    .tree-bott {
+      position: absolute;
+      width: 21.8rem;
+      height: 20.6rem;
+      left: 49.1rem; //70.9rem; <- figma values
+      top: 475.2rem; //495.8rem;
+    }
+  }
+}

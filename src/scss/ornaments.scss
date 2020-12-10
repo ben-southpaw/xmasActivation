@@ -1,0 +1,103 @@
+//Blank Ornament
+@include respond-to("desktop") {
+  .blank-ornaments {
+    .blank-ornaments__1 {
+      position: absolute;
+      width: 22rem;
+      height: 63.4rem;
+      left: 25.3rem;
+      top: 459.1rem;
+    }
+
+    .blank-ornaments__2 {
+      position: absolute;
+      width: 22rem;
+      height: 63.4rem;
+      left: 73rem;
+      top: 494.8rem;
+    }
+
+    .blank-ornaments__xxx {
+      position: absolute;
+      width: 22rem;
+      height: 48rem;
+      left: 49rem;
+      top: 283.3rem;
+    }
+  }
+
+  //Name Ornament Class
+  .name-ornaments {
+    .name-ornaments__1-1 {
+      position: absolute;
+      width: 22rem;
+      height: 63.4rem;
+      left: 1rem;
+      top: 435.9rem;
+    }
+
+    .name-ornaments__1-3 {
+      position: absolute;
+      width: 22rem;
+      height: 63.4rem;
+      left: 97rem;
+      top: 215.5rem;
+    }
+
+    .name-ornaments__1-5 {
+      position: absolute;
+      width: 22rem;
+      height: 63.4rem;
+      left: 25rem;
+      top: 308rem;
+    }
+
+    .name-ornaments__2-2 {
+      position: absolute;
+      width: 22rem;
+      height: 63.4rem;
+      left: 24.9rem;
+      top: 93.6rem;
+    }
+
+    .name-ornaments__2-4 {
+      position: absolute;
+      width: 22rem;
+      height: 63.4rem;
+      left: 73rem;
+      top: 325rem;
+    }
+
+    .name-ornaments__2-6 {
+      position: absolute;
+      width: 22rem;
+      height: 63.4rem;
+      left: 1rem;
+      top: 243.9rem;
+    }
+
+    .name-ornaments__3-2 {
+      position: absolute;
+      width: 22rem;
+      height: 63.4rem;
+      left: 97rem;
+      top: 378.4rem;
+    }
+
+    .name-ornaments__3-4 {
+      position: absolute;
+      width: 22rem;
+      height: 63.4rem;
+      left: 48.9rem;
+      top: 125.3rem;
+    }
+
+    .name-ornaments__4-1 {
+      position: absolute;
+      width: 22rem;
+      height: 63.4rem;
+      left: 120.9rem;
+      top: 188.8rem;
+    }
+  }
+}
