@@ -1,41 +1,41 @@
 <script>
-    import { onMount, tick } from 'svelte';
-    import {draw} from "../../static/js/vendor/twgl-full.module.js";
-    import * as canvas from "../../static/js/vendor/twgl-full.module.js";
+    import { onMount } from 'svelte';
+    import Background from '../../static/js/background.js';
+    let root;
 
-  let canvas;
-  let ctx;
-  let width = 1007;
-  let height = 1140;
-
-    const draw = () => {
-    // ctx.clearRect(0, 0, width, height);
-    // ctx.beginPath();
-    // ctx.moveTo(width/2 - 50, height/2);
-    // ctx.arc(width/2, height/2, 50, 0, 2 * Math.PI);
-    // ctx.fill();
-    };
 
 onMount(async () => {
-  ctx = canvas.getContext("2d");
-  canvas.width = width;
-  canvas.height = height;
-  await tick();
-  draw();
+    // window.addEventListener('resize')
+  console.log(root);
+
+  const bg = new Background(root)
 });
 
 </script>
 
-<div
-  class="container"
-  bind:clientWidth={width}
-  bind:clientHeight={height}>
-  <canvas bind:this={canvas} {width} {height} />
+<div class="bg" bind:this={root}>
+
 </div>
 
-<style>
-  .container {
+<style lang="scss">
+     @import '../scss/global';
+
+  .bg {
+    position: fixed;
     width: 100%;
     height: 100%;
+    z-index: 99;
   }
+     :global(.snowflake) {
+       width: 3.5rem;
+       height: 3.5rem;
+       background-image: url("/images/ac_wheel_big_fg.svg");
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: 3rem;
+       position: absolute;
+  }
+
+
+
 </style>

@@ -1,4 +1,5 @@
 <script>
+    import Background from "./Background.svelte";
     import Footer from "./Footer.svelte";
     import Header from "./Header.svelte";
 
@@ -8,6 +9,7 @@
 
 
 <main>
+    <Background />
     <div class="header">
         <img class="nav-lights" src="/images/lights/lights_1.1.svg" alt="lights" >
         <a class="nav-ac" href="https://acdc.adventureclub.io" target="_blank">&nbsp;</a>
@@ -128,8 +130,6 @@
             top: 246.2rem;
         }
       }
-
-
     }
     }
 
