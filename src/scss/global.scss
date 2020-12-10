@@ -27,7 +27,7 @@
 
 :root {
   background: $primary-bg;
-  --base-fontsize: 10px !important;
+  --base-fontsize: 10 !important;
   --base-design-width: 740;
   @include respond-to("desktop") {
     --base-fontsize: 10 !important;
