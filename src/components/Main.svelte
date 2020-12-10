@@ -1,11 +1,22 @@
 <script>
+    import Footer from "./Footer.svelte";
     import Header from "./Header.svelte";
+
+    let groupName = 'adidas';
 
 </script>
 
 
 <main>
-<!--    <Header />-->
+    <div class="header">
+        <img class="nav-lights" src="/images/lights/lights_1.1.svg" alt="lights" >
+        <a class="nav-ac" href="https://acdc.adventureclub.io" target="_blank">&nbsp;</a>
+        <p class="nav-text">Merry Christmas</p>
+        <h1 class="text-one">Hey, you beautiful <br> people at {groupName} <br>Merry Christmas</h1>
+        <p class="text-two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor
+                illo nam, nemo neque odit possimus quaerat quasi qui sit ut velit veritatis! Animi dicta
+                impedit magnam nihil perspiciatis, veritatis.</p>
+    </div>
 
     <div class="blank-ornaments">
         <img class="blank-ornaments__1" src="/images/ornaments/ornament_round.svg" alt="ornament-one">
@@ -35,7 +46,7 @@
         <h1 class="text-nine">joulua</h1>
         <h1 class="text-ten">god</h1>
         <h1 class="text-eleven">jul</h1>
-        <h1 class="text-twelve">vasela</h1>
+        <h1 class="text-twelve">vesala</h1>
         <h1 class="text-thirteen">koleda</h1>
 
 
@@ -48,9 +59,12 @@
         <img class="solid-shape__six" src="/images/solid-shapes/solid_shape_6.svg" alt="solidshapeSix">
         <img class="ac-snowflake__one" src="/images/snowflakes/ac_snowflake_1.svg" alt="snowflakeOne">
         <img class="ac-snowflake__two" src="/images/snowflakes/ac_snowflake_2.svg" alt="snowflakeTwo">
+        <img class="ac-snowflake__three" src="/images/snowflakes/ac_snowflake_3.svg" alt="snowflakeThree">
+        <img class="ac-snowflake__small" src="/images/snowflakes/ac_snowflake_small.svg" alt="snowflakeSmall">
         <img class="star__one" src="/images/star_1.svg" alt="starOne">
         <img class="star__two" src="/images/star_1.svg" alt="starTwo">
         <img class="chandelier" src="/images/chandelier.svg" alt="chandelier">
+        <img class="snowman" src="/images/snowman.svg" alt="snowman">
 
 
     </div>
@@ -66,13 +80,20 @@
         <img class="tree-mid" src="/images/trees/tree_mid.svg" alt="treeTop">
         <img class="tree-bott" src="/images/trees/tree_bott.svg" alt="treeBot">
     </div>
-
-
+    <div class="footer-container">
+        <Footer />
+    </div>
 </main>
 
 
 <style lang="scss">
     @import '../scss/global';
+    @import '../scss/header';
+    @import '../scss/ornaments';
+    @import '../scss/bg-items';
+    @import '../scss/text-blocks';
+    @import '../scss/trees';
+
 
     main {
     @include respond-to('desktop') {
@@ -80,273 +101,13 @@
     width: 144rem;
     height: 828.1rem;
 
-      //Blank Ornament
-      .blank-ornaments {
-        .blank-ornaments__1 {
-            position: absolute;
-            width: 22rem;
-            height: 63.4rem;
-            left: 25.3rem;
-            top: 459.1rem;
-        }
-        .blank-ornaments__2 {
-            position: absolute;
-            width: 22rem;
-            height: 63.4rem;
-            left: 73rem;
-            top: 494.8rem;
-        }
-        .blank-ornaments__xxx {
-            position: absolute;
-            width: 22rem;
-            height: 48rem;
-            left: 49rem;
-            top: 283.3rem;
-        }
-      }
-
-      //Name Ornament Class
-      .name-ornaments {
-        .name-ornaments__1-1 {
-            position: absolute;
-            width: 22rem;
-            height: 63.4rem;
-            left: 1rem;
-            top: 435.9rem;
-
-        }
-        .name-ornaments__1-3 {
-            position: absolute;
-            width: 22rem;
-            height: 63.4rem;
-            left: 97rem;
-            top: 215.5rem;
-        }
-
-        .name-ornaments__1-5 {
-            position: absolute;
-            width: 22rem;
-            height: 63.4rem;
-            left: 25rem;
-            top: 308rem;
-        }
-
-        .name-ornaments__2-2 {
-            position: absolute;
-            width: 22rem;
-            height: 63.4rem;
-            left: 24.9rem;
-            top: 93.6rem;
-
-        }
-        .name-ornaments__2-4 {
-            position: absolute;
-            width: 22rem;
-            height: 63.4rem;
-            left: 73rem;
-            top: 325rem;
-
-        }
-        .name-ornaments__2-6 {
-            position: absolute;
-            width: 22rem;
-            height: 63.4rem;
-            left: 1rem;
-            top: 243.9rem;
-        }
-        .name-ornaments__3-2 {
-            position: absolute;
-            width: 22rem;
-            height: 63.4rem;
-            left: 97rem;
-            top: 378.4rem;
-        }
-
-        .name-ornaments__3-4 {
-            position: absolute;
-            width: 22rem;
-            height: 63.4rem;
-            left: 48.9rem;
-            top: 125.3rem;
-        }
-
-        .name-ornaments__4-1 {
-            position: absolute;
-            width: 22rem;
-            height: 63.4rem;
-            left: 120.9rem;
-            top: 188.8rem;
-        }
-      }
-
-      //Background Items (non-interactive)
-      .bg-items {
-        .solid-shape__one {
+      .footer-container {
         position: absolute;
-        width: 47rem;
-        height: 47rem;
-        left: 0;
-        top: 159rem;
-        }
-        .solid-shape__two {
-          position: absolute;
-          width: 32rem; //these values don't match figma
-          height: 32rem;
-          left: 44rem;
-          top: 259.2rem;
-        }
-        .solid-shape__three {
-          position: absolute;
-          width: 47rem;
-          height: 28.6rem;
-          left: 94.7rem;
-          top: 315.1rem;
-          transform: rotate(-11deg);
-        }
-        .solid-shape__six {
-          position: absolute;
-          width: 47rem;
-          height: 47rem;
-          right: 0;
-          top: 588.9rem//635.9rem;
-          //transform: rotate(-180deg);
-        }
-        .ac-snowflake__one {
-          position: absolute;
-          width: 46.1rem;
-          height: 46.1rem;
-          left: 97rem;
-          top: 112.8rem;
-        }
-        .ac-snowflake__two {
-          position: absolute;
-          width: 65rem;
-          height: 65rem;
-          right: -7rem; //non figma values
-          top: 435rem; //463.1rem;
-          z-index: -1;
-        }
-        .star__one {
-          position: absolute;
-          width: 11rem;
-          height: 11rem;
-          left: 1rem;
-          top: 380.7rem;
-        }
-        .star__two {
-          position: absolute;
-          width: 11rem;
-          height: 11rem;
-          left: 12rem;
-          top: 386.2rem;
-        }
-        .chandelier {
-          position: absolute;
-          width: 22rem;
-          height: 22.9rem;
-          left: 121rem;
-          top: 566.1rem;
-        }
-
-      }
-
-      //Text Blocks/Elements
-      .text-blocks {
-            font-family: $main_cako;
-            color: $purple;
-            font-weight: 900;
-            line-height: 10.6rem;
-            height: 10.6rem;
-            text-transform: capitalize;
-
-        .text-three {
-            position: absolute;
-            width: 30.2rem;
-            left: -0.6rem;
-            top: 147.4rem;
-            font-size: 9rem;
-        }
-        .text-four {
-            position: absolute;
-            width: 45.5rem;
-            height: 10.6rem;
-            left: 72rem;
-            top: 207rem;
-            font-size: 9rem;
-            letter-spacing: -0.6px;
-        }
-        .text-five {
-            position: absolute;
-            width: 17.9rem;
-            left: 22.5rem;
-            top: 300rem;
-            font-size: 7.2rem;
-            letter-spacing: -0.48px;
-        }
-        .text-six {
-            position: absolute;
-            width: 22rem;
-            left: 2.4rem;
-            top: 318.8rem;
-            font-size: 7.2rem;
-            letter-spacing: -0.48px;
-        }
-        .text-seven {
-          position: absolute;
-            width: 29.1rem;
-            left: 113.1rem;
-            top: 343rem; //Editted
-            font-size: 5.2rem;
-            letter-spacing: -0.34px;
-        }
-        .text-eight {
-          position: absolute;
-            width: 26.6rem;
-            left: 73rem;
-            top: 396.8rem;
-            font-size: 9rem;
-            letter-spacing: -0.6px;
-        }
-        .text-nine {
-          position: absolute;
-            width: 27.2rem;
-            left: 48.3rem;
-            top: 430.6rem;
-            font-size: 9rem;
-            letter-spacing: -0.6px;
-        }
-        .text-ten {
-          position: absolute;
-            width: 31rem;
-            left: 96.6rem;
-            top: 471.1rem;
-            font-size: 16rem;
-            letter-spacing: -1.06px;
-        }
-        .text-eleven {
-          position: absolute;
-            width: 20.6rem;
-            left: 122.1rem;
-            top: 487.7rem;
-            font-size: 16rem;
-            letter-spacing: -1.06px;
-        }
-        .text-twelve {
-          position: absolute;
-            width: 34.2rem;
-            left: 2.2rem;
-            top: 541rem;
-            font-size: 11rem;
-            letter-spacing: -0.73px;
-        }
-        .text-thirteen {
-          position: absolute;
-            width: 36.3rem;
-            left: 97rem;
-            top: 547.1rem;
-            font-size: 11rem;
-            letter-spacing: -0.73px;
-        }
+        z-index: 2;
+        width: 125.8rem;
+        height: 175.4rem;
+        left: 9.1rem;
+        top: 646.9rem;
       }
 
       //Lights
@@ -368,38 +129,6 @@
         }
       }
 
-      .trees {
-        .trees-one {
-            position: absolute;
-            width: 22rem;
-            height: 52.7rem;
-            left: 73rem;
-            top: 266.6rem;
-        }
-
-        .tree-top {
-            position: absolute;
-            width: 21.7rem;
-            height: 15rem;
-            left: 49.4rem;      //70.9rem; <- figma values
-            top: 414rem;        //429.0rem;
-
-        }
-        .tree-mid {
-            position: absolute;
-            width: 21.7rem;
-            height: 17.7rem;
-            left: 49.2rem;      //70.6rem;
-            top: 450.5rem;      //468.2rem;
-        }
-        .tree-bott {
-            position: absolute;
-            width: 21.8rem;
-            height: 20.6rem;
-            left: 49.1rem;      //70.9rem; <- figma values
-            top: 475.2rem;      //495.8rem;
-        }
-      }
 
     }
     }

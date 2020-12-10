@@ -1,0 +1,91 @@
+@include respond-to("desktop") {
+  //Background Items (non-interactive)
+  .bg-items {
+    .solid-shape__one {
+      position: absolute;
+      width: 47rem;
+      height: 47rem;
+      left: 0;
+      top: 159rem;
+    }
+    .solid-shape__two {
+      position: absolute;
+      width: 32rem; //these values don't match figma
+      height: 32rem;
+      left: 44rem;
+      top: 259.2rem;
+    }
+    .solid-shape__three {
+      position: absolute;
+      width: 47rem;
+      height: 28.6rem;
+      left: 94.7rem;
+      top: 315.1rem;
+      transform: rotate(-11deg);
+    }
+    .solid-shape__six {
+      position: absolute;
+      width: 47rem;
+      height: 47rem;
+      right: 0;
+      top: 588.9rem //635.9rem;;
+      //transform: rotate(-180deg);
+    }
+    .ac-snowflake__one {
+      position: absolute;
+      width: 46.1rem;
+      height: 46.1rem;
+      left: 97rem;
+      top: 112.8rem;
+    }
+    .ac-snowflake__two {
+      position: absolute;
+      width: 65rem;
+      height: 65rem;
+      right: -7rem; //non figma values
+      top: 435rem; //463.1rem;
+      z-index: -1;
+    }
+    .ac-snowflake__three {
+      position: absolute;
+      width: 22rem;
+      height: 22rem;
+      left: 25rem;
+      top: 606.4rem;
+    }
+    .ac-snowflake__small {
+      position: absolute;
+      width: 22rem;
+      height: 22rem;
+      left: 49rem;
+      top: 590.5rem;
+    }
+    .star__one {
+      position: absolute;
+      width: 11rem;
+      height: 11rem;
+      left: 1rem;
+      top: 380.7rem;
+    }
+    .star__two {
+      position: absolute;
+      width: 11rem;
+      height: 11rem;
+      left: 12rem;
+      top: 386.2rem;
+    }
+    .chandelier {
+      position: absolute;
+      width: 22rem;
+      height: 22.9rem;
+      left: 121rem;
+      top: 566.1rem;
+    }
+    .snowman {
+      position: absolute;
+      width: 55rem;
+      left: 1rem;
+      top: 547rem;
+    }
+  }
+}
