@@ -25,7 +25,8 @@ onMount(async () => {
     width: 100%;
     height: 100%;
     z-index: 1;
-    display: none; //undo when bg is needed
+    pointer-events: none;
+    //display: none; //undo when bg is needed
   }
      :global(.snowflake) {
        width: 3.5rem;

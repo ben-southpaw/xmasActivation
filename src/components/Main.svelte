@@ -80,8 +80,11 @@
     </div>
 
     <div class="lights">
-        <img class="lights-2" src="/images/lights/lights_2.1.svg" alt="lights2-1">
-        <img class="lights-3" src="/images/lights/lights_3.1.svg" alt="lights3-1">
+        <img class="lights-2" src="/images/lights/lights_2.1.svg" data-active="{isActive}" alt="lights2-1">
+         <img class="lights-2" src="/images/lights/lights_2.2.svg" data-active="{!isActive}" alt="lights2-1">
+        <img class="lights-3" src="/images/lights/lights_3.1.svg" data-active="{isActive}" alt="lights3-1">
+         <img class="lights-3" src="/images/lights/lights_3.2.svg" data-active="{!isActive}" alt="lights3-1">
+
     </div>
 
     <div class="trees">
@@ -131,6 +134,10 @@
             height: 21.7rem;
             left: 21.5rem;
             top: 219.3rem;
+            opacity: 0;
+            &[data-active="true"] {
+                opacity: 1;
+    }
         }
 
         .lights-3 {
@@ -139,6 +146,10 @@
             height: 6rem;
             left: 71rem;
             top: 246.2rem;
+            opacity: 0;
+            &[data-active="true"] {
+                opacity: 1;
+    }
         }
       }
     }
