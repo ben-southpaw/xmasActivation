@@ -1,7 +1,6 @@
 <script>
     import Background from "./Background.svelte";
     import Footer from "./Footer.svelte";
-    import Header from "./Header.svelte";
 
     let groupName = 'adidas';
 
@@ -63,10 +62,11 @@
         <img class="ac-snowflake__two" src="/images/snowflakes/ac_snowflake_2.svg" alt="snowflakeTwo">
         <img class="ac-snowflake__three" src="/images/snowflakes/ac_snowflake_3.svg" alt="snowflakeThree">
         <img class="ac-snowflake__small" src="/images/snowflakes/ac_snowflake_small.svg" alt="snowflakeSmall">
-        <img class="star__one" src="/images/star_1.svg" alt="starOne">
-        <img class="star__two" src="/images/star_1.svg" alt="starTwo">
+        <img class="star__one" src="/images/stars/star_1.svg" alt="starOne">
+        <img class="star__two" src="/images//stars/star_1.svg" alt="starTwo">
         <img class="chandelier" src="/images/chandelier.svg" alt="chandelier">
         <img class="snowman" src="/images/snowman.svg" alt="snowman">
+
 
 
     </div>
@@ -98,10 +98,13 @@
 
 
     main {
+    width: 37.5rem;
+    height: 598rem;
     @include respond-to('desktop') {
-    position: relative;
-    width: 144rem;
-    height: 828.1rem;
+      position: relative;
+      width: 144rem;
+      height: 828.1rem;
+    }
 
       .footer-container {
         position: absolute;
@@ -131,7 +134,7 @@
         }
       }
     }
-    }
+
 
 
 
