@@ -52,20 +52,22 @@
         <p class="solid-shape__six-text">Lorem ipsum dolor sit amet, consectetur</p>
         <img class="ac-snowflake__four" src="/images/snowflakes/ac_snowflake_4.svg" alt="snowflakeFour">
         <img class="ac-snowflake__five" src="/images/snowflakes/ac_snowflake_5.svg" alt="snowflakeFive">
+        <img class="ac-snowflake__six" src="/images/snowflakes/ac_snowflake_6.svg" alt="snowflakeSix">
         <img class="ac-snowflake__seven" src="/images/snowflakes/ac_snowflake_7.svg" alt="snowflakeSeven">
-<!--        <img class="ac-snowflake__three" src="/images/snowflakes/ac_snowflake_3.svg" alt="snowflakeThree">-->
+
 <!--        <img class="ac-snowflake__small" src="/images/snowflakes/ac_snowflake_small.svg" alt="snowflakeSmall">-->
         <img class="star__one" src="/images/stars/star_1.svg" alt="starOne">
         <img class="star__two" src="/images//stars/star_2.svg" alt="starTwo">
         <img class="xxx-flag" src="/images/xxx_flag.svg" alt="flag">
         <img class="hat" src="/images/hat.svg" alt="hat">
+        <img class="horns" src="/images/horns.svg" alt="horns">
 
 
     </div>
 
     <div class="personal-lights">
         <img class="lights-4" src="/images/lights/lights_4.1.svg" alt="lights4">
-<!--        <img class="lights-3" src="/images/lights/lights_3.1.svg" alt="lights3-1">-->
+        <img class="lights-5" src="/images/lights/lights_5.1.svg" alt="lights5-1">
     </div>
 
     <div class="personal-trees">
@@ -104,7 +106,6 @@
         height: 144.9rem;
         left: 0;
         top: 652rem;
-       background: #979797;
     }
     .personal-text-blocks {
         line-height: 10.6rem;
@@ -163,6 +164,13 @@
         height: 22.1rem;
         left: 49rem;
         top: 102.4rem
+      }
+      .ac-snowflake__six {
+        position: absolute;
+        width: 22rem;
+        height: 22rem;
+        left: 97rem;
+        top: 599.3rem;
       }
       .solid-shape__four {
         position: absolute;
@@ -242,8 +250,15 @@
         position: absolute;
         width: 21.9rem;
         height: 24.6rem;
-        left: 49.1rem;
-        top: 587rem;
+        left: 49.3rem;
+        top: 586.2rem;
+      }
+      .horns {
+        position: absolute;
+        width: 22rem;
+        height: 20.9rem;
+        left: 0;
+        top: 621rem;
       }
       .star__one {
         position: absolute;
@@ -316,6 +331,13 @@
         height: 29.9rem;
         left: -0.6rem;
         top: 238.1rem;
+      }
+      .lights-5 {
+        position: absolute;
+        width: 96.8rem;
+        height: 83rem;
+        left: 61rem;
+        top: 610.5rem;
       }
     }
      .personal-trees {

@@ -1,11 +1,19 @@
-<script></script>
+<script>
+
+    let name = 'Nataliia';
+    let company = 'Adventure Club';
+</script>
 
 
 <section>
     <div class="text-container">
         <h1 class="text-gift">Lorem ipsum <br> gift for you</h1>
-<!--        <h1 class="footer-text__two">..to all of you</h1>-->
-<!--        <h1 class="footer-text__three">a very Merry Christmas</h1>-->
+        <h1 class="gift-name">{name}</h1>
+        <h1 class="gift-company">{company}</h1>
+        <p class="stamp-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
     </div>
     <div class="images-container">
         <img class="candy-cane" src="/images/gift-section/candy_cane.svg" alt="candy">
@@ -14,13 +22,18 @@
         <img class="gift-3" src="/images/gift-section/gift_3.svg" alt="gift3">
 <!--        <img class="gift-line-one" src="/images/gift-section/gift_line_1.svg" alt="line1">-->
 <!--        <img class="gift-line-two" src="/images/gift-section/gift_line_2.svg" alt="line2">-->
-        <img class="gift-stamp" src="/images/gift-section/gift_stamp.svg" alt="stamp">
+        <img class="gift-stamp" src="/images/gift-section/stamp.svg" alt="stamp">
         <img class="gift-tag-one" src="/images/gift-section/gift_tag.svg" alt="tag1">
         <img class="gift-tag-two" src="/images/gift-section/gift_tag.svg" alt="tag2">
 
         <img class="star-b" src="/images/stars/star_3.svg" alt="star3">
         <img class="star-a" src="/images/stars/star_4.svg" alt="star4">
         <img class="star-c" src="/images/stars/star_5.svg" alt="star5">
+
+        <img class="gift-box" src="/images/gift-section/gift_big.svg" alt="star5">
+        <div class="input-box">
+
+        </div>
     </div>
 
 </section>
@@ -101,21 +114,37 @@
           width: 11rem;
           height: 11rem;
           left: 12rem;
-          top: 68.5rem;
+          top: 33rem;
         }
         .star-b{
           position: absolute;
           width: 11rem;
           height: 11rem;
           left: 1rem;
-          top: 69.6rem;
+          top: 44rem;
         }
         .star-c {
           position: absolute;
-          width: 11rem;
-          height: 11rem;
-          left: 125.2rem;
-          top: 78rem;
+          width: 15rem;
+          height: 15rem;
+          left: 121.2rem;
+          top: 128rem;
+        }
+        .gift-box {
+          position: absolute;
+          width: 97.9rem;
+          height: 49rem;
+          right: 22rem;
+          top: 95.9rem;
+          z-index: -1;
+        }
+        .input-box {
+          position: absolute;
+          width: 32.4rem;
+          height: 31.8rem;
+          right: 44.6rem;
+          top: 111.4rem;
+          background: $mid-blue;
         }
       }
 
@@ -136,15 +165,41 @@
           font-size: 11rem;
           line-height: 13.5rem;
         }
+        .gift-name {
+          position: absolute;
+          height: 4rem;
+          width: 23rem;
+          top: 68rem;
+          right: 15rem;
+          font-family: $main_cako;
+          font-size: 6.2rem;
+          line-height: 4rem;
+        }
 
-        //.footer-text__two {
-        //  font-size: 11rem; //12 on figma
-        //  position: absolute;
-        //  left: 18.52%;
-        //  right: 18.52%;
-        //  top: calc(50% - 13.6rem / 2 + 19.2rem);
-        //}
-        //
+        .gift-company {
+          position: absolute;
+          height: 8rem;
+          width: 33rem;
+          top: 106rem;
+          right: -8rem;
+          font-family: $main_cako;
+          font-size: 4rem;
+          line-height: 4rem;
+          transform: rotate(-90deg);
+        }
+        .stamp-text {
+          position: absolute;
+          height: 14.4rem;
+          width: 32.9rem;
+          top: 94rem;
+          left: 7.6rem;
+          color: $font-white;
+          font-family: $main_gilroy;
+          font-size: 2.2rem;
+          line-height: 3.6rem;
+          z-index: 1;
+        }
+
         //.footer-text__three {
         //  height: 27.2rem;
         //  font-size: 11rem; //12 on figma

@@ -1,8 +1,14 @@
 <script>
     import Background from "./Background.svelte";
     import Footer from "./Footer.svelte";
-
+    let x = 1;
     let groupName = 'adidas';
+    let isActive = false;
+
+
+    setInterval(()=> {
+        isActive = !isActive;
+    }, 500);
 
 </script>
 
@@ -10,7 +16,9 @@
 <main>
     <Background />
     <div class="header">
-        <img class="nav-lights" src="/images/lights/lights_1.1.svg" alt="lights" >
+        <img class="nav-lights" src="/images/lights/lights_1.1.svg" data-active="{isActive}" alt="lights" >
+        <img class="nav-lights" src="/images/lights/lights_1.2.svg" data-active="{!isActive}" alt="lights" >
+
         <a class="nav-ac" href="https://acdc.adventureclub.io" target="_blank">&nbsp;</a>
         <p class="nav-text">Merry Christmas</p>
         <h1 class="text-one">Hey, you beautiful <br> people at {groupName} <br>Merry Christmas</h1>

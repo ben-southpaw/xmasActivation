@@ -31,6 +31,9 @@
     height: 44.2rem;
     left: -12.2rem;
     top: -9.9rem;
+    opacity: 0;
+    &[data-active="true"] {
+      opacity: 1;
+    }
   }
 }
-//}
