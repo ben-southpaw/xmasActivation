@@ -20,12 +20,8 @@
         <img class="gift-1" src="/images/gift-section/gift_1.svg" alt="gift1">
         <img class="gift-2" src="/images/gift-section/gift_2.svg" alt="gift2">
         <img class="gift-3" src="/images/gift-section/gift_3.svg" alt="gift3">
-<!--        <img class="gift-line-one" src="/images/gift-section/gift_line_1.svg" alt="line1">-->
-<!--        <img class="gift-line-two" src="/images/gift-section/gift_line_2.svg" alt="line2">-->
         <img class="gift-stamp" src="/images/gift-section/stamp.svg" alt="stamp">
-        <img class="gift-tag-one" src="/images/gift-section/gift_tag.svg" alt="tag1">
-        <img class="gift-tag-two" src="/images/gift-section/gift_tag.svg" alt="tag2">
-
+        <img class="labels" src="/images/gift-section/labels_full_lines.svg" alt="labels">
         <img class="star-b" src="/images/stars/star_3.svg" alt="star3">
         <img class="star-a" src="/images/stars/star_4.svg" alt="star4">
         <img class="star-c" src="/images/stars/star_5.svg" alt="star5">
@@ -69,7 +65,7 @@
           width: 9.9rem;
           height: 9.9rem;
           left: 42.6rem;
-          top: 12.5rem;
+          top: 12rem;
           transform: rotate(15deg);
         }
         .gift-line-one {
@@ -93,20 +89,11 @@
           left: 1rem;
           top: 80.3rem;
         }
-        .gift-tag-one {
+        .labels {
           position: absolute;
-          width: 48rem;
-          height: 24rem;
-          left: 95rem;
-          top: 58.4rem;
-        }
-        .gift-tag-two {
-          position: absolute;
-          width: 40.4rem;
-          height: 23.2rem;
-          right: -9.7rem;
-          top: 96.7rem;
-          transform: rotate(90deg);
+          height: 85%;
+          width: 100%;
+          z-index: -1;
         }
 
         .star-a {
@@ -199,20 +186,6 @@
           line-height: 3.6rem;
           z-index: 1;
         }
-
-        //.footer-text__three {
-        //  height: 27.2rem;
-        //  font-size: 11rem; //12 on figma
-        //  position: absolute;
-        //  left: 8.43%;
-        //  right: 8.35%;
-        //  top: calc(50% - 27.2rem / 2 + 46.3rem);
-        //}
       }
-
     }
-
-
-
-
 </style>
