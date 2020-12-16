@@ -3,10 +3,9 @@
     import Background from '../../static/js/background.js';
     let root;
 
-
 onMount(async () => {
     // window.addEventListener('resize')
-  console.log(root);
+    // console.log(root);
 
   const bg = new Background(root)
 });
@@ -37,7 +36,5 @@ onMount(async () => {
        background-size: 3rem;
        position: absolute;
   }
-
-
 
 </style>

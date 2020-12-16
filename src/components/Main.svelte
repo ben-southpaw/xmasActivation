@@ -1,18 +1,18 @@
 <script>
+    import Mobile from "./Mobile.svelte";
     import Background from "./Background.svelte";
     import Footer from "./Footer.svelte";
+
     let x = 1;
     let groupName = 'adidas';
     let isActive = false;
 
 
-    setInterval(()=> {
+    setInterval(() => {
         isActive = !isActive;
     }, 500);
 
 </script>
-
-
 <main>
     <Background />
     <div class="header">
@@ -21,7 +21,7 @@
 
         <a class="nav-ac" href="https://acdc.adventureclub.io" target="_blank">&nbsp;</a>
         <p class="nav-text">Merry Christmas</p>
-        <h1 class="text-one">Hey, you beautiful <br> people at {groupName} <br>Merry Christmas</h1>
+        <h1 class="text-one">Hey, you beautiful <br> people at {groupName}, <br>Merry Christmas!</h1>
         <p class="text-two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor
                 illo nam, nemo neque odit possimus quaerat quasi qui sit ut velit veritatis! Animi dicta
                 impedit magnam nihil perspiciatis, veritatis.</p>
@@ -55,7 +55,6 @@
         <h1 class="client-7">Nataliia Vynogradova</h1>
         <h1 class="client-8">Nataliia Vynogradova</h1>
         <h1 class="client-9">Nataliia Vynogradova</h1>
-        <h1 class="client-10">Nataliia Vynogradova</h1>
     </div>
 
     <div class="text-blocks">
@@ -70,7 +69,6 @@
         <h1 class="text-eleven">jul</h1>
         <h1 class="text-twelve">vesala</h1>
         <h1 class="text-thirteen">koleda</h1>
-
 
     </div>
 
@@ -87,8 +85,6 @@
         <img class="star__two" src="/images//stars/star_1.svg" alt="starTwo">
         <img class="chandelier" src="/images/chandelier.svg" alt="chandelier">
         <img class="snowman" src="/images/snowman.svg" alt="snowman">
-
-
 
     </div>
 
@@ -120,16 +116,15 @@
     @import '../scss/text-blocks';
     @import '../scss/trees';
 
-
     main {
-    width: 37.5rem;
-    height: 598rem;
+    display: none;
     @include respond-to('desktop') {
+      display: block;
       position: relative;
       width: 144rem;
       height: 828.1rem;
     }
-
+    @include respond-to('desktop') {
       .footer-container {
         position: absolute;
         z-index: 2;
@@ -221,28 +216,31 @@
       //Lights
       .lights {
         .lights-2 {
-            position: absolute;
-            width: 44.5rem;
-            height: 21.7rem;
-            left: 21.5rem;
-            top: 219.3rem;
-            opacity: 0;
-            &[data-active="true"] {
-                opacity: 1;
-    }
+          position: absolute;
+          width: 44.5rem;
+          height: 21.7rem;
+          left: 21.5rem;
+          top: 219.3rem;
+          opacity: 0;
+
+          &[data-active="true"] {
+            opacity: 1;
+          }
         }
 
         .lights-3 {
-            position: absolute;
-            width: 26rem;
-            height: 6rem;
-            left: 71rem;
-            top: 246.2rem;
-            opacity: 0;
-            &[data-active="true"] {
-                opacity: 1;
-    }
+          position: absolute;
+          width: 26rem;
+          height: 6rem;
+          left: 71rem;
+          top: 246.2rem;
+          opacity: 0;
+
+          &[data-active="true"] {
+            opacity: 1;
+          }
         }
+      }
       }
     }
 

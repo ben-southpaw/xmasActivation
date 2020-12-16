@@ -1,18 +1,14 @@
-//@include respond-to("desktop") {
 .header {
   .text-one {
     position: absolute;
     color: $violet;
     font-family: $main_cako;
-    font-size: 3.6rem;
-    @include respond-to("desktop") {
-      width: 142.1rem;
-      height: 33.6rem;
-      left: 23rem;
-      top: 31.2rem;
-      font-size: 9rem;
-      text-transform: none;
-    }
+    width: 142.1rem;
+    height: 33.6rem;
+    left: 23rem;
+    top: 31.2rem;
+    font-size: 9rem;
+    text-transform: none;
   }
   .text-two {
     position: absolute;
