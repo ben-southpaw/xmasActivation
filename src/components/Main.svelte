@@ -1,9 +1,14 @@
 <script>
     import Background from "./Background.svelte";
     import Footer from "./Footer.svelte";
-    import Header from "./Header.svelte";
-
+    let x = 1;
     let groupName = 'adidas';
+    let isActive = false;
+
+
+    setInterval(()=> {
+        isActive = !isActive;
+    }, 500);
 
 </script>
 
@@ -11,7 +16,9 @@
 <main>
     <Background />
     <div class="header">
-        <img class="nav-lights" src="/images/lights/lights_1.1.svg" alt="lights" >
+        <img class="nav-lights" src="/images/lights/lights_1.1.svg" data-active="{isActive}" alt="lights" >
+        <img class="nav-lights" src="/images/lights/lights_1.2.svg" data-active="{!isActive}" alt="lights" >
+
         <a class="nav-ac" href="https://acdc.adventureclub.io" target="_blank">&nbsp;</a>
         <p class="nav-text">Merry Christmas</p>
         <h1 class="text-one">Hey, you beautiful <br> people at {groupName} <br>Merry Christmas</h1>
@@ -36,6 +43,19 @@
         <img class="name-ornaments__3-2" src="/images/name-ornaments/ornament_name_3.2.svg" alt="name-3-2">
         <img class="name-ornaments__3-4" src="/images/name-ornaments/ornament_name_3.4.svg" alt="name-3-4">
         <img class="name-ornaments__4-1" src="/images/name-ornaments/ornament_name_4.1.svg" alt="name-4-1">
+    </div>
+
+    <div class="client-names">
+        <h1 class="client-1">Nataliia Vynogradova</h1>
+        <h1 class="client-2">Nataliia Vynogradova</h1>
+        <h1 class="client-3">Nataliia Vynogradova</h1>
+        <h1 class="client-4">Nataliia Vynogradova</h1>
+        <h1 class="client-5">Nataliia Vynogradova</h1>
+        <h1 class="client-6">Nataliia Vynogradova</h1>
+        <h1 class="client-7">Nataliia Vynogradova</h1>
+        <h1 class="client-8">Nataliia Vynogradova</h1>
+        <h1 class="client-9">Nataliia Vynogradova</h1>
+        <h1 class="client-10">Nataliia Vynogradova</h1>
     </div>
 
     <div class="text-blocks">
@@ -63,17 +83,21 @@
         <img class="ac-snowflake__two" src="/images/snowflakes/ac_snowflake_2.svg" alt="snowflakeTwo">
         <img class="ac-snowflake__three" src="/images/snowflakes/ac_snowflake_3.svg" alt="snowflakeThree">
         <img class="ac-snowflake__small" src="/images/snowflakes/ac_snowflake_small.svg" alt="snowflakeSmall">
-        <img class="star__one" src="/images/star_1.svg" alt="starOne">
-        <img class="star__two" src="/images/star_1.svg" alt="starTwo">
+        <img class="star__one" src="/images/stars/star_1.svg" alt="starOne">
+        <img class="star__two" src="/images//stars/star_1.svg" alt="starTwo">
         <img class="chandelier" src="/images/chandelier.svg" alt="chandelier">
         <img class="snowman" src="/images/snowman.svg" alt="snowman">
+
 
 
     </div>
 
     <div class="lights">
-        <img class="lights-2" src="/images/lights/lights_2.1.svg" alt="lights2-1">
-        <img class="lights-3" src="/images/lights/lights_3.1.svg" alt="lights3-1">
+        <img class="lights-2" src="/images/lights/lights_2.1.svg" data-active="{isActive}" alt="lights2-1">
+         <img class="lights-2" src="/images/lights/lights_2.2.svg" data-active="{!isActive}" alt="lights2-1">
+        <img class="lights-3" src="/images/lights/lights_3.1.svg" data-active="{isActive}" alt="lights3-1">
+         <img class="lights-3" src="/images/lights/lights_3.2.svg" data-active="{!isActive}" alt="lights3-1">
+
     </div>
 
     <div class="trees">
@@ -98,10 +122,13 @@
 
 
     main {
+    width: 37.5rem;
+    height: 598rem;
     @include respond-to('desktop') {
-    position: relative;
-    width: 144rem;
-    height: 828.1rem;
+      position: relative;
+      width: 144rem;
+      height: 828.1rem;
+    }
 
       .footer-container {
         position: absolute;
@@ -112,6 +139,85 @@
         top: 646.9rem;
       }
 
+      .client-names {
+          font-family: $main_cako;
+          line-height: 3.4rem;
+          color: $font-white;
+          text-align: center;
+        .client-1 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 142.2rem;
+          left: 26.4rem;
+        }
+        .client-2 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 173.9rem;
+          left: 50.4rem;
+        }
+        .client-3 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 237.8rem;
+          left: 122.4rem;
+        }
+        .client-4 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 264.5rem;
+          left: 98.5rem;
+        }
+        .client-5 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 292.5rem;
+          left: 2.5rem;
+        }
+        .client-6 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 356.6rem;
+          left: 26.5rem;
+        }
+        .client-7 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 373.6rem;
+          left: 74.55rem;
+        }
+        .client-8 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 427rem;
+          left: 98.5rem;
+        }
+        .client-9 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 484.9rem;
+          left: 2.5rem;
+        }
+      }
+
       //Lights
       .lights {
         .lights-2 {
@@ -120,6 +226,10 @@
             height: 21.7rem;
             left: 21.5rem;
             top: 219.3rem;
+            opacity: 0;
+            &[data-active="true"] {
+                opacity: 1;
+    }
         }
 
         .lights-3 {
@@ -128,10 +238,14 @@
             height: 6rem;
             left: 71rem;
             top: 246.2rem;
+            opacity: 0;
+            &[data-active="true"] {
+                opacity: 1;
+    }
         }
       }
     }
-    }
+
 
 
 
