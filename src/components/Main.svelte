@@ -45,6 +45,19 @@
         <img class="name-ornaments__4-1" src="/images/name-ornaments/ornament_name_4.1.svg" alt="name-4-1">
     </div>
 
+    <div class="client-names">
+        <h1 class="client-1">Nataliia Vynogradova</h1>
+        <h1 class="client-2">Nataliia Vynogradova</h1>
+        <h1 class="client-3">Nataliia Vynogradova</h1>
+        <h1 class="client-4">Nataliia Vynogradova</h1>
+        <h1 class="client-5">Nataliia Vynogradova</h1>
+        <h1 class="client-6">Nataliia Vynogradova</h1>
+        <h1 class="client-7">Nataliia Vynogradova</h1>
+        <h1 class="client-8">Nataliia Vynogradova</h1>
+        <h1 class="client-9">Nataliia Vynogradova</h1>
+        <h1 class="client-10">Nataliia Vynogradova</h1>
+    </div>
+
     <div class="text-blocks">
         <h1 class="text-three">vrolik</h1>
         <h1 class="text-four">kerstfeest</h1>
@@ -124,6 +137,85 @@
         height: 175.4rem;
         left: 9.1rem;
         top: 646.9rem;
+      }
+
+      .client-names {
+          font-family: $main_cako;
+          line-height: 3.4rem;
+          color: $font-white;
+          text-align: center;
+        .client-1 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 142.2rem;
+          left: 26.4rem;
+        }
+        .client-2 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 173.9rem;
+          left: 50.4rem;
+        }
+        .client-3 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 237.8rem;
+          left: 122.4rem;
+        }
+        .client-4 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 264.5rem;
+          left: 98.5rem;
+        }
+        .client-5 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 292.5rem;
+          left: 2.5rem;
+        }
+        .client-6 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 356.6rem;
+          left: 26.5rem;
+        }
+        .client-7 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 373.6rem;
+          left: 74.55rem;
+        }
+        .client-8 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 427rem;
+          left: 98.5rem;
+        }
+        .client-9 {
+          position: absolute;
+          font-size: 3rem;
+          width: 19rem;
+          height: 6.8rem;
+          top: 484.9rem;
+          left: 2.5rem;
+        }
       }
 
       //Lights

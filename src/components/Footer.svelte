@@ -4,8 +4,8 @@
 <footer>
     <div class="text-container">
         <h1 class="footer-text__one">From all of us..</h1>
-        <h1 class="footer-text__two">..to all of you</h1>
-        <h1 class="footer-text__three">a very Merry Christmas</h1>
+        <h1 class="footer-text__two">..to all of you.</h1>
+        <h1 class="footer-text__three">A very, <br> Merry Christmas</h1>
     </div>
     <div class="images-container">
         <img class="ac-wheel__one" src="/images/ac_wheel_small.svg" alt="ac-one">
