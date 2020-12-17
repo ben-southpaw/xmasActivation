@@ -1,14 +1,18 @@
 <script>
+    import Personal from "./Personal.svelte";
     import Background from "./Background.svelte";
     import Footer from "./Footer.svelte";
     import {data} from "../../static/copy/copy.js";
     import {getUrlSearch} from "../../static/js/path.js";
-    import { onMount } from 'svelte';
+    import {onMount} from 'svelte';
 
-    let companyData = {name : ''};
-    let quote = companyData.lead_quote;
+    let companyData = {name: ''};
+    let visible = false;
     let names = [];
+    let y;
     let nameSlots = new Array(9).fill();
+
+    export let name;
 
     onMount(async () => {
         const urlSearch = getUrlSearch();
@@ -16,11 +20,9 @@
         const comp = urlSearch.get('company');
         companyData = data[comp];
         names = companyData.members;
-        // names = ...companyData.members;
-        console.log(name,comp, names, 'here');
+        // console.log(name,comp, names, 'here');
         }
     );
-
 
 
     //lights animating
@@ -30,7 +32,12 @@
         isActive = !isActive;
     }, 500);
 
+    //if isVisible display none
+
 </script>
+<svelte:window bind:scrollY={y}/>
+
+{#if !visible}
 <main>
     <Background />
     <div class="header">
@@ -61,7 +68,7 @@
         <img class="name-ornaments__4-1" src="/images/name-ornaments/ornament_name_4.1.svg" alt="name-4-1">
     </div>
 
-    <div class="client-names">
+    <div class="client-names" on:click={() => {visible = !visible; y = 0}}>
          {#each nameSlots as member, i}
              {#if names.length}
                 <h1 class="client-{i + 1}">{names[i % names.length].name}</h1>
@@ -118,6 +125,13 @@
         <Footer />
     </div>
 </main>
+{/if}
+{#if visible}
+<div class="personal-page__container" bind:this={visible}>
+    <Personal {data} />
+</div>
+{/if}
+
 
 
 <style lang="scss">
@@ -127,6 +141,10 @@
     @import '../scss/bg-items';
     @import '../scss/text-blocks';
     @import '../scss/trees';
+
+    //.hide {
+    //  display: none;
+    //}
 
     main {
     display: none;
@@ -151,6 +169,7 @@
           line-height: 3.4rem;
           color: $font-white;
           text-align: center;
+          cursor: pointer;
         .client-1 {
           position: absolute;
           font-size: 3rem;

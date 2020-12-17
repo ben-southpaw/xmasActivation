@@ -1,8 +1,21 @@
 <script>
-    import Gift from "../components/Gift.svelte";
-    import Footer from "../components/Footer.svelte";
+    import Gift from "./Gift.svelte";
+    import Footer from "./Footer.svelte";
+    import {getUrlSearch} from "../../static/js/path.js";
+    import {onMount} from 'svelte';
 
-    let groupMember = 'Nataliia';
+    // export let data;
+    let name = '';
+
+    onMount(async () => {
+        const urlSearch = getUrlSearch();
+        name = urlSearch.get('name');
+        // const comp = urlSearch.get('company');
+        // companyData = data[comp];
+         console.log(name, 'here');
+        }
+    );
+
 </script>
 
 <section class="personal-container">
@@ -25,7 +38,7 @@
     </div>
 
     <div class="personal-text-blocks">
-    <h1 class="text-one">Merry Christmas, <br> {groupMember}</h1>
+    <h1 class="text-one">Merry Christmas, <br> {name}</h1>
         <p class="text-two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor
                 illo nam, nemo neque odit possimus quaerat quasi qui sit ut velit veritatis! Animi dicta
                 impedit magnam nihil perspiciatis, veritatis.</p>
