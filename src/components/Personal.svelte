@@ -10,18 +10,26 @@
     var companyData = {};
     var members = [];
     let foundName = {};
+    let stat1 = '';
+    let stat2 = '';
+    let stat3 = '';
+    let stat4 = '';
 
     onMount(async () => {
         const urlSearch = getUrlSearch();
         name = urlSearch.get('name');
         comp = urlSearch.get('company');
         companyData = data[comp];
+        stat1 = companyData.stat1;
+        stat2 = companyData.stat2;
+        stat3 = companyData.stat3;
+        stat4 = companyData.stat4;
         members = companyData.members;
-         console.log(members[3].name.split(" "), 'here');
         foundName = members.find((member) => member.name.toLowerCase().includes(name));
+        console.log(companyData.stat1.number)
         }
     );
-    
+
 
 
 
@@ -78,14 +86,14 @@
     </div>
 
     <div class="stats-text">
-        <h1 class="stats-1">12</h1>
-        <p class="stats-text-1">Lorem ipsum dolor sit amet, consectetur</p>
-        <h1 class="stats-2">6</h1>
-        <p class="stats-text-2">Lorem ipsum</p>
-        <h1 class="stats-3">666%</h1>
-        <p class="stats-text-3">Lorem ipsum dolor sit amet, consectetur</p>
-        <h1 class="stats-4">48k</h1>
-        <p class="stats-text-4">Lorem ipsum <br> dolor sit amet,<br> consectetur</p>
+        <h1 class="stats-1">{stat1.number}</h1>
+        <p class="stats-text-1">{stat1.text}</p>
+        <h1 class="stats-2">{stat2.number}</h1>
+        <p class="stats-text-2">{stat2.text}</p>
+        <h1 class="stats-3">{stat3.number}</h1>
+        <p class="stats-text-3">{stat3.text}</p>
+        <h1 class="stats-4">{stat4.number}</h1>
+        <p class="stats-text-4">{stat4.text}</p>
     </div>
 
     <div class="personal-lights">
