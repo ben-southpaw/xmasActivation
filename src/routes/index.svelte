@@ -11,7 +11,7 @@
 </svelte:head>
 
 <div class="mobile-container">
-        <Mobile />
+	<Mobile />
 </div>
 <Main />
 

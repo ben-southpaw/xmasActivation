@@ -1,7 +1,27 @@
 <script>
-    import Mobile from "./Mobile.svelte";
     import Background from "./Background.svelte";
     import Footer from "./Footer.svelte";
+    import {data} from "../../static/copy/copy.js";
+    import {getUrlSearch} from "../../static/js/path.js";
+    import { onMount } from 'svelte';
+
+    onMount(async () => {
+        const urlSearch = getUrlSearch();
+        const name = urlSearch.get('name');
+        const comp = urlSearch.get('company');
+
+        companyData = data[comp];
+        console.log(name,comp, companyData, 'here');
+
+});
+    export let location;
+
+
+
+    let companyData = {name : ''};
+    let quote = data.stat1;
+
+
 
     let x = 1;
     let groupName = 'adidas';
@@ -21,7 +41,7 @@
 
         <a class="nav-ac" href="https://acdc.adventureclub.io" target="_blank">&nbsp;</a>
         <p class="nav-text">Merry Christmas</p>
-        <h1 class="text-one">Hey, you beautiful <br> people at {groupName}, <br>Merry Christmas!</h1>
+        <h1 class="text-one">Hey, you beautiful<br> people at {companyData.name}, <br>Merry Christmas!</h1>
         <p class="text-two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor
                 illo nam, nemo neque odit possimus quaerat quasi qui sit ut velit veritatis! Animi dicta
                 impedit magnam nihil perspiciatis, veritatis.</p>

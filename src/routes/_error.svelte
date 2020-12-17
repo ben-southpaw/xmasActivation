@@ -5,9 +5,10 @@
 	const dev = process.env.NODE_ENV === 'development';
 </script>
 
-<style>
-
+<style lang="scss">
+	@import '../scss/global';
 	body {
+		height: 100vh;
 		background: rgb(95,0,249);
 		background: linear-gradient(90deg, rgba(95,0,249,0.8855917366946778) 0%, rgba(214,105,191,0.4318102240896359) 9%, rgba(68,68,221,0.6699054621848739) 20%, rgba(0,212,255,0.6587009803921569) 59%)
 	}
@@ -15,6 +16,8 @@
 	h1, p {
 		margin: 0 auto;
 		text-align: center;
+		font-size: 18px;
+		font-family: $main_gilroy;
 	}
 
 	h1 {
@@ -25,6 +28,12 @@
 
 	p {
 		margin: 1em auto;
+		font-size: 18px;
+	}
+
+	pre {
+		font-size: 16px;
+		margin: 100px;
 	}
 
 	@media (min-width: 480px) {
