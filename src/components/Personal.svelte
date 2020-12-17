@@ -4,17 +4,28 @@
     import {getUrlSearch} from "../../static/js/path.js";
     import {onMount} from 'svelte';
 
-    // export let data;
+    export let data;
     let name = '';
+    let comp = '';
+    var companyData = {};
+    var members = [];
+    let foundName = {};
 
     onMount(async () => {
         const urlSearch = getUrlSearch();
         name = urlSearch.get('name');
-        // const comp = urlSearch.get('company');
-        // companyData = data[comp];
-         console.log(name, 'here');
+        comp = urlSearch.get('company');
+        companyData = data[comp];
+        members = companyData.members;
+         console.log(members[3].name.split(" "), 'here');
+        foundName = members.find((member) => member.name.toLowerCase().includes(name));
         }
     );
+    
+
+
+
+
 
 </script>
 
@@ -39,9 +50,7 @@
 
     <div class="personal-text-blocks">
     <h1 class="text-one">Merry Christmas, <br> {name}</h1>
-        <p class="text-two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor
-                illo nam, nemo neque odit possimus quaerat quasi qui sit ut velit veritatis! Animi dicta
-                impedit magnam nihil perspiciatis, veritatis.</p>
+        <p class="text-two">{foundName.personal_quote}</p>
 
     </div>
 

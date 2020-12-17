@@ -20,10 +20,9 @@
         const comp = urlSearch.get('company');
         companyData = data[comp];
         names = companyData.members;
-        // console.log(name,comp, names, 'here');
+
         }
     );
-
 
     //lights animating
     let x = 1;

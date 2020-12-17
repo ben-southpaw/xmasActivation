@@ -33,7 +33,7 @@ export const data = {
         personal_quote: "Xmas Andy!",
       },
       {
-        name: "Jelle - Bart Koeman",
+        name: "Jelle-Bart Koeman",
         personal_quote: "Xmas Andy!",
       },
       {
