@@ -5,29 +5,27 @@
     import {getUrlSearch} from "../../static/js/path.js";
     import { onMount } from 'svelte';
 
+    let companyData = {name : ''};
+    let quote = companyData.lead_quote;
+    let names = [];
+    let nameSlots = new Array(9).fill();
+
     onMount(async () => {
         const urlSearch = getUrlSearch();
         const name = urlSearch.get('name');
         const comp = urlSearch.get('company');
-
         companyData = data[comp];
-        console.log(name,comp, companyData, 'here');
-
-});
-    export let location;
-
-
-
-    let companyData = {name : ''};
-    let quote = data.stat1;
+        names = companyData.members;
+        // names = ...companyData.members;
+        console.log(name,comp, names, 'here');
+        }
+    );
 
 
 
+    //lights animating
     let x = 1;
-    let groupName = 'adidas';
     let isActive = false;
-
-
     setInterval(() => {
         isActive = !isActive;
     }, 500);
@@ -42,9 +40,7 @@
         <a class="nav-ac" href="https://acdc.adventureclub.io" target="_blank">&nbsp;</a>
         <p class="nav-text">Merry Christmas</p>
         <h1 class="text-one">Hey, you beautiful<br> people at {companyData.name}, <br>Merry Christmas!</h1>
-        <p class="text-two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor
-                illo nam, nemo neque odit possimus quaerat quasi qui sit ut velit veritatis! Animi dicta
-                impedit magnam nihil perspiciatis, veritatis.</p>
+        <p class="text-two">{companyData.lead_quote}</p>
     </div>
 
     <div class="blank-ornaments">
@@ -66,15 +62,11 @@
     </div>
 
     <div class="client-names">
-        <h1 class="client-1">Nataliia Vynogradova</h1>
-        <h1 class="client-2">Nataliia Vynogradova</h1>
-        <h1 class="client-3">Nataliia Vynogradova</h1>
-        <h1 class="client-4">Nataliia Vynogradova</h1>
-        <h1 class="client-5">Nataliia Vynogradova</h1>
-        <h1 class="client-6">Nataliia Vynogradova</h1>
-        <h1 class="client-7">Nataliia Vynogradova</h1>
-        <h1 class="client-8">Nataliia Vynogradova</h1>
-        <h1 class="client-9">Nataliia Vynogradova</h1>
+         {#each nameSlots as member, i}
+             {#if names.length}
+                <h1 class="client-{i + 1}">{names[i % names.length].name}</h1>
+             {/if}
+         {/each}
     </div>
 
     <div class="text-blocks">
