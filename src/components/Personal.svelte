@@ -108,7 +108,7 @@
         <img class="trees-four" src="/images/trees/horizontal_tree_triangles_2.svg" alt="treeFour">
     </div>
     <div class="gift-container">
-        <Gift />
+        <Gift {comp} {name}/>
     </div>
     <div class="footer-container">
         <Footer />

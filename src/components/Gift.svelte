@@ -1,7 +1,7 @@
 <script>
 
-    let name = 'Nataliia';
-    let company = 'Adventure Club';
+    export let name;
+    export let comp;
 </script>
 
 
@@ -9,7 +9,7 @@
     <div class="text-container">
         <h1 class="text-gift">Lorem ipsum <br> gift for you</h1>
         <h1 class="gift-name">{name}</h1>
-        <h1 class="gift-company">{company}</h1>
+        <h1 class="gift-company">{comp}</h1>
         <p class="stamp-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
