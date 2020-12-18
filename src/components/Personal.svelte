@@ -58,8 +58,16 @@
 
     <div class="personal-text-blocks">
     <h1 class="text-one">Merry Christmas, <br> {name}</h1>
-        <p class="text-two">{foundName.personal_quote}</p>
+        <p class="text-two">Lorem ipsum not sure what this extra quote is for</p>
 
+    </div>
+
+    <div class="cracker-container">
+        <div class="personal-note"></div>
+        <p class="personal-quote">{foundName.personal_quote}</p>
+        <p class="from-text">Love, Andre Taris</p>
+        <img class="cracker-1" src="/images/cracker_1.svg" alt="cracker1">
+        <img class="cracker-2" src="/images/cracker_2.svg" alt="cracker2">
     </div>
 
     <div class="personal-bg-items">
@@ -120,6 +128,7 @@
      @import '../scss/global';
      @import '../scss/personal-bg-items';
      @import '../scss/personal-text';
+     @import '../scss/personal-ornaments.scss';
 
   section {
     height: 989.1rem;
@@ -142,53 +151,90 @@
         top: 652rem;
     }
 
-    .name-ornaments {
-      .name-ornaments__2-4 {
-        position: absolute;
-        width: 22rem;
-        height: 75.5rem;
-        left: 109rem;
-        top: -5rem;
-      }
-    }
-    .blank-ornaments {
-      .blank-ornaments__1 {
-        position: absolute;
-        width: 22rem;
-        height: 63.4rem;
-        left: 37rem;
-        top: 134.6rem;
-      }
-      .blank-ornaments__2 {
-        position: absolute;
-        width: 22rem;
-        height: 63.4rem;
-        left: 85rem;
-        top: 211.9rem;
-      }
-      .blank-ornaments__3 {
-        position: absolute;
-        width: 22rem;
-        height: 63.4rem;
-        left: 25rem;
-        top: 300rem;
-      }
-      .blank-ornaments__4 {
-        position: absolute;
-        width: 22rem;
-        height: 63.4rem;
-        left: 37rem;
-        top: 440.5rem;
-      }
-      .blank-ornaments__5 {
-        position: absolute;
-        width: 22rem;
-        height: 65.5rem;
-        left: 85rem;
-        top: 462.5rem;
-      }
-    }
+    .cracker-container {
+        .cracker-1 {
+          position: absolute;
+          width: 40.8rem;
+          height: 26.3rem;
+          left: 33.3rem;
+          top: 546.7rem;
+          transition: transform 0.5s;
 
+        }
+       .cracker-2 {
+          position: absolute;
+          width: 40.8rem;
+          height: 26.3rem;
+          right: 33.3rem;
+          top: 546.7rem;
+          transition: transform 0.5s;
+        }
+
+        .personal-note {
+          position: absolute;
+          width: 76.2rem;
+          height: 23.2rem;
+          left: 33.3rem;
+          top: 548.1rem;
+          background: $violet;
+          border-radius: 5rem;
+          box-shadow:
+             15vw 0 0 $primary-bg inset,
+             -15vw 0 0 $primary-bg inset;
+          -webkit-transition: all .2s ease-out;
+          transition: all .2s ease-out;
+        }
+        .personal-quote {
+            font-family: $main_gilroy;
+            font-size: 2rem;
+            line-height: 3rem;
+            text-align: center;
+            z-index: 1;
+            color: $font-white;
+            position: absolute;
+            width: 50.4rem;
+            height: 12rem;
+            left: 46.8rem;
+            right: 46.8rem;
+            top: 552.3rem;
+            opacity: 0;
+            -webkit-transition: opacity .5s ease-out;
+            transition: opacity .5s ease-out;
+          }
+        .from-text {
+            font-family: $main_cako;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            text-align: center;
+            z-index: 1;
+            color: $mid-blue;
+            position: absolute;
+            width: 20rem;
+            height: 1.9rem;
+            left: 62rem;
+            top: 566rem;
+            opacity: 0;
+            -webkit-transition: opacity .5s ease-out;
+            transition: opacity .5s ease-out;
+        }
+    }
+    .cracker-container:hover .cracker-1 {
+          transform: translateX(-33rem);
+        }
+    .cracker-container:hover .cracker-2 {
+          transform: translateX(33rem);
+        }
+    .cracker-container:hover .from-text {
+          opacity: 1;
+    }
+    .cracker-container:hover .personal-quote {
+          opacity: 1;
+    }
+    .cracker-container:hover .personal-note {
+          box-shadow:
+    0 0 0 $primary-bg inset,
+    0 0 0 $primary-bg inset;
+    }
     .personal-lights {
       .lights-4 {
         position: absolute;
