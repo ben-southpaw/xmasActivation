@@ -12,7 +12,7 @@
     let y;
     let nameSlots = new Array(9).fill();
 
-    export let name;
+    // export const name;
 
     onMount(async () => {
         const urlSearch = getUrlSearch();

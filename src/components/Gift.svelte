@@ -1,6 +1,7 @@
 <script>
 
     export let name;
+
     export let comp;
 </script>
 
@@ -159,6 +160,7 @@
           top: 68rem;
           right: 15rem;
           font-family: $main_cako;
+          text-transform: capitalize;
           font-size: 6.2rem;
           line-height: 4rem;
         }
