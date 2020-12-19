@@ -1,0 +1,180 @@
+.ac-members-container {
+  .ac-member__1 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 2rem;
+    top: 410rem;
+    @include respond-to("desktop") {
+      width: 11rem;
+      height: 23.1rem;
+      left: 0;
+      top: 26.7rem;
+    }
+  }
+  .ac-member__2 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 13.3rem;
+    top: 403.2rem;
+    @include respond-to("desktop") {
+      left: 16.4rem;
+      top: 31.7rem;
+    }
+  }
+  .ac-member__3 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 24.6rem;
+    top: 410rem;
+    @include respond-to("desktop") {
+      left: 32.8rem;
+      top: 36.7rem;
+    }
+  }
+  .ac-member__4 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 2rem;
+    top: 435.9rem;
+    @include respond-to("desktop") {
+      left: 49.2rem;
+      top: 31.7rem;
+    }
+  }
+  .ac-member__5 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 13.3rem;
+    top: 429.1rem;
+    @include respond-to("desktop") {
+      left: 65.6rem;
+      top: 26.7rem;
+    }
+  }
+  .ac-member__6 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 24.6rem;
+    top: 435.9rem;
+    @include respond-to("desktop") {
+      left: 82rem;
+      top: 31.7rem;
+    }
+  }
+  .ac-member__7 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 2rem;
+    top: 461.8rem;
+    @include respond-to("desktop") {
+      left: 98.4rem;
+      top: 36.7rem;
+    }
+  }
+  .ac-member__8 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 13.3rem;
+    top: 455rem;
+    @include respond-to("desktop") {
+      left: 114.8rem;
+      top: 31.7rem;
+    }
+  }
+  .ac-member__9 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 24.6rem;
+    top: 461.8rem;
+    @include respond-to("desktop") {
+      left: 0;
+      top: 57.8rem;
+    }
+  }
+  .ac-member__10 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 2rem;
+    top: 487.7rem;
+    @include respond-to("desktop") {
+      left: 16.4rem;
+      top: 62.8rem;
+    }
+  }
+  .ac-member__11 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 13.3rem;
+    top: 480.9rem;
+    @include respond-to("desktop") {
+      left: 32.8rem;
+      top: 67.8rem;
+    }
+  }
+  .ac-member__12 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 24.6rem;
+    top: 487.7rem;
+    @include respond-to("desktop") {
+      left: 49.2rem;
+      top: 62.8rem;
+    }
+  }
+  .ac-member__13 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 13.3rem;
+    top: 506.8rem;
+    @include respond-to("desktop") {
+      left: 65.6rem;
+      top: 57.8rem;
+    }
+  }
+  .ac-member__14 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 24.6rem;
+    top: 513.6rem;
+    @include respond-to("desktop") {
+      left: 82rem;
+      top: 62.8rem;
+    }
+  }
+  .ac-member__15 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 13.3rem;
+    top: 532.7rem;
+    @include respond-to("desktop") {
+      left: 98.4rem;
+      top: 67.8rem;
+    }
+  }
+  .ac-member__16 {
+    position: absolute;
+    width: 11rem;
+    height: 23.1rem;
+    left: 2rem;
+    top: 513.6rem;
+    @include respond-to("desktop") {
+      left: 114.8rem;
+      top: 62.8rem;
+    }
+  }
+}

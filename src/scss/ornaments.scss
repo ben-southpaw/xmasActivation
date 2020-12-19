@@ -6,6 +6,7 @@
     height: 50.8rem;
     left: 2.1rem;
     top: 300.2rem;
+    z-index: 1;
     @include respond-to("desktop") {
       width: 22rem;
       height: 63.4rem;
@@ -41,15 +42,15 @@
 .name-ornaments {
   .name-ornaments__1-1 {
     position: absolute;
-    width: 22rem;
-    height: 63.4rem;
-    left: 1rem;
-    top: 435.9rem;
+    width: 11rem;
+    height: 40rem;
+    left: 2.1rem;
+    top: 333rem;
     @include respond-to("desktop") {
-      width: 11rem;
-      height: 23.5rem;
-      left: 2.1rem;
-      top: 348.9rem;
+      width: 22rem;
+      height: 63.4rem;
+      left: 1rem;
+      top: 435.9rem;
     }
   }
 
@@ -70,7 +71,7 @@
   .name-ornaments__1-5 {
     position: absolute;
     width: 11rem;
-    height: 22.8rem;
+    height: 40rem;
     left: 13.3rem;
     top: 238.6rem;
     @include respond-to("desktop") {
@@ -98,9 +99,9 @@
   .name-ornaments__2-4 {
     position: absolute;
     width: 11rem;
-    height: 22.1rem;
+    height: 40rem;
     left: 24.6rem;
-    top: 296.6rem;
+    top: 287rem;
     @include respond-to("desktop") {
       width: 22rem;
       height: 63.4rem;
@@ -112,7 +113,7 @@
   .name-ornaments__2-6 {
     position: absolute;
     width: 11rem;
-    height: 22.7rem;
+    height: 35.7rem;
     left: 2rem;
     top: 220.9rem;
     @include respond-to("desktop") {
@@ -128,7 +129,7 @@
     width: 11rem;
     height: 35.7rem;
     left: 13.3rem;
-    top: 299rem;
+    top: 300rem;
     @include respond-to("desktop") {
       width: 22rem;
       height: 63.4rem;
@@ -154,9 +155,9 @@
   .name-ornaments__4-1 {
     position: absolute;
     width: 11rem;
-    height: 22.7rem;
+    height: 30rem;
     left: 24.6rem;
-    top: 147.2rem;
+    top: 140rem;
     @include respond-to("desktop") {
       width: 22rem;
       height: 63.4rem;

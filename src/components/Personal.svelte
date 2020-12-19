@@ -143,7 +143,6 @@
      @import '../scss/personal-ornaments.scss';
 
   section {
-    height: 989.1rem;
     width: 144rem;
 
     .footer-container {
@@ -166,35 +165,59 @@
     .cracker-container {
         .cracker-1 {
           position: absolute;
+          width: 51.6rem;
+          height: 33.4rem;
+          left: -7rem;
+          top: 520.2rem;
+          transform: rotate(90deg);
+          @include respond-to("desktop") {
+          transform: rotate(0);
+          transition: transform 0.5s;
           width: 40.8rem;
           height: 26.3rem;
           left: 33.3rem;
           top: 546.7rem;
-          transition: transform 0.5s;
-
+          }
         }
        .cracker-2 {
           position: absolute;
-          width: 40.8rem;
+          width: 51.6rem;
+          height: 33.4rem;
+          left: -7rem;
+          top: 612.2rem;
+          transform: rotate(90deg);
+         @include respond-to("desktop") {
+          transform: rotate(0);
+          transition: transform 0.5s;
+           width: 40.8rem;
           height: 26.3rem;
           right: 33.3rem;
           top: 546.7rem;
-          transition: transform 0.5s;
+           left: unset;
+         }
         }
 
         .personal-note {
           position: absolute;
+          width: 60.8rem;
+          height: 27rem;
+          left: -11.5rem;
+          top: 567rem;
+          background: $violet;
+          transform: rotate(90deg);
+          @include respond-to("desktop") {
+          transform: rotate(0);
           width: 76.2rem;
           height: 23.2rem;
           left: 33.3rem;
           top: 548.1rem;
-          background: $violet;
           border-radius: 5rem;
           box-shadow:
              15vw 0 0 $primary-bg inset,
              -15vw 0 0 $primary-bg inset;
           -webkit-transition: all .2s ease-out;
           transition: all .2s ease-out;
+          }
         }
         .personal-quote {
             font-family: $main_gilroy;
@@ -250,11 +273,19 @@
     .personal-lights {
       .lights-4 {
         position: absolute;
+        width: 52.6rem;
+        height: 13rem;
+        left: -9rem;
+        top: 278.4rem;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        opacity: 0;
+        @include respond-to("desktop") {
+        transform: none;
         width: 96.6rem;
         height: 29.9rem;
         left: -0.6rem;
         top: 238.1rem;
-        opacity: 0;
+        }
         &[data-active="true"] {
         opacity: 1;
     }

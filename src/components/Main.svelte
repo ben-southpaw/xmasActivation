@@ -142,11 +142,11 @@
     </div>
 </main>
 {/if}
-{#if visible}
+<!--{#if visible}-->
 <div class="personal-page__container" bind:this={visible}>
     <Personal {data} />
 </div>
-{/if}
+<!--{/if}-->
 
 <style lang="scss">
     @import '../scss/global';
@@ -154,13 +154,22 @@
     @import '../scss/ornaments';
     @import '../scss/bg-items';
     @import '../scss/text-blocks';
-    @import '../scss/trees';
+    @import '../scss/trees'; //height: 989.1rem;
 
+    .personal-page__container {
+        height: 1082.2rem;
+        width: 37.5rem;
+        @include respond-to('desktop') {
+            height: 989.1rem;
+            width: 144rem ;
+        }
+    }
 
     main {
+    display: none; //undo when needed
     position: relative;
     width: 37.5rem;
-    height: 787.6rem;
+    height: 598rem;
     @include respond-to('desktop') {
       width: 144rem;
       height: 828.1rem;
@@ -169,10 +178,10 @@
       .footer-container {
         position: absolute;
         z-index: 2;
-        width: 37.5rem;
-        height: 201.7rem;
-        left: 0;
-        top: 391.3rem;
+        //width: 37.5rem;
+        //height: 201.7rem;
+        //left: 0;
+        //top: 391.3rem;
         @include respond-to('desktop') {
         width: 125.8rem;
         height: 175.4rem;
@@ -183,86 +192,151 @@
 
       .client-names {
           font-family: $main_cako;
-          line-height: 3.4rem;
+          line-height: 1.7rem;
           color: $font-white;
           text-align: center;
           //pointer-events: none;
         cursor: pointer; //undo later
-
+        @include respond-to('desktop') {
+        line-height: 3.4rem;
+        }
         .client.isActive {
           cursor: pointer;
         }
         .client-1 {
           position: absolute;
+          font-size: 1.5rem;
+          width: 9.5rem;
+          height: 3.4rem;
+          top: 107.5rem;
+          left: 2.75rem;
+          @include respond-to('desktop') {
           font-size: 3rem;
           width: 19rem;
           height: 6.8rem;
           top: 142.2rem;
           left: 26.4rem;
+          }
         }
         .client-2 {
           position: absolute;
+          font-size: 1.5rem;
+          width: 10rem;
+          height: 3.4rem;
+          top: 116rem;
+          left: 14rem;
+          @include respond-to('desktop') {
           font-size: 3rem;
           width: 19rem;
           height: 6.8rem;
           top: 173.9rem;
           left: 50.4rem;
+          }
         }
         .client-3 {
           position: absolute;
+          font-size: 1.5rem;
+          width: 10rem;
+          height: 3.4rem;
+          top: 162.7rem;
+          left: 25.3rem;
+          @include respond-to('desktop') {
           font-size: 3rem;
           width: 19rem;
           height: 6.8rem;
           top: 237.8rem;
           left: 122.4rem;
+          }
         }
         .client-4 {
           position: absolute;
+          font-size: 1.5rem;
+          width: 10rem;
+          height: 3.4rem;
+          top: 169.8rem;
+          left: 14rem;
+          @include respond-to('desktop') {
           font-size: 3rem;
           width: 19rem;
           height: 6.8rem;
           top: 264.5rem;
           left: 98.5rem;
+          }
         }
         .client-5 {
           position: absolute;
+          font-size: 1.5rem;
+          width: 10rem;
+          height: 3.4rem;
+          left: 2.5rem;
+          top: 247.9rem;
+          @include respond-to('desktop') {
           font-size: 3rem;
           width: 19rem;
           height: 6.8rem;
           top: 292.5rem;
           left: 2.5rem;
+          }
         }
         .client-6 {
           position: absolute;
+          font-size: 1.5rem;
+          width: 10rem;
+          height: 3.4rem;
+          top: 268rem;
+          left: 14rem;
+          @include respond-to('desktop') {
           font-size: 3rem;
           width: 19rem;
           height: 6.8rem;
           top: 356.6rem;
           left: 26.5rem;
+          }
         }
         .client-7 {
           position: absolute;
+          font-size: 1.5rem;
+          width: 10rem;
+          height: 3.4rem;
+          top: 316rem;
+          left: 25rem;
+          @include respond-to('desktop') {
           font-size: 3rem;
           width: 19rem;
           height: 6.8rem;
           top: 373.6rem;
           left: 74.55rem;
+          }
         }
         .client-8 {
           position: absolute;
+          font-size: 1.5rem;
+          width: 10rem;
+          height: 3.4rem;
+          top: 327rem;
+          left: 14rem;
+          @include respond-to('desktop') {
           font-size: 3rem;
           width: 19rem;
           height: 6.8rem;
           top: 427rem;
           left: 98.5rem;
+          }
         }
         .client-9 {
           position: absolute;
+          font-size: 1.5rem;
+          width: 10rem;
+          height: 3.4rem;
+          top: 362.3rem;
+          left: 2.4rem;
+          @include respond-to('desktop') {
           font-size: 3rem;
           width: 19rem;
           height: 6.8rem;
           top: 484.9rem;
-          left: 2.5rem;
+          left: 2.2rem;
+          }
         }
       }
 
