@@ -42,8 +42,9 @@
   margin: 0;
 }
 
-body {
+:global(body) {
   background-color: $primary-bg;
+  overflow-x: hidden;
 }
 
 //For dynamically changing colours via JS

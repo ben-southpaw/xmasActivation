@@ -1,10 +1,13 @@
 <script>
-     import {writable, get} from 'svelte/store';
+    import StarThree from "./StarThree.svelte";
+    import Candycane from "./Candycane.svelte";
+    import {writable, get} from 'svelte/store';
+
     export let name;
     export let foundName;
     export let comp;
 
-     let user = writable({
+    let user = writable({
         address_1: '',
         address_2: ''
     })
@@ -24,14 +27,18 @@
         </p>
     </div>
     <div class="images-container">
-        <img class="candy-cane" src="/images/gift-section/candy_cane.svg" alt="candy">
+        <div class="candy-cane">
+            <Candycane />
+        </div>
         <img class="gift-1" src="/images/gift-section/gift_1.svg" alt="gift1">
         <img class="gift-2" src="/images/gift-section/gift_2.svg" alt="gift2">
         <img class="gift-3" src="/images/gift-section/gift_3.svg" alt="gift3">
         <img class="gift-stamp" src="/images/gift-section/stamp.svg" alt="stamp">
         <img class="labels" src="/images/gift-section/labels_full_lines.svg" alt="labels">
+        <div class="star-a">
+            <StarThree />
+        </div>
         <img class="star-b" src="/images/stars/star_3.svg" alt="star3">
-        <img class="star-a" src="/images/stars/star_4.svg" alt="star4">
         <img class="star-c" src="/images/stars/star_5.svg" alt="star5">
 
         <img class="gift-box" src="/images/gift-section/gift_big.svg" alt="star5">

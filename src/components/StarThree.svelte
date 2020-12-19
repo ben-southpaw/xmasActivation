@@ -3,7 +3,7 @@
 </script>
 
 <LottiePlayer
-  src="/lottie-files/snowman.json"
+  src="/lottie-files/Star_2_Gold.json"
   autoplay="{true}"
   loop="{true}"
   renderer="svg"

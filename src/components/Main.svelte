@@ -1,4 +1,6 @@
 <script>
+    import StarTwo from "./StarTwo.svelte";
+    import Chandelier from "./Chandelier.svelte";
     import Snowman from "./Snowman.svelte";
     import Personal from "./Personal.svelte";
     import Background from "./Background.svelte";
@@ -70,13 +72,13 @@
         <img class="name-ornaments__3-4" src="/images/name-ornaments/ornament_name_3.4.svg" alt="name-3-4">
         <img class="name-ornaments__4-1" src="/images/name-ornaments/ornament_name_4.1.svg" alt="name-4-1">
     </div>
-
+<!--data-currentUser="{currentUser.id === names[i % names.length].id}"-->
     <div class="client-names" >
          {#each nameSlots as member, i}
              {#if names.length}
                 <h1 class="client client-{i + 1}  {currentUser.id === names[i % names.length].id ? 'isActive' : ''}"
                     on:click={() => {visible = !visible; y = 0}}
-                    data-currentUser="{currentUser.id === names[i % names.length].id}">
+                    >
                     {names[i % names.length].name}
                 </h1>
              {/if}
@@ -107,10 +109,15 @@
         <img class="ac-snowflake__two" src="/images/snowflakes/ac_snowflake_2.svg" alt="snowflakeTwo">
         <img class="ac-snowflake__three" src="/images/snowflakes/ac_snowflake_3.svg" alt="snowflakeThree">
         <img class="ac-snowflake__small" src="/images/snowflakes/ac_snowflake_small.svg" alt="snowflakeSmall">
-        <img class="star__one" src="/images/stars/star_1.svg" alt="starOne">
-        <img class="star__two" src="/images//stars/star_1.svg" alt="starTwo">
-        <img class="chandelier" src="/images/chandelier.svg" alt="chandelier">
-<!--        <img class="snowman" src="/images/snowman.svg" alt="snowman">-->
+        <div class="star__one">
+            <StarTwo />
+        </div>
+        <div class="star__two">
+            <StarTwo />
+        </div>
+        <div class="chandelier">
+            <Chandelier />
+        </div>
         <div class="snowman">
             <Snowman />
         </div>
@@ -178,7 +185,8 @@
           line-height: 3.4rem;
           color: $font-white;
           text-align: center;
-          pointer-events: none;
+          //pointer-events: none;
+        cursor: pointer; //undo later
 
         .client.isActive {
           cursor: pointer;

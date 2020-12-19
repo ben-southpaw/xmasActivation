@@ -1,4 +1,6 @@
 <script>
+    import StarOne from "./StarOne.svelte";
+    import Tree from "./Tree.svelte";
     import Gift from "./Gift.svelte";
     import Footer from "./Footer.svelte";
     import {getUrlSearch} from "../../static/js/path.js";
@@ -29,10 +31,6 @@
         console.log(foundName, 'found name');
         }
     );
-
-
-
-
 
 
 </script>
@@ -83,13 +81,15 @@
         <img class="ac-snowflake__five" src="/images/snowflakes/ac_snowflake_5.svg" alt="snowflakeFive">
         <img class="ac-snowflake__six" src="/images/snowflakes/ac_snowflake_6.svg" alt="snowflakeSix">
         <img class="ac-snowflake__seven" src="/images/snowflakes/ac_snowflake_7.svg" alt="snowflakeSeven">
-        <img class="star__one" src="/images/stars/star_1.svg" alt="starOne">
-        <img class="star__two" src="/images//stars/star_2.svg" alt="starTwo">
+        <img class="star__two" src="/images/stars/star_2.svg" alt="starTwo">
         <img class="xxx-flag" src="/images/xxx_flag.svg" alt="flag">
         <img class="hat" src="/images/hat.svg" alt="hat">
         <img class="horns" src="/images/horns.svg" alt="horns">
         <img class="arrow-one" src="/images/arrow.svg" alt="horns">
         <img class="arrow-two" src="/images/arrow.svg" alt="horns">
+        <div class="star__one" >
+           <StarOne />
+        </div>
 
     </div>
 
@@ -110,9 +110,13 @@
     </div>
 
     <div class="personal-trees">
-        <img class="trees-one" src="/images/trees/horizontal_tree_triangles_1.svg" alt="treesOne">
+        <div class="trees-one" >
+           <Tree />
+        </div>
         <img class="trees-two" src="/images/trees/horizontal_tree_triangles_2.svg" alt="treeTwo">
-        <img class="trees-three" src="/images/trees/horizontal_tree_triangles_1.svg" alt="treeThree">
+        <div class="trees-three" >
+            <Tree />
+        </div>
         <img class="trees-four" src="/images/trees/horizontal_tree_triangles_2.svg" alt="treeFour">
     </div>
     <div class="gift-container">
