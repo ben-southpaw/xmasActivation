@@ -34,7 +34,7 @@
     //lights animating
     let x = 1;
     let isActive = false;
-    setInterval(() => {
+    var lights = setInterval(() => {
         isActive = !isActive;
     }, 500);
 
@@ -148,8 +148,6 @@
 </div>
 {/if}
 
-
-
 <style lang="scss">
     @import '../scss/global';
     @import '../scss/header';
@@ -163,10 +161,9 @@
     //}
 
     main {
-    display: none;
+    position: relative;
+      
     @include respond-to('desktop') {
-      display: block;
-      position: relative;
       width: 144rem;
       height: 828.1rem;
     }
