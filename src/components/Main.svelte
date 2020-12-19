@@ -34,9 +34,9 @@
     //lights animating
     let x = 1;
     let isActive = false;
-    var lights = setInterval(() => {
-        isActive = !isActive;
-    }, 500);
+    // var lights = setInterval(() => {
+    //     isActive = !isActive;
+    // }, 500);
 
     //if member === name then enable clickable
 
@@ -156,25 +156,29 @@
     @import '../scss/text-blocks';
     @import '../scss/trees';
 
-    //.hide {
-    //  display: none;
-    //}
 
     main {
     position: relative;
-      
+    width: 37.5rem;
+    height: 787.6rem;
     @include respond-to('desktop') {
       width: 144rem;
       height: 828.1rem;
     }
-    @include respond-to('desktop') {
+
       .footer-container {
         position: absolute;
         z-index: 2;
+        width: 37.5rem;
+        height: 201.7rem;
+        left: 0;
+        top: 391.3rem;
+        @include respond-to('desktop') {
         width: 125.8rem;
         height: 175.4rem;
         left: 9.1rem;
         top: 646.9rem;
+        }
       }
 
       .client-names {
@@ -266,12 +270,17 @@
       .lights {
         .lights-2 {
           position: absolute;
+          width: 22.3rem;
+          height: 10.9rem;
+          left: 13.1rem;
+          top: 132.9rem;
+          opacity: 0;
+          @include respond-to('desktop') {
           width: 44.5rem;
           height: 21.7rem;
           left: 21.5rem;
           top: 219.3rem;
-          opacity: 0;
-
+          }
           &[data-active="true"] {
             opacity: 1;
           }
@@ -279,19 +288,23 @@
 
         .lights-3 {
           position: absolute;
+          width: 13rem;
+          height: 3rem;
+          left: 2rem;
+          top: 152rem;
+          opacity: 0;
+          @include respond-to('desktop') {
           width: 26rem;
           height: 6rem;
           left: 71rem;
           top: 246.2rem;
-          opacity: 0;
-
+          }
           &[data-active="true"] {
             opacity: 1;
           }
         }
       }
       }
-    }
 
 
 

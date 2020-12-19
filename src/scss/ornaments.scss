@@ -1,99 +1,163 @@
 //Blank Ornament
-@include respond-to("desktop") {
-  .blank-ornaments {
-    .blank-ornaments__1 {
-      position: absolute;
+.blank-ornaments {
+  .blank-ornaments__1 {
+    position: absolute;
+    width: 11rem;
+    height: 50.8rem;
+    left: 2.1rem;
+    top: 300.2rem;
+    @include respond-to("desktop") {
       width: 22rem;
       height: 63.4rem;
       left: 25.3rem;
       top: 459.1rem;
     }
+  }
 
-    .blank-ornaments__2 {
-      position: absolute;
-      width: 22rem;
-      height: 63.4rem;
-      left: 73rem;
-      top: 494.8rem;
-    }
+  .blank-ornaments__2 {
+    position: absolute;
+    width: 22rem;
+    height: 63.4rem;
+    left: 73rem;
+    top: 494.8rem;
+  }
 
-    .blank-ornaments__xxx {
-      position: absolute;
+  .blank-ornaments__xxx {
+    position: absolute;
+    width: 11rem;
+    height: 50rem;
+    left: 24.3rem;
+    top: 181.7rem;
+    @include respond-to("desktop") {
       width: 22rem;
       height: 48rem;
       left: 49rem;
       top: 283.3rem;
     }
   }
+}
 
-  //Name Ornament Class
-  .name-ornaments {
-    .name-ornaments__1-1 {
-      position: absolute;
-      width: 22rem;
-      height: 63.4rem;
-      left: 1rem;
-      top: 435.9rem;
+//Name Ornament Class
+.name-ornaments {
+  .name-ornaments__1-1 {
+    position: absolute;
+    width: 22rem;
+    height: 63.4rem;
+    left: 1rem;
+    top: 435.9rem;
+    @include respond-to("desktop") {
+      width: 11rem;
+      height: 23.5rem;
+      left: 2.1rem;
+      top: 348.9rem;
     }
+  }
 
-    .name-ornaments__1-3 {
-      position: absolute;
+  .name-ornaments__1-3 {
+    position: absolute;
+    width: 11rem;
+    height: 40.8rem;
+    left: 13.3rem;
+    top: 140.7rem;
+    @include respond-to("desktop") {
       width: 22rem;
       height: 63.4rem;
       left: 97rem;
       top: 215.5rem;
     }
+  }
 
-    .name-ornaments__1-5 {
-      position: absolute;
+  .name-ornaments__1-5 {
+    position: absolute;
+    width: 11rem;
+    height: 22.8rem;
+    left: 13.3rem;
+    top: 238.6rem;
+    @include respond-to("desktop") {
       width: 22rem;
       height: 63.4rem;
       left: 25rem;
       top: 308rem;
     }
+  }
 
-    .name-ornaments__2-2 {
-      position: absolute;
+  .name-ornaments__2-2 {
+    position: absolute;
+    width: 11rem;
+    height: 31.7rem;
+    left: 2rem;
+    top: 83.2rem;
+    @include respond-to("desktop") {
       width: 22rem;
       height: 63.4rem;
       left: 24.9rem;
       top: 93.6rem;
     }
+  }
 
-    .name-ornaments__2-4 {
-      position: absolute;
+  .name-ornaments__2-4 {
+    position: absolute;
+    width: 11rem;
+    height: 22.1rem;
+    left: 24.6rem;
+    top: 296.6rem;
+    @include respond-to("desktop") {
       width: 22rem;
       height: 63.4rem;
       left: 73rem;
       top: 325rem;
     }
+  }
 
-    .name-ornaments__2-6 {
-      position: absolute;
+  .name-ornaments__2-6 {
+    position: absolute;
+    width: 11rem;
+    height: 22.7rem;
+    left: 2rem;
+    top: 220.9rem;
+    @include respond-to("desktop") {
       width: 22rem;
       height: 63.4rem;
       left: 1rem;
       top: 243.9rem;
     }
+  }
 
-    .name-ornaments__3-2 {
-      position: absolute;
+  .name-ornaments__3-2 {
+    position: absolute;
+    width: 11rem;
+    height: 35.7rem;
+    left: 13.3rem;
+    top: 299rem;
+    @include respond-to("desktop") {
       width: 22rem;
       height: 63.4rem;
       left: 97rem;
       top: 378.4rem;
     }
+  }
 
-    .name-ornaments__3-4 {
-      position: absolute;
+  .name-ornaments__3-4 {
+    position: absolute;
+    width: 11rem;
+    height: 40.8rem;
+    left: 13.3rem;
+    top: 87.1rem;
+    @include respond-to("desktop") {
       width: 22rem;
       height: 63.4rem;
       left: 48.9rem;
       top: 125.3rem;
     }
+  }
 
-    .name-ornaments__4-1 {
-      position: absolute;
+  .name-ornaments__4-1 {
+    position: absolute;
+    width: 11rem;
+    height: 22.7rem;
+    left: 24.6rem;
+    top: 147.2rem;
+    @include respond-to("desktop") {
       width: 22rem;
       height: 63.4rem;
       left: 120.9rem;
