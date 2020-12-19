@@ -1,4 +1,5 @@
 <script>
+    import Snowman from "./Snowman.svelte";
     import Personal from "./Personal.svelte";
     import Background from "./Background.svelte";
     import Footer from "./Footer.svelte";
@@ -9,18 +10,22 @@
     let companyData = {name: ''};
     let visible = false;
     let names = [];
+    let members = [];
+    let currentUser = {};
     let y;
+    let name;
+    let comp;
     let nameSlots = new Array(9).fill();
 
-    // export const name;
 
     onMount(async () => {
         const urlSearch = getUrlSearch();
-        const name = urlSearch.get('name');
-        const comp = urlSearch.get('company');
+        name = urlSearch.get('name');
+        comp = urlSearch.get('company');
         companyData = data[comp];
         names = companyData.members;
-
+        currentUser = names.find((user) => user.id === name);
+        console.log(currentUser, name, 'names');
         }
     );
 
@@ -31,11 +36,10 @@
         isActive = !isActive;
     }, 500);
 
-    //if isVisible display none
+    //if member === name then enable clickable
 
 </script>
 <svelte:window bind:scrollY={y}/>
-
 {#if !visible}
 <main>
     <Background />
@@ -67,10 +71,14 @@
         <img class="name-ornaments__4-1" src="/images/name-ornaments/ornament_name_4.1.svg" alt="name-4-1">
     </div>
 
-    <div class="client-names" on:click={() => {visible = !visible; y = 0}}>
+    <div class="client-names" >
          {#each nameSlots as member, i}
              {#if names.length}
-                <h1 class="client-{i + 1}">{names[i % names.length].name}</h1>
+                <h1 class="client client-{i + 1}  {currentUser.id === names[i % names.length].id ? 'isActive' : ''}"
+                    on:click={() => {visible = !visible; y = 0}}
+                    data-currentUser="{currentUser.id === names[i % names.length].id}">
+                    {names[i % names.length].name}
+                </h1>
              {/if}
          {/each}
     </div>
@@ -102,8 +110,10 @@
         <img class="star__one" src="/images/stars/star_1.svg" alt="starOne">
         <img class="star__two" src="/images//stars/star_1.svg" alt="starTwo">
         <img class="chandelier" src="/images/chandelier.svg" alt="chandelier">
-        <img class="snowman" src="/images/snowman.svg" alt="snowman">
-
+<!--        <img class="snowman" src="/images/snowman.svg" alt="snowman">-->
+        <div class="snowman">
+            <Snowman />
+        </div>
     </div>
 
     <div class="lights">
@@ -168,7 +178,11 @@
           line-height: 3.4rem;
           color: $font-white;
           text-align: center;
+          pointer-events: none;
+
+        .client.isActive {
           cursor: pointer;
+        }
         .client-1 {
           position: absolute;
           font-size: 3rem;

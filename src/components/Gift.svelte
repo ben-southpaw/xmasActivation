@@ -1,21 +1,14 @@
 <script>
-    import {writable} from 'svelte/store';
+     import {writable, get} from 'svelte/store';
     export let name;
     export let foundName;
     export let comp;
-    import dotenv from "dotenv";
-    dotenv.config();
 
-    var user = writable({
+     let user = writable({
         address_1: '',
         address_2: ''
-    });
+    })
 
-  let handleSubmit = (e) => {
-        console.log(e, 'submitted')
-    };
-
-    $: console.log(user.address_1, 'user');
 
 </script>
 
@@ -45,8 +38,8 @@
         <div class="input-box">
         </div>
         <p class="input-box_name">{foundName.name}</p>
-
-        <form action="{process.env.FORMSPREE}" method="POST">
+<!--        //{process.env.FORMSPREE}-->
+        <form action="" method="POST">
                     <input class="input-box_address_1" type="text" placeholder="address" bind:value={$user.address_1} name="address_1"/>
                     <input class="input-box_address_2" type="text" placeholder="postcode" bind:value={$user.address_2} name="address_1" />
                     <button class="input-box_address_submit" type="submit">Submit address</button>

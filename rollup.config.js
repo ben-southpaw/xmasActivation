@@ -1,3 +1,4 @@
+import nodeResolve from "@rollup/plugin-node-resolve";
 import resolve from "@rollup/plugin-node-resolve";
 import replace from "@rollup/plugin-replace";
 import commonjs from "@rollup/plugin-commonjs";
@@ -110,6 +111,7 @@ export default {
       }),
       svelte({
         preprocess,
+        hydratable: true,
         generate: "ssr",
         dev,
       }),
@@ -119,6 +121,7 @@ export default {
       builtins({
         fs: true,
       }),
+      nodeResolve(),
       commonjs(),
     ],
     external: Object.keys(pkg.dependencies).concat(
@@ -127,21 +130,21 @@ export default {
     ),
 
     onwarn,
-  } /*,
+  },
 
-	serviceworker: {
-		input: config.serviceworker.input(),
-		output: config.serviceworker.output(),
-		plugins: [
-			resolve(),
-			replace({
-				'process.browser': true,
-				'process.env.NODE_ENV': JSON.stringify(mode)
-			}),
-			commonjs(),
-			!dev && terser()
-		],
+  serviceworker: {
+    input: config.serviceworker.input(),
+    output: config.serviceworker.output(),
+    plugins: [
+      resolve(),
+      replace({
+        "process.browser": true,
+        "process.env.NODE_ENV": JSON.stringify(mode),
+      }),
+      commonjs(),
+      !dev && terser(),
+    ],
 
-		onwarn,
-    },*/,
+    onwarn,
+  },
 };
