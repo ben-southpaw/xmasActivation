@@ -32,6 +32,12 @@
         }
     );
 
+        //lights animating
+    let x = 1;
+    let isActive = false;
+    setInterval(() => {
+        isActive = !isActive;
+    }, 500);
 
 </script>
 
@@ -105,8 +111,10 @@
     </div>
 
     <div class="personal-lights">
-        <img class="lights-4" src="/images/lights/lights_4.1.svg" alt="lights4">
-        <img class="lights-5" src="/images/lights/lights_5.1.svg" alt="lights5-1">
+        <img class="lights-4" src="/images/lights/lights_4.1.svg" alt="lights4" data-active="{isActive}">
+        <img class="lights-4" src="/images/lights/lights_4.2.svg" alt="lights4" data-active="{!isActive}">
+        <img class="lights-5" src="/images/lights/lights_5.1.svg" alt="lights5-1" data-active="{isActive}">
+        <img class="lights-5" src="/images/lights/lights_5.2.svg" alt="lights5-1" data-active="{!isActive}">
     </div>
 
     <div class="personal-trees">
@@ -246,6 +254,10 @@
         height: 29.9rem;
         left: -0.6rem;
         top: 238.1rem;
+        opacity: 0;
+        &[data-active="true"] {
+        opacity: 1;
+    }
       }
       .lights-5 {
         position: absolute;
@@ -253,6 +265,10 @@
         height: 83rem;
         left: 61rem;
         top: 610.5rem;
+        opacity: 0;
+        &[data-active="true"] {
+        opacity: 1;
+    }
       }
     }
      .personal-trees {
