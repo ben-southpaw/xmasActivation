@@ -48,16 +48,16 @@
     </div>
 
     <div class="blank-ornaments">
-        <img class="blank-ornaments__1" src="/images/ornaments/ornament_round.svg" alt="ornament-one">
+        <img class="blank-ornaments__1 swing" src="/images/ornaments/ornament_round.svg" alt="ornament-one">
         <img class="blank-ornaments__2" src="/images/ornaments/ornament_round.svg" alt="ornament-two">
-        <img class="blank-ornaments__3" src="/images/ornaments/ornament_round.svg" alt="ornament-three">
-        <img class="blank-ornaments__4" src="/images/ornaments/ornament_round.svg" alt="ornament-four">
-        <img class="blank-ornaments__5" src="/images/ornaments/ornament_round_2.svg" alt="ornament-four">
+        <img class="blank-ornaments__3 swing" src="/images/ornaments/ornament_round.svg" alt="ornament-three">
+        <img class="blank-ornaments__4 swing" src="/images/ornaments/ornament_round.svg" alt="ornament-four">
+        <img class="blank-ornaments__5 swing" src="/images/ornaments/ornament_round_2.svg" alt="ornament-four">
 
     </div>
 
     <div class="name-ornaments">
-        <img class="name-ornaments__2-4" src="/images/name-ornaments/ornament_name_2.4.svg" alt="name-2-4">
+        <img class="name-ornaments__2-4 swing" src="/images/name-ornaments/ornament_name_2.4.svg" alt="name-2-4">
     </div>
 
     <div class="personal-text-blocks">

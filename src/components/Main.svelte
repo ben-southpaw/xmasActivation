@@ -32,9 +32,6 @@
     let comp;
     let nameSlots = new Array(9).fill();
 
-
-    console.log(y, 'scroll here');
-
     onMount(async () => {
         const urlSearch = getUrlSearch();
         name = urlSearch.get('name');
@@ -56,7 +53,7 @@
     }, 500);
     var lightsContainer = setTimeout(()=> {
         introAnimation = true;
-;    },1000);
+    },1000);
 
     //if member === name then enable clickable
     let onNameClick = () => {
@@ -213,10 +210,8 @@
         }
       }
 
-
       .transition-one {
         background: $violet;
-
       }
       .transition-two {
         background: $gold;
@@ -224,7 +219,7 @@
       }
       .transition-text {
         color: $font-white;
-        font-size: 20rem;
+        font-size: 5rem;
         transition-delay: 0.5s;
         z-index: 4;
         position: fixed;
@@ -233,6 +228,9 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @include respond-to('desktop') {
+           font-size: 20rem;
+        }
       }
 
       .transition-text span {
@@ -253,9 +251,6 @@
         }
       }
 
-
-
-
     .personal-page__container {
         height: 1033rem;
         width: 37.5rem;
@@ -266,7 +261,6 @@
     }
 
     main {
-    //display: none; //undo when needed
     position: relative;
     width: 37.5rem;
     height: 598rem;
