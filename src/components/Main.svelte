@@ -142,11 +142,11 @@
     </div>
 </main>
 {/if}
-<!--{#if visible}-->
+{#if visible}
 <div class="personal-page__container" bind:this={visible}>
     <Personal {data} />
 </div>
-<!--{/if}-->
+{/if}
 
 <style lang="scss">
     @import '../scss/global';
@@ -166,7 +166,7 @@
     }
 
     main {
-    display: none; //undo when needed
+    //display: none; //undo when needed
     position: relative;
     width: 37.5rem;
     height: 598rem;

@@ -57,7 +57,7 @@
     @include respond-to("desktop") {
       font-size: 30rem;
       line-height: 36rem;
-      top: 121.5rem;
+      top: 114.5rem;
       left: 11.4rem;
     }
   }
@@ -110,9 +110,9 @@
       top: 221.1rem;
       left: 83.2rem;
       font-size: 3rem;
-      line-height: 4.7rem;
+      line-height: 3.7rem;
       width: 25.6rem;
-      height: 4.7rem;
+      height: 3.7rem;
     }
   }
   .stats-3 {
@@ -145,7 +145,6 @@
     transform: rotate(9deg); //TBC
     @include respond-to("desktop") {
       width: 27.2rem;
-      height: 63.4rem;
       left: 80.3rem;
       top: 310.4rem;
       font-size: 4rem;

@@ -12,9 +12,7 @@
         address_2: ''
     })
 
-
 </script>
-
 
 <section>
     <div class="text-container">
