@@ -1,153 +1,226 @@
 .images-container {
   .candy-cane {
     position: absolute;
-    width: 14.4rem;
-    height: 6.6rem;
-    left: 18.6rem;
-    top: 0;
+    width: 10rem;
+    height: 4.5rem;
+    left: 0.6rem;
+    top: 18.5rem;
+    transform: rotate(-45deg);
+    @include respond-to("desktop") {
+      width: 14.4rem;
+      height: 6.6rem;
+      left: 18.6rem;
+      top: -2.5rem;
+    }
   }
 
   .gift-1 {
     position: absolute;
-    width: 29.4rem;
-    height: 15.4rem;
-    left: 1rem;
-    top: 6.6rem;
+    width: 21rem;
+    height: 11rem;
+    left: 0;
+    top: 25rem;
+    @include respond-to("desktop") {
+      width: 29.4rem;
+      height: 15.4rem;
+      left: 1rem;
+      top: 6.6rem;
+    }
   }
 
   .gift-2 {
     position: absolute;
-    width: 8rem;
-    height: 14.9rem;
-    left: 31.9rem;
-    top: 6rem;
-    transform: rotate(-25deg);
+    width: 7rem;
+    height: 12rem;
+    left: 12.9rem;
+    top: 15.5rem;
+    transform: rotate(90deg);
+    @include respond-to("desktop") {
+      width: 8rem;
+      height: 14.9rem;
+      left: 31.9rem;
+      top: 6rem;
+      transform: rotate(-25deg);
+    }
   }
 
   .gift-3 {
     position: absolute;
-    width: 9.9rem;
-    height: 9.9rem;
-    left: 42.6rem;
-    top: 12rem;
+    width: 10.9rem;
+    height: 10.9rem;
+    left: 21rem;
+    top: 25rem;
     transform: rotate(15deg);
-  }
-
-  .gift-line-one {
-    position: absolute;
-    left: -2%;
-    right: 30%;
-    top: 14%;
-    bottom: 51%;
-  }
-
-  .gift-line-two {
-    position: absolute;
-    left: 60.77%;
-    right: 8.39%;
-    top: 48.59%;
-    bottom: 39.55%;
+    @include respond-to("desktop") {
+      width: 9.9rem;
+      height: 9.9rem;
+      left: 42.6rem;
+      top: 12rem;
+      transform: rotate(15deg);
+    }
   }
 
   .gift-stamp {
     position: absolute;
-    width: 46rem;
-    height: 46rem;
-    left: 1rem;
-    top: 80.3rem;
+    width: 37.5rem;
+    height: 37.5rem;
+    left: 0;
+    top: 60rem;
+    @include respond-to("desktop") {
+      width: 46rem;
+      height: 46rem;
+      left: 1rem;
+      top: 80.3rem;
+    }
   }
 
   .labels {
     position: absolute;
+    width: 69rem;
+    top: 0;
     height: 85%;
-    width: 100%;
-    z-index: -1;
+    @include respond-to("desktop") {
+      height: 85%;
+      width: 100%;
+      z-index: -1;
+      top: unset;
+    }
   }
 
   .star-a {
     position: absolute;
     width: 11rem;
     height: 11rem;
-    left: 12rem;
-    top: 33rem;
+    left: 15rem;
+    top: 163rem;
+    @include respond-to("desktop") {
+      left: 12rem;
+      top: 33rem;
+    }
   }
 
   .star-b {
     position: absolute;
     width: 11rem;
     height: 11rem;
-    left: 1rem;
-    top: 44rem;
+    left: 2rem;
+    top: 155rem;
+    @include respond-to("desktop") {
+      width: 11rem;
+      height: 11rem;
+      left: 1rem;
+      top: 44rem;
+    }
   }
 
   .star-c {
-    position: absolute;
-    width: 15rem;
-    height: 15rem;
-    left: 121.2rem;
-    top: 128rem;
+    display: none;
+    @include respond-to("desktop") {
+      display: block;
+      position: absolute;
+      width: 15rem;
+      height: 15rem;
+      left: 121.2rem;
+      top: 128rem;
+    }
   }
 
   .gift-box {
     position: absolute;
-    width: 97.9rem;
-    height: 49rem;
-    right: 22rem;
-    top: 95.9rem;
+    width: 85rem;
+    height: 43.2rem;
+    left: -33.5rem;
+    top: 102.3rem;
     z-index: -1;
+    @include respond-to("desktop") {
+      left: unset;
+      width: 97.9rem;
+      height: 49rem;
+      right: 22rem;
+      top: 95.9rem;
+    }
   }
 }
 
 .text-container {
-  font-family: $main_cako;
-  color: $violet;
-  height: 13.6rem;
-  line-height: 13.6rem;
-  text-align: center;
+  @include respond-to("desktop") {
+    font-family: $main_cako;
+    color: $violet;
+    height: 13.6rem;
+    line-height: 13.6rem;
+    text-align: center;
+  }
 
   .text-gift {
+    font-family: $main_cako;
+    color: $violet;
+    text-align: center;
     position: absolute;
-    width: 76.5rem;
-    height: 27rem;
-    left: 23.67%;
-    right: 22.83%;
-    top: calc(50% - 27rem / 2 - 28.6rem);
-    font-size: 11rem;
-    line-height: 13.5rem;
+    width: 33.4rem;
+    height: 13.6rem;
+    left: 2rem;
+    top: 40rem;
+    font-size: 4.4rem;
+    line-height: 6.5rem;
+    @include respond-to("desktop") {
+      width: 76.5rem;
+      height: 27rem;
+      left: 23.67%;
+      right: 22.83%;
+      top: calc(50% - 27rem / 2 - 28.6rem);
+      font-size: 11rem;
+      line-height: 13.5rem;
+    }
   }
   .gift-name {
-    position: absolute;
-    height: 4rem;
-    width: 23rem;
-    top: 68rem;
-    right: 15rem;
-    font-family: $main_cako;
-    text-transform: capitalize;
-    font-size: 6.2rem;
-    line-height: 4rem;
+    display: none;
+    @include respond-to("desktop") {
+      display: block;
+      position: absolute;
+      height: 4rem;
+      width: 23rem;
+      top: 68rem;
+      right: 15rem;
+      font-family: $main_cako;
+      text-transform: capitalize;
+      font-size: 6.2rem;
+      line-height: 4rem;
+    }
   }
 
   .gift-company {
-    position: absolute;
-    height: 8rem;
-    width: 33rem;
-    top: 106rem;
-    right: -8rem;
-    font-family: $main_cako;
-    font-size: 4rem;
-    line-height: 4rem;
-    transform: rotate(-90deg);
+    display: none;
+    @include respond-to("desktop") {
+      display: block;
+      position: absolute;
+      height: 10rem;
+      width: 33rem;
+      top: 106rem;
+      right: -6rem;
+      font-family: $main_cako;
+      font-size: 4rem;
+      line-height: 6rem;
+      transform: rotate(-90deg);
+    }
   }
   .stamp-text {
     position: absolute;
     height: 14.4rem;
-    width: 32.9rem;
-    top: 94rem;
-    left: 7.6rem;
+    width: 26.9rem;
+    top: 71rem;
+    left: 5.3rem;
     color: $font-white;
     font-family: $main_gilroy;
-    font-size: 2.2rem;
-    line-height: 3.6rem;
+    font-size: 2rem;
+    line-height: 2.9rem;
     z-index: 1;
+    @include respond-to("desktop") {
+      height: 14.4rem;
+      width: 32.9rem;
+      top: 94rem;
+      left: 7.6rem;
+      font-size: 2.2rem;
+      line-height: 3.6rem;
+    }
   }
 }

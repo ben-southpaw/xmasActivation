@@ -3,12 +3,7 @@
 //global values
 @import "normalize";
 
-////font from normal css file
-//@import "../global.css";
-
 /* Hide scrollbar for Chrome, Safari and Opera */
-
-//optional
 :global(body::-webkit-scrollbar) {
   display: none;
 }
@@ -50,30 +45,42 @@
 //For dynamically changing colours via JS
 
 //Globally used styles
-@include respond-to("desktop") {
-  .nav-ac {
-    position: absolute;
+
+.nav-ac {
+  position: absolute;
+  background-image: url(/images/ac-logo.svg);
+  background-repeat: no-repeat;
+  width: 11rem;
+  height: 1.7rem;
+  left: 2rem;
+  top: 2.4rem;
+  background-size: 11rem;
+  @include respond-to("desktop") {
     width: 11rem;
     height: 1.7rem;
     left: 1rem;
     top: 4rem;
-    background-image: url(/images/ac-logo.svg);
-    background-repeat: no-repeat;
     background-size: 11rem;
   }
-  .nav-text {
-    position: absolute;
+}
+.nav-text {
+  position: absolute;
+  color: $font-white;
+  font-family: $bold_gilroy;
+  font-weight: 900;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 11rem;
+  height: 1.1rem;
+  right: 2.5rem;
+  top: 2.7rem;
+  @include respond-to("desktop") {
     width: 11rem;
     height: 1.1rem;
     right: 2rem;
     top: 4.1rem;
-    color: $font-white;
-    font-family: $bold_gilroy;
-    font-weight: 900;
-    font-size: 1.1rem;
-    line-height: 1.1rem;
-    text-transform: uppercase;
-    text-align: center;
   }
 }
 

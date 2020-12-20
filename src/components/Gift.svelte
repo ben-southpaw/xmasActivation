@@ -1,7 +1,7 @@
 <script>
     import StarThree from "./StarThree.svelte";
     import Candycane from "./Candycane.svelte";
-    import {writable, get} from 'svelte/store';
+    import {writable} from 'svelte/store';
 
     export let name;
     export let foundName;
@@ -12,9 +12,7 @@
         address_2: ''
     })
 
-
 </script>
-
 
 <section>
     <div class="text-container">
@@ -63,23 +61,36 @@
     section {
       .input-box {
           position: absolute;
-          width: 32.4rem;
-          height: 31.8rem;
-          right: 44.6rem;
+          width: 33rem;
+          height: 32rem;
+          left: 2.25rem;
           top: 111.4rem;
           background: $mid-blue;
+        @include respond-to("desktop") {
+          left: unset;
+          right: 44.6rem;
+          top: 111.4rem;
+        }
         }
         .input-box_name {
           position: absolute;
-          width: 22rem;
+          width: 27.5rem;
           height: 3rem;
-          left: 71rem;
+          left: 5rem;
           top: 114rem;
           text-align: center;
           color:$font-white;
           font-family: $main_gilroy;
           font-size: 2.4rem;
           line-height: 3.6rem;
+          @include respond-to("desktop") {
+          width: 22rem;
+          height: 3rem;
+          left: 71rem;
+          top: 114rem;
+          font-size: 2.4rem;
+          line-height: 3.6rem;
+          }
         }
         .input-box_address_1 {
           position: absolute;
@@ -91,10 +102,16 @@
           outline: 0;
           border-bottom: 1px $font-white solid;
           background: $mid-blue;
+          width: 27.5rem;
+          height: 4rem;
+          left: 5rem;
+          top: 122rem;
+          @include respond-to("desktop") {
           width: 22rem;
           height: 5rem;
           left: 71rem;
           top: 122rem;
+          }
         }
         .input-box_address_2 {
           position: absolute;
@@ -106,10 +123,16 @@
           outline: 0;
           border-bottom: 1px $font-white solid;
           background: $mid-blue;
+          width: 27.5rem;
+          height: 4rem;
+          left: 5rem;
+          top: 128rem;
+          @include respond-to("desktop") {
           width: 22rem;
           height: 5rem;
           left: 71rem;
           top: 128rem;
+          }
         }
         .input-box_address_submit {
           position: absolute;
@@ -120,10 +143,16 @@
           font-family: $main_gilroy;
           color: $font-white;
           background: $mid-blue;
+          width: 27rem;
+          height: 5rem;
+          left: 5rem;
+          top: 136rem;
+          @include respond-to("desktop") {
           width: 22rem;
           height: 5rem;
           left: 71rem;
           top: 136rem;
+          }
         }
         ::placeholder {
           color: $font-grey;
@@ -137,8 +166,5 @@
             input:-webkit-autofill:active {
                 -webkit-box-shadow: 0 0 0 30px $mid-blue inset !important;
             }
-
-
-
 
 </style>

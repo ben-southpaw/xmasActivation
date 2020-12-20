@@ -3,136 +3,242 @@
     position: absolute;
     width: 22rem;
     height: 13.4rem;
-    left: 25rem;
-    top: 15.5rem;
+    left: 2rem;
+    top: 10.2rem;
+    @include respond-to("desktop") {
+      left: 25rem;
+      top: 15.5rem;
+    }
   }
   .ac-snowflake__four {
-    position: absolute;
-    width: 22rem;
-    height: 22.1rem;
-    left: 121rem;
-    top: 264.2rem;
+    display: none;
+    @include respond-to("desktop") {
+      display: block;
+      position: absolute;
+      width: 22rem;
+      height: 22.1rem;
+      left: 121rem;
+      top: 264.2rem;
+    }
   }
   .ac-snowflake__five {
     position: absolute;
-    width: 22rem;
-    height: 22.1rem;
-    left: 2rem;
-    top: 402rem;
+    width: 11rem;
+    height: 11rem;
+    left: 24.6rem;
+    top: 196.6rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 22.1rem;
+      left: 2rem;
+      top: 402rem;
+    }
   }
   .ac-snowflake__six {
     position: absolute;
-    width: 22rem;
-    height: 22rem;
-    left: 97rem;
-    top: 599.3rem;
+    width: 11rem;
+    height: 11rem;
+    left: 24.4rem;
+    top: 373.8rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 22rem;
+      left: 97rem;
+      top: 599.3rem;
+    }
   }
   .ac-snowflake__seven {
     position: absolute;
     width: 22rem;
     height: 22.1rem;
-    left: 49rem;
-    top: 102.4rem;
+    left: 2.1rem;
+    top: 95.5rem;
+    @include respond-to("desktop") {
+      left: 49rem;
+      top: 102.4rem;
+    }
   }
   .solid-shape__one {
     position: absolute;
-    width: 48rem;
-    height: 48rem;
-    left: 1rem;
-    top: 112.9rem;
+    width: 33.4rem;
+    height: 33.4rem;
+    left: 2rem;
+    top: 120.3rem;
     transform: rotate(-90deg);
+    @include respond-to("desktop") {
+      width: 48rem;
+      height: 48rem;
+      left: 1rem;
+      top: 112.9rem;
+    }
   }
   .solid-shape__four {
     position: absolute;
-    width: 94rem;
-    height: 36.7rem;
-    left: 23.7rem;
+    width: 37rem;
+    height: 37rem;
+    left: 0;
     top: 294.6rem;
     transform: rotate(9deg);
+    @include respond-to("desktop") {
+      width: 94rem;
+      height: 36.7rem;
+      left: 23.7rem;
+      top: 294.6rem;
+    }
   }
   .solid-shape__five-1 {
     position: absolute;
-    width: 46rem;
-    height: 25.8rem;
-    left: 25rem;
-    top: 413.1rem;
+    width: 33.4rem;
+    height: 18.7rem;
+    left: 2rem;
+    top: 397.1rem;
+    @include respond-to("desktop") {
+      width: 46rem;
+      height: 25.8rem;
+      left: 25rem;
+      top: 413.1rem;
+    }
   }
   .solid-shape__five-2 {
     position: absolute;
-    width: 46rem;
-    height: 25.8rem;
-    left: 73rem;
-    top: 413.1rem;
+    width: 33.4rem;
+    height: 18.7rem;
+    left: 2rem;
+    top: 415.7rem;
+    @include respond-to("desktop") {
+      width: 46rem;
+      height: 25.8rem;
+      left: 73rem;
+      top: 413.1rem;
+    }
   }
   .solid-shape__five-3 {
     position: absolute;
-    width: 46rem;
-    height: 25.8rem;
-    left: 25rem;
-    top: 438.8rem;
+    width: 33.4rem;
+    height: 18.7rem;
+    left: 2rem;
+    top: 434.3rem;
+    @include respond-to("desktop") {
+      width: 46rem;
+      height: 25.8rem;
+      left: 25rem;
+      top: 438.8rem;
+    }
   }
   .solid-shape__five-4 {
     position: absolute;
-    width: 46rem;
-    height: 25.8rem;
-    left: 73rem;
-    top: 438.8rem;
+    width: 33.4rem;
+    height: 18.7rem;
+    left: 2rem;
+    top: 452.9rem;
+    @include respond-to("desktop") {
+      width: 46rem;
+      height: 25.8rem;
+      left: 73rem;
+      top: 438.8rem;
+    }
   }
   .xxx-flag {
     position: absolute;
-    width: 22rem;
-    height: 30.4rem;
-    left: 97rem;
-    top: 143.9rem;
+    width: 11rem;
+    height: 15.2rem;
+    left: 2rem;
+    top: 189rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 30.4rem;
+      left: 97rem;
+      top: 143.9rem;
+    }
   }
   .snowglobe {
     position: absolute;
-    width: 46rem;
-    height: 51rem;
-    left: 73rem;
-    top: 187.9rem;
+    width: 22.1rem;
+    height: 24.6rem;
+    left: 2.1rem;
+    top: 211.9rem;
+    @include respond-to("desktop") {
+      width: 46rem;
+      height: 51rem;
+      left: 73rem;
+      top: 187.9rem;
+    }
   }
   .hat {
     position: absolute;
-    width: 21.9rem;
-    height: 24.6rem;
-    left: 49.3rem;
-    top: 586.2rem;
+    width: 11rem;
+    height: 12.4rem;
+    left: 13.3rem;
+    top: 384.8rem;
+    @include respond-to("desktop") {
+      width: 21.9rem;
+      height: 24.6rem;
+      left: 49.3rem;
+      top: 586.2rem;
+    }
   }
   .horns {
-    position: absolute;
-    width: 22rem;
-    height: 20.9rem;
-    left: 1rem;
-    top: 621rem;
+    display: none;
+    @include respond-to("desktop") {
+      display: block;
+      position: absolute;
+      width: 22rem;
+      height: 20.9rem;
+      left: 1rem;
+      top: 621rem;
+    }
   }
   .star__one {
     position: absolute;
-    width: 25rem;
-    height: 25rem;
-    left: 77rem;
-    top: 284.8rem;
+    width: 11rem;
+    height: 11rem;
+    left: 2rem;
+    top: 299rem;
+    @include respond-to("desktop") {
+      width: 25rem;
+      height: 25rem;
+      left: 77rem;
+      top: 284.8rem;
+    }
   }
   .star__two {
     position: absolute;
     width: 22rem;
     height: 22rem;
-    left: 13rem;
-    top: 520.2rem;
+    left: 13.4rem;
+    top: 510.3rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 22rem;
+      left: 13rem;
+      top: 520.2rem;
+    }
   }
   .arrow-one {
     position: absolute;
-    width: 11rem;
-    height: 13.5rem;
-    left: 90.5rem;
-    top: 425.2rem;
+    width: 8rem;
+    height: 9.9rem;
+    left: 14.7rem;
+    top: 424.6rem;
     transform: rotate(-180deg);
+    @include respond-to("desktop") {
+      width: 11rem;
+      height: 13.5rem;
+      left: 90.5rem;
+      top: 425.2rem;
+    }
   }
   .arrow-two {
     position: absolute;
-    width: 11rem;
-    height: 13.5rem;
-    left: 42.5rem;
-    top: 451rem;
+    width: 8rem;
+    height: 9.9rem;
+    left: 14.7rem;
+    top: 461.7rem;
+    @include respond-to("desktop") {
+      width: 11rem;
+      height: 13.5rem;
+      left: 42.5rem;
+      top: 451rem;
+    }
   }
 }

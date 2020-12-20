@@ -143,17 +143,22 @@
      @import '../scss/personal-ornaments.scss';
 
   section {
-    height: 989.1rem;
-    width: 144rem;
+    //width: 144rem;
 
     .footer-container {
-        position: absolute;
-        z-index: 2;
+      position: absolute;
+      z-index: 2;
+      width: 37.5rem;
+      height: 201.7rem;
+      left: 0;
+      top: 442rem; //874.6rem;
+      @include respond-to("desktop") {
         width: 125.8rem;
         height: 175.4rem;
         left: 9.1rem;
         top: 807.9rem;
       }
+    }
     .gift-container {
         position: absolute;
         z-index: 2;
@@ -166,35 +171,59 @@
     .cracker-container {
         .cracker-1 {
           position: absolute;
+          width: 51.6rem;
+          height: 33.4rem;
+          left: -7rem;
+          top: 520.2rem;
+          transform: rotate(90deg);
+          @include respond-to("desktop") {
+          transform: rotate(0);
+          transition: transform 0.5s;
           width: 40.8rem;
           height: 26.3rem;
           left: 33.3rem;
           top: 546.7rem;
-          transition: transform 0.5s;
-
+          }
         }
        .cracker-2 {
           position: absolute;
-          width: 40.8rem;
+          width: 51.6rem;
+          height: 33.4rem;
+          left: -7rem;
+          top: 612.2rem;
+          transform: rotate(90deg);
+         @include respond-to("desktop") {
+          transform: rotate(0);
+          transition: transform 0.5s;
+           width: 40.8rem;
           height: 26.3rem;
           right: 33.3rem;
           top: 546.7rem;
-          transition: transform 0.5s;
+           left: unset;
+         }
         }
 
         .personal-note {
           position: absolute;
+          width: 60.8rem;
+          height: 27rem;
+          left: -11.5rem;
+          top: 567rem;
+          background: $violet;
+          transform: rotate(90deg);
+          @include respond-to("desktop") {
+          transform: rotate(0);
           width: 76.2rem;
           height: 23.2rem;
           left: 33.3rem;
           top: 548.1rem;
-          background: $violet;
           border-radius: 5rem;
           box-shadow:
              15vw 0 0 $primary-bg inset,
              -15vw 0 0 $primary-bg inset;
           -webkit-transition: all .2s ease-out;
           transition: all .2s ease-out;
+          }
         }
         .personal-quote {
             font-family: $main_gilroy;
@@ -204,6 +233,13 @@
             z-index: 1;
             color: $font-white;
             position: absolute;
+            width: 26.5rem;
+            height: 25.6rem;
+            left: 5.5rem;
+            top: 567rem;
+          @include respond-to("desktop") {
+            font-size: 2rem;
+            line-height: 3rem;
             width: 50.4rem;
             height: 12rem;
             left: 46.8rem;
@@ -213,21 +249,28 @@
             -webkit-transition: opacity .5s ease-out;
             transition: opacity .5s ease-out;
           }
+          }
         .from-text {
             font-family: $main_cako;
-            font-size: 1.6rem;
-            line-height: 1.9rem;
+            font-size: 2rem;
+            line-height: 2.4rem;
             text-align: center;
             z-index: 1;
             color: $mid-blue;
             position: absolute;
-            width: 20rem;
+            width: 15rem;
+            height: 4.8rem;
+            left: 11.5rem;
+            top: 596rem;
+          @include respond-to("desktop") {
+          width: 20rem;
             height: 1.9rem;
             left: 62rem;
             top: 566rem;
             opacity: 0;
             -webkit-transition: opacity .5s ease-out;
             transition: opacity .5s ease-out;
+          }
         }
     }
     .cracker-container:hover .cracker-1 {
@@ -250,59 +293,73 @@
     .personal-lights {
       .lights-4 {
         position: absolute;
+        width: 52.6rem;
+        height: 13rem;
+        left: -9rem;
+        top: 278.4rem;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        opacity: 0;
+        @include respond-to("desktop") {
+        transform: none;
         width: 96.6rem;
         height: 29.9rem;
         left: -0.6rem;
         top: 238.1rem;
-        opacity: 0;
+        }
         &[data-active="true"] {
         opacity: 1;
     }
       }
       .lights-5 {
-        position: absolute;
-        width: 96.8rem;
-        height: 83rem;
-        left: 61rem;
-        top: 610.5rem;
-        opacity: 0;
+        display: none;
+        @include respond-to("desktop") {
+          display: block;
+          position: absolute;
+          width: 96.8rem;
+          height: 83rem;
+          left: 61rem;
+          top: 610.5rem;
+          opacity: 0;
+        }
         &[data-active="true"] {
         opacity: 1;
     }
       }
     }
      .personal-trees {
-        .trees-one {
-          position: absolute;
-          width: 22rem;
-          height: 31.2rem;
-          left: 47rem;
-          top: 365.8rem;
-        }
-        .trees-two{
-          position: absolute;
-          width: 22rem;
-          height: 31.2rem;
-          left: 72rem;
-          top: 370.8rem;
-        }
-        .trees-three{
-          position: absolute;
-          width: 22rem;
-          height: 31.2rem;
-          left: 96rem;
-          top: 365.8rem;
-        }
-        .trees-four{
-          position: absolute;
-          width: 22rem;
-          height: 31.2rem;
-          left: 120rem;
-          top: 370.8rem;
+       display: none;
+        @include respond-to("desktop") {
+          display: block;
+          .trees-one {
+            position: absolute;
+            width: 22rem;
+            height: 31.2rem;
+            left: 47rem;
+            top: 365.8rem;
+          }
+          .trees-two {
+            position: absolute;
+            width: 22rem;
+            height: 31.2rem;
+            left: 72rem;
+            top: 370.8rem;
+          }
+          .trees-three {
+            position: absolute;
+            width: 22rem;
+            height: 31.2rem;
+            left: 96rem;
+            top: 365.8rem;
+          }
+          .trees-four {
+            position: absolute;
+            width: 22rem;
+            height: 31.2rem;
+            left: 120rem;
+            top: 370.8rem;
+          }
         }
       }
-
-
   }
      
 </style>

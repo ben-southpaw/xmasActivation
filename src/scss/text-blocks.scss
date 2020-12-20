@@ -1,22 +1,33 @@
 //Text Blocks/Elements
-@include respond-to("desktop") {
-  .text-blocks {
-    font-family: $main_cako;
-    color: $purple;
-    font-weight: 900;
-    line-height: 10.6rem;
-    height: 10.6rem;
-    text-transform: capitalize;
+.text-blocks {
+  font-family: $main_cako;
+  color: $purple;
+  font-weight: 900;
+  line-height: 10.6rem;
+  height: 10.6rem;
+  text-transform: capitalize;
 
-    .text-three {
-      position: absolute;
+  .text-three {
+    position: absolute;
+    width: 16.2rem;
+    right: 2rem;
+    top: 100rem;
+    font-size: 5rem;
+    @include respond-to("desktop") {
       width: 30.2rem;
       left: -0.6rem;
       top: 147.4rem;
       font-size: 9rem;
     }
-    .text-four {
-      position: absolute;
+  }
+  .text-four {
+    position: absolute;
+    width: 20rem;
+    height: 6rem;
+    left: 1rem;
+    top: 125.7rem;
+    font-size: 5rem;
+    @include respond-to("desktop") {
       width: 45.5rem;
       height: 10.6rem;
       left: 72rem;
@@ -24,72 +35,135 @@
       font-size: 9rem;
       letter-spacing: -0.6px;
     }
-    .text-five {
-      position: absolute;
+  }
+  .text-five {
+    position: absolute;
+    width: 10rem;
+    left: 2rem;
+    top: 158.9rem;
+    font-size: 5rem;
+    letter-spacing: -0.48px;
+    @include respond-to("desktop") {
       width: 17.9rem;
       left: 22.5rem;
       top: 300rem;
       font-size: 7.2rem;
       letter-spacing: -0.48px;
     }
-    .text-six {
-      position: absolute;
+  }
+  .text-six {
+    position: absolute;
+    width: 10rem;
+    left: 19rem;
+    top: 175.9rem;
+    font-size: 5rem;
+    letter-spacing: -0.48px;
+    @include respond-to("desktop") {
       width: 22rem;
       left: 2.4rem;
       top: 318.8rem;
       font-size: 7.2rem;
       letter-spacing: -0.48px;
     }
-    .text-seven {
-      position: absolute;
+  }
+  .text-seven {
+    position: absolute;
+    width: 30rem;
+    left: 2.9rem;
+    top: 216rem; //Editted
+    font-size: 5rem;
+    letter-spacing: -0.34px;
+    @include respond-to("desktop") {
       width: 29.1rem;
       left: 113.1rem;
       top: 343rem; //Editted
       font-size: 5.2rem;
       letter-spacing: -0.34px;
     }
-    .text-eight {
-      position: absolute;
+  }
+  .text-eight {
+    position: absolute;
+    width: 10rem;
+    left: 2rem;
+    top: 232rem;
+    font-size: 5rem;
+    letter-spacing: -0.34px;
+    @include respond-to("desktop") {
       width: 26.6rem;
       left: 73rem;
       top: 396.8rem;
       font-size: 9rem;
       letter-spacing: -0.6px;
     }
-    .text-nine {
-      position: absolute;
+  }
+  .text-nine {
+    position: absolute;
+    width: 10rem;
+    left: 17.9rem;
+    top: 232rem;
+    font-size: 5rem;
+    letter-spacing: -0.34px;
+    @include respond-to("desktop") {
       width: 27.2rem;
       left: 48.3rem;
       top: 430.6rem;
       font-size: 9rem;
       letter-spacing: -0.6px;
     }
-    .text-ten {
-      position: absolute;
+  }
+  .text-ten {
+    position: absolute;
+    width: 10rem;
+    left: 1rem;
+    top: 313.9rem;
+    font-size: 5rem;
+    letter-spacing: -1.06px;
+    @include respond-to("desktop") {
       width: 31rem;
       left: 96.6rem;
       top: 471.1rem;
       font-size: 16rem;
       letter-spacing: -1.06px;
     }
-    .text-eleven {
-      position: absolute;
+  }
+  .text-eleven {
+    position: absolute;
+    width: 10rem;
+    left: 12rem;
+    top: 313.9rem;
+    font-size: 5rem;
+    letter-spacing: -1.06px;
+    @include respond-to("desktop") {
       width: 20.6rem;
       left: 122.1rem;
       top: 487.7rem;
       font-size: 16rem;
       letter-spacing: -1.06px;
     }
-    .text-twelve {
-      position: absolute;
+  }
+  .text-twelve {
+    position: absolute;
+    width: 10rem;
+    left: 2.1rem;
+    top: 366.4rem;
+    font-size: 5rem;
+    letter-spacing: -0.73px;
+    @include respond-to("desktop") {
       width: 34.2rem;
       left: 2.2rem;
       top: 541rem;
       font-size: 11rem;
       letter-spacing: -0.73px;
     }
-    .text-thirteen {
-      position: absolute;
+  }
+  .text-thirteen {
+    position: absolute;
+    width: 10rem;
+    left: 18rem;
+    top: 366.4rem;
+    font-size: 5rem;
+    letter-spacing: -0.73px;
+    @include respond-to("desktop") {
       width: 36.3rem;
       left: 97rem;
       top: 547.1rem;
