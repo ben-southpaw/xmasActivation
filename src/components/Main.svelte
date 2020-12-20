@@ -8,17 +8,32 @@
     import {data} from "../../static/copy/copy.js";
     import {getUrlSearch} from "../../static/js/path.js";
     import {onMount} from 'svelte';
+    // import scroll from '/js/scroll.js';
 
     let companyData = {name: ''};
     let visible = false;
+    let introAnimation = false;
     let names = [];
     let members = [];
     let currentUser = {};
-    let y;
+    let nameOrnaments = [
+        {name:"name-ornaments__1-1", src:"/images/name-ornaments/ornament_name_1.1.svg"},
+            {name:"name-ornaments__1-3", src:"/images/name-ornaments/ornament_name_1.3.svg"},
+                {name:"name-ornaments__1-5", src:"/images/name-ornaments/ornament_name_1.5.svg"},
+                    {name:"name-ornaments__2-2", src:"/images/name-ornaments/ornament_name_2.2.svg"},
+                        {name:"name-ornaments__2-4", src:"/images/name-ornaments/ornament_name_2.4.svg"},
+                            {name:"name-ornaments__2-6", src:"/images/name-ornaments/ornament_name_2.6.svg"},
+                                {name:"name-ornaments__3-2", src:"/images/name-ornaments/ornament_name_3.2.svg"},
+                                    {name:"name-ornaments__3-4", src:"/images/name-ornaments/ornament_name_3.4.svg"},
+                                        {name:"name-ornaments__4-1", src:"/images/name-ornaments/ornament_name_4.1.svg"}
+    ];
+    let y = '';
     let name;
     let comp;
     let nameSlots = new Array(9).fill();
 
+
+    console.log(y, 'scroll here');
 
     onMount(async () => {
         const urlSearch = getUrlSearch();
@@ -33,25 +48,42 @@
 
     //lights animating
     let x = 1;
-    let isActive = false;
-    // var lights = setInterval(() => {
-    //     isActive = !isActive;
-    // }, 500);
+    let lightActive = false;
+    let transitionActive = false;
+
+    var lights = setInterval(() => {
+        lightActive = !lightActive;
+    }, 500);
+    var lightsContainer = setTimeout(()=> {
+        introAnimation = true;
+;    },1000);
 
     //if member === name then enable clickable
+    let onNameClick = () => {
+        transitionActive = true;
+        setTimeout(()=> {
+           visible = !visible;
+           y = 0;
+        }, 2500)
+    };
 
 </script>
 <svelte:window bind:scrollY={y}/>
 {#if !visible}
-<main>
+<main data-introAnimation="{introAnimation}">
     <Background />
     <div class="header">
-        <img class="nav-lights" src="/images/lights/lights_1.1.svg" data-active="{isActive}" alt="lights" >
-        <img class="nav-lights" src="/images/lights/lights_1.2.svg" data-active="{!isActive}" alt="lights" >
+        <div class="lights">
+             <img class="nav-lights" src="/images/lights/lights_1.1.svg" data-active="{lightActive}" alt="lights" >
+        <img class="nav-lights" src="/images/lights/lights_1.2.svg" data-active="{!lightActive}" alt="lights" >
+        </div>
 
         <a class="nav-ac" href="https://acdc.adventureclub.io" target="_blank">&nbsp;</a>
         <p class="nav-text">Merry Christmas</p>
-        <h1 class="text-one">Hey, you beautiful<br> people at {companyData.name}, <br>Merry Christmas!</h1>
+        <h1 class="text-one">
+            <span class="text-one-inner">Hey, you beautiful<br> people at {companyData.name}, <br>Merry Christmas!</span>
+        </h1>
+
         <p class="text-two">{companyData.lead_quote}</p>
     </div>
 
@@ -61,27 +93,17 @@
         <img class="blank-ornaments__xxx" src="/images/ornaments/ornament_xxx.svg" alt="ornament-xxx">
     </div>
 
-    <div class="name-ornaments">
-        <img class="name-ornaments__1-1" src="/images/name-ornaments/ornament_name_1.1.svg" alt="name-1-1">
-        <img class="name-ornaments__1-3" src="/images/name-ornaments/ornament_name_1.3.svg" alt="name-1-3">
-        <img class="name-ornaments__1-5" src="/images/name-ornaments/ornament_name_1.5.svg" alt="name-1-5">
-        <img class="name-ornaments__2-2" src="/images/name-ornaments/ornament_name_2.2.svg" alt="name-2-2">
-        <img class="name-ornaments__2-4" src="/images/name-ornaments/ornament_name_2.4.svg" alt="name-2-4">
-        <img class="name-ornaments__2-6" src="/images/name-ornaments/ornament_name_2.6.svg" alt="name-2-6">
-        <img class="name-ornaments__3-2" src="/images/name-ornaments/ornament_name_3.2.svg" alt="name-3-2">
-        <img class="name-ornaments__3-4" src="/images/name-ornaments/ornament_name_3.4.svg" alt="name-3-4">
-        <img class="name-ornaments__4-1" src="/images/name-ornaments/ornament_name_4.1.svg" alt="name-4-1">
-    </div>
-<!--data-currentUser="{currentUser.id === names[i % names.length].id}"-->
-    <div class="client-names" >
-         {#each nameSlots as member, i}
-             {#if names.length}
-                <h1 class="client client-{i + 1}  {currentUser.id === names[i % names.length].id ? 'isActive' : ''}"
-                    on:click={() => {visible = !visible; y = 0}}
+    <div class="name-ornaments" >
+         {#each nameOrnaments as ornament, i}
+             <div class="{ornament.name} swing" style="background-image: url({ornament.src})">
+                 {#if names.length}
+                <h1 class="client client-{i + 1} {currentUser.id === names[i % names.length].id ? 'isActive' : ''}"
+                    on:click={onNameClick}
                     >
                     {names[i % names.length].name}
                 </h1>
              {/if}
+             </div>
          {/each}
     </div>
 
@@ -97,7 +119,6 @@
         <h1 class="text-eleven">jul</h1>
         <h1 class="text-twelve">vesala</h1>
         <h1 class="text-thirteen">koleda</h1>
-
     </div>
 
     <div class="bg-items">
@@ -124,11 +145,10 @@
     </div>
 
     <div class="lights">
-        <img class="lights-2" src="/images/lights/lights_2.1.svg" data-active="{isActive}" alt="lights2-1">
-         <img class="lights-2" src="/images/lights/lights_2.2.svg" data-active="{!isActive}" alt="lights2-1">
-        <img class="lights-3" src="/images/lights/lights_3.1.svg" data-active="{isActive}" alt="lights3-1">
-         <img class="lights-3" src="/images/lights/lights_3.2.svg" data-active="{!isActive}" alt="lights3-1">
-
+        <img class="lights-2" src="/images/lights/lights_2.1.svg" data-active="{lightActive}" alt="lights2-1">
+         <img class="lights-2" src="/images/lights/lights_2.2.svg" data-active="{!lightActive}" alt="lights2-1">
+        <img class="lights-3" src="/images/lights/lights_3.1.svg" data-active="{lightActive}" alt="lights3-1">
+         <img class="lights-3" src="/images/lights/lights_3.2.svg" data-active="{!lightActive}" alt="lights3-1">
     </div>
 
     <div class="trees">
@@ -148,6 +168,12 @@
 </div>
 {/if}
 
+ <div class="transition-container" data-transitionactive="{transitionActive}">
+        <div class="transition-one"></div>
+        <div class="transition-two"></div>
+        <h1 class="transition-text"><span>ho</span> <span>ho</span> <span>ho</span></h1>
+ </div>
+
 <style lang="scss">
     @import '../scss/global';
     @import '../scss/header';
@@ -155,6 +181,80 @@
     @import '../scss/bg-items';
     @import '../scss/text-blocks';
     @import '../scss/trees'; //height: 989.1rem;
+
+    .transition-container {
+      display: flex;
+      pointer-events: none;
+      opacity: 1;
+      transition: opacity 1s 3s $ease-out-sine;
+      &[data-transitionactive="true"] {
+          opacity: 0;
+        }
+    }
+      .transition-one, .transition-two {
+        position: fixed;
+        z-index: 3;
+        height: 200vh;
+        width: 200vh;
+        border-radius: 50%;
+        right: -100vh;
+        bottom: -100vh;
+        transform: scale(0);
+        transition: transform 1s ease-in-out;
+        @include respond-to('desktop') {
+        height: 200vw;
+        width: 200vw;
+        right: -100vw;
+        bottom: -100vw;
+        }
+
+        [data-transitionactive="true"] & {
+          transform: scale(1.3);
+        }
+      }
+
+
+      .transition-one {
+        background: $violet;
+
+      }
+      .transition-two {
+        background: $gold;
+        transition-delay: 0.1s;
+      }
+      .transition-text {
+        color: $font-white;
+        font-size: 20rem;
+        transition-delay: 0.5s;
+        z-index: 4;
+        position: fixed;
+        font-family: $main_cako;
+        white-space: nowrap;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .transition-text span {
+        display: inline-block;
+        transition: transform 2s $ease-out-quart, opacity 0s;
+        transform: scale(1.3);
+        opacity: 0;
+
+        @for $i from 1 through 3 {
+            &:nth-child(#{$i}) {
+                transition-delay: #{$i * 0.2 + 1}s;
+            }
+        }
+
+        [data-transitionactive="true"] & {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+
+
 
     .personal-page__container {
         height: 1033rem;
@@ -190,155 +290,7 @@
         }
       }
 
-      .client-names {
-          font-family: $main_cako;
-          line-height: 1.7rem;
-          color: $font-white;
-          text-align: center;
-          //pointer-events: none;
-        cursor: pointer; //undo later
-        @include respond-to('desktop') {
-        line-height: 3.4rem;
-        }
-        .client.isActive {
-          cursor: pointer;
-        }
-        .client-1 {
-          position: absolute;
-          font-size: 1.5rem;
-          width: 9.5rem;
-          height: 3.4rem;
-          top: 107.5rem;
-          left: 2.75rem;
-          @include respond-to('desktop') {
-          font-size: 3rem;
-          width: 19rem;
-          height: 6.8rem;
-          top: 142.2rem;
-          left: 26.4rem;
-          }
-        }
-        .client-2 {
-          position: absolute;
-          font-size: 1.5rem;
-          width: 10rem;
-          height: 3.4rem;
-          top: 116rem;
-          left: 14rem;
-          @include respond-to('desktop') {
-          font-size: 3rem;
-          width: 19rem;
-          height: 6.8rem;
-          top: 173.9rem;
-          left: 50.4rem;
-          }
-        }
-        .client-3 {
-          position: absolute;
-          font-size: 1.5rem;
-          width: 10rem;
-          height: 3.4rem;
-          top: 162.7rem;
-          left: 25.3rem;
-          @include respond-to('desktop') {
-          font-size: 3rem;
-          width: 19rem;
-          height: 6.8rem;
-          top: 237.8rem;
-          left: 122.4rem;
-          }
-        }
-        .client-4 {
-          position: absolute;
-          font-size: 1.5rem;
-          width: 10rem;
-          height: 3.4rem;
-          top: 169.8rem;
-          left: 14rem;
-          @include respond-to('desktop') {
-          font-size: 3rem;
-          width: 19rem;
-          height: 6.8rem;
-          top: 264.5rem;
-          left: 98.5rem;
-          }
-        }
-        .client-5 {
-          position: absolute;
-          font-size: 1.5rem;
-          width: 10rem;
-          height: 3.4rem;
-          left: 2.5rem;
-          top: 247.9rem;
-          @include respond-to('desktop') {
-          font-size: 3rem;
-          width: 19rem;
-          height: 6.8rem;
-          top: 292.5rem;
-          left: 2.5rem;
-          }
-        }
-        .client-6 {
-          position: absolute;
-          font-size: 1.5rem;
-          width: 10rem;
-          height: 3.4rem;
-          top: 268rem;
-          left: 14rem;
-          @include respond-to('desktop') {
-          font-size: 3rem;
-          width: 19rem;
-          height: 6.8rem;
-          top: 356.6rem;
-          left: 26.5rem;
-          }
-        }
-        .client-7 {
-          position: absolute;
-          font-size: 1.5rem;
-          width: 10rem;
-          height: 3.4rem;
-          top: 316rem;
-          left: 25rem;
-          @include respond-to('desktop') {
-          font-size: 3rem;
-          width: 19rem;
-          height: 6.8rem;
-          top: 373.6rem;
-          left: 74.55rem;
-          }
-        }
-        .client-8 {
-          position: absolute;
-          font-size: 1.5rem;
-          width: 10rem;
-          height: 3.4rem;
-          top: 327rem;
-          left: 14rem;
-          @include respond-to('desktop') {
-          font-size: 3rem;
-          width: 19rem;
-          height: 6.8rem;
-          top: 427rem;
-          left: 98.5rem;
-          }
-        }
-        .client-9 {
-          position: absolute;
-          font-size: 1.5rem;
-          width: 10rem;
-          height: 3.4rem;
-          top: 362.3rem;
-          left: 2.4rem;
-          @include respond-to('desktop') {
-          font-size: 3rem;
-          width: 19rem;
-          height: 6.8rem;
-          top: 484.9rem;
-          left: 2.2rem;
-          }
-        }
-      }
+
 
       //Lights
       .lights {

@@ -84,6 +84,27 @@
   }
 }
 
+.swing {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  @for $i from 1 through 16 {
+    &:nth-child(#{$i}) {
+      animation-delay: random() + s;
+    }
+  }
+}
+.swing:after {
+  transform: rotate(45deg);
+}
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
 //Font face, add fonts here, < 10 preferable. Can be used as mixins..
 @font-face {
   font-family: "Cako Black";

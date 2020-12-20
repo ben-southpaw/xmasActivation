@@ -1,5 +1,7 @@
-
-<footer>
+<script !src="">
+    export let y;
+</script>
+<footer style="--scroll-y : {y};">
     <div class="text-container">
         <h1 class="footer-text__one">From all of us..</h1>
         <h1 class="footer-text__two">..to all of you.</h1>
@@ -11,23 +13,24 @@
         <img class="ac-wheel__three" src="/images/ac_wheel_small.svg" alt="ac-three">
         <img class="heart" src="/images/heart_big.svg" alt="heart">
     </div>
+
     <div class="ac-members-container">
-        <img class="ac-member__1" src="/images/ac-members/ac_tommi.svg" alt="1">
-        <img class="ac-member__2" src="/images/ac-members/ac_tiina.svg" alt="2">
-        <img class="ac-member__3" src="/images/ac-members/ac_thuy.svg" alt="3">
-        <img class="ac-member__4" src="/images/ac-members/ac_jochem.svg" alt="4">
-        <img class="ac-member__5" src="/images/ac-members/ac_kaisa.svg" alt="5">
-        <img class="ac-member__6" src="/images/ac-members/ac_marten.svg" alt="6">
-        <img class="ac-member__7" src="/images/ac-members/ac_kev.svg" alt="7">
-        <img class="ac-member__8" src="/images/ac-members/ac_mario.svg" alt="8">
-        <img class="ac-member__9" src="/images/ac-members/ac_boris.svg" alt="9">
-        <img class="ac-member__10" src="/images/ac-members/ac_martijn.svg" alt="10">
-        <img class="ac-member__11" src="/images/ac-members/ac_martijn2.svg" alt="11">
-        <img class="ac-member__12" src="/images/ac-members/ac_stephanie.svg" alt="12">
-        <img class="ac-member__13" src="/images/ac-members/ac_matthias.svg" alt="13">
-        <img class="ac-member__14" src="/images/ac-members/ac_andre.svg" alt="14">
-        <img class="ac-member__15" src="/images/ac-members/ac_anders.svg" alt="15">
-        <img class="ac-member__16" src="/images/ac-members/ac_benjamin.svg" alt="16">
+        <img class="ac-member__1 swing" src="/images/ac-members/ac_tommi.svg" alt="1">
+        <img class="ac-member__2 swing" src="/images/ac-members/ac_tiina.svg" alt="2">
+        <img class="ac-member__3 swing" src="/images/ac-members/ac_thuy.svg" alt="3">
+        <img class="ac-member__4 swing" src="/images/ac-members/ac_jochem.svg" alt="4">
+        <img class="ac-member__5 swing" src="/images/ac-members/ac_kaisa.svg" alt="5">
+        <img class="ac-member__6 swing" src="/images/ac-members/ac_marten.svg" alt="6">
+        <img class="ac-member__7 swing" src="/images/ac-members/ac_kev.svg" alt="7">
+        <img class="ac-member__8 swing" src="/images/ac-members/ac_mario.svg" alt="8">
+        <img class="ac-member__9 swing" src="/images/ac-members/ac_boris.svg" alt="9">
+        <img class="ac-member__10 swing" src="/images/ac-members/ac_martijn.svg" alt="10">
+        <img class="ac-member__11 swing" src="/images/ac-members/ac_martijn2.svg" alt="11">
+        <img class="ac-member__12 swing" src="/images/ac-members/ac_stephanie.svg" alt="12">
+        <img class="ac-member__13 swing" src="/images/ac-members/ac_matthias.svg" alt="13">
+        <img class="ac-member__14 swing" src="/images/ac-members/ac_andre.svg" alt="14">
+        <img class="ac-member__15 swing" src="/images/ac-members/ac_anders.svg" alt="15">
+        <img class="ac-member__16 swing" src="/images/ac-members/ac_benjamin.svg" alt="16">
     </div>
     <div class="contact-container">
         <a class="ac-logo" href="https://acdc.adventureclub.io" target="_blank">&nbsp;</a>
@@ -44,6 +47,7 @@
 <style lang="scss">
     @import '../scss/global';
     @import '../scss/ac-members.scss';
+
     footer {
       .images-container {
         .ac-wheel__one {

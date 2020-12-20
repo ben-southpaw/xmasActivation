@@ -2,6 +2,9 @@
     import StarThree from "./StarThree.svelte";
     import Candycane from "./Candycane.svelte";
     import {writable} from 'svelte/store';
+    // import dotenv from 'dotenv';
+    // dotenv.config();
+    // var formspree = process.env.FORMSPREE;
 
     export let name;
     export let foundName;

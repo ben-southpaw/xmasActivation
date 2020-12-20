@@ -9,7 +9,9 @@ import pkg from "./package.json";
 import json from "@rollup/plugin-json";
 import sveltePreprocess from "svelte-preprocess";
 import builtins from "rollup-plugin-node-builtins-brofs";
-import "dotenv/config";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
