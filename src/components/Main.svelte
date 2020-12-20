@@ -157,11 +157,11 @@
     @import '../scss/trees'; //height: 989.1rem;
 
     .personal-page__container {
-        height: 1082.2rem;
+        height: 1033rem;
         width: 37.5rem;
         @include respond-to('desktop') {
             height: 989.1rem;
-            width: 144rem ;
+            width: 144rem;
         }
     }
 

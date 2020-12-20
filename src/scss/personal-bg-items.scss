@@ -11,11 +11,15 @@
     }
   }
   .ac-snowflake__four {
-    position: absolute;
-    width: 22rem;
-    height: 22.1rem;
-    left: 121rem;
-    top: 264.2rem;
+    display: none;
+    @include respond-to("desktop") {
+      display: block;
+      position: absolute;
+      width: 22rem;
+      height: 22.1rem;
+      left: 121rem;
+      top: 264.2rem;
+    }
   }
   .ac-snowflake__five {
     position: absolute;
@@ -174,11 +178,15 @@
     }
   }
   .horns {
-    position: absolute;
-    width: 22rem;
-    height: 20.9rem;
-    left: 1rem;
-    top: 621rem;
+    display: none;
+    @include respond-to("desktop") {
+      display: block;
+      position: absolute;
+      width: 22rem;
+      height: 20.9rem;
+      left: 1rem;
+      top: 621rem;
+    }
   }
   .star__one {
     position: absolute;

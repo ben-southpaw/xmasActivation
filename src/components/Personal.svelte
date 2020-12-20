@@ -143,16 +143,22 @@
      @import '../scss/personal-ornaments.scss';
 
   section {
-    width: 144rem;
+    //width: 144rem;
 
     .footer-container {
-        position: absolute;
-        z-index: 2;
+      position: absolute;
+      z-index: 2;
+      width: 37.5rem;
+      height: 201.7rem;
+      left: 0;
+      top: 442rem; //874.6rem;
+      @include respond-to("desktop") {
         width: 125.8rem;
         height: 175.4rem;
         left: 9.1rem;
         top: 807.9rem;
       }
+    }
     .gift-container {
         position: absolute;
         z-index: 2;
@@ -227,6 +233,13 @@
             z-index: 1;
             color: $font-white;
             position: absolute;
+            width: 26.5rem;
+            height: 25.6rem;
+            left: 5.5rem;
+            top: 567rem;
+          @include respond-to("desktop") {
+            font-size: 2rem;
+            line-height: 3rem;
             width: 50.4rem;
             height: 12rem;
             left: 46.8rem;
@@ -236,21 +249,28 @@
             -webkit-transition: opacity .5s ease-out;
             transition: opacity .5s ease-out;
           }
+          }
         .from-text {
             font-family: $main_cako;
-            font-size: 1.6rem;
-            line-height: 1.9rem;
+            font-size: 2rem;
+            line-height: 2.4rem;
             text-align: center;
             z-index: 1;
             color: $mid-blue;
             position: absolute;
-            width: 20rem;
+            width: 15rem;
+            height: 4.8rem;
+            left: 11.5rem;
+            top: 596rem;
+          @include respond-to("desktop") {
+          width: 20rem;
             height: 1.9rem;
             left: 62rem;
             top: 566rem;
             opacity: 0;
             -webkit-transition: opacity .5s ease-out;
             transition: opacity .5s ease-out;
+          }
         }
     }
     .cracker-container:hover .cracker-1 {
@@ -291,49 +311,55 @@
     }
       }
       .lights-5 {
-        position: absolute;
-        width: 96.8rem;
-        height: 83rem;
-        left: 61rem;
-        top: 610.5rem;
-        opacity: 0;
+        display: none;
+        @include respond-to("desktop") {
+          display: block;
+          position: absolute;
+          width: 96.8rem;
+          height: 83rem;
+          left: 61rem;
+          top: 610.5rem;
+          opacity: 0;
+        }
         &[data-active="true"] {
         opacity: 1;
     }
       }
     }
      .personal-trees {
-        .trees-one {
-          position: absolute;
-          width: 22rem;
-          height: 31.2rem;
-          left: 47rem;
-          top: 365.8rem;
-        }
-        .trees-two{
-          position: absolute;
-          width: 22rem;
-          height: 31.2rem;
-          left: 72rem;
-          top: 370.8rem;
-        }
-        .trees-three{
-          position: absolute;
-          width: 22rem;
-          height: 31.2rem;
-          left: 96rem;
-          top: 365.8rem;
-        }
-        .trees-four{
-          position: absolute;
-          width: 22rem;
-          height: 31.2rem;
-          left: 120rem;
-          top: 370.8rem;
+       display: none;
+        @include respond-to("desktop") {
+          display: block;
+          .trees-one {
+            position: absolute;
+            width: 22rem;
+            height: 31.2rem;
+            left: 47rem;
+            top: 365.8rem;
+          }
+          .trees-two {
+            position: absolute;
+            width: 22rem;
+            height: 31.2rem;
+            left: 72rem;
+            top: 370.8rem;
+          }
+          .trees-three {
+            position: absolute;
+            width: 22rem;
+            height: 31.2rem;
+            left: 96rem;
+            top: 365.8rem;
+          }
+          .trees-four {
+            position: absolute;
+            width: 22rem;
+            height: 31.2rem;
+            left: 120rem;
+            top: 370.8rem;
+          }
         }
       }
-
-
   }
      
 </style>

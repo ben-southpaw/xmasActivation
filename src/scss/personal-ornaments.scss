@@ -7,7 +7,7 @@
     top: 61.1rem;
     @include respond-to("desktop") {
       width: 22rem;
-      height: 75.5rem;
+      height: 72.5rem;
       left: 109rem;
       top: -5rem;
     }
@@ -66,10 +66,14 @@
     }
   }
   .blank-ornaments__5 {
-    position: absolute;
-    width: 22rem;
-    height: 65.5rem;
-    left: 85rem;
-    top: 462.5rem;
+    display: none;
+    @include respond-to("desktop") {
+      display: block;
+      position: absolute;
+      width: 22rem;
+      height: 65.5rem;
+      left: 85rem;
+      top: 462.5rem;
+    }
   }
 }
