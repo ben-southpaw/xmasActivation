@@ -183,11 +183,6 @@
     @import '../scss/trees'; //height: 989.1rem;
 
     .transition-container {
-        width: 37.5rem;
-        overflow-x: hidden;
-        @include respond-to('desktop') {
-            width: 144rem;
-        }
       display: flex;
       pointer-events: none;
       opacity: 1;
@@ -281,10 +276,7 @@
       .footer-container {
         position: absolute;
         z-index: 2;
-        //width: 37.5rem;
-        //height: 201.7rem;
-        //left: 0;
-        //top: 391.3rem;
+        overflow: initial;
         @include respond-to('desktop') {
         width: 125.8rem;
         height: 175.4rem;
@@ -292,8 +284,6 @@
         top: 646.9rem;
         }
       }
-
-
 
       //Lights
       .lights {

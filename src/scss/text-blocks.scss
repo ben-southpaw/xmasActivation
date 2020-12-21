@@ -9,7 +9,7 @@
 
   .text-three {
     position: absolute;
-    width: 16.2rem;
+    //width: 16.2rem;
     right: 2rem;
     top: 100rem;
     font-size: 5rem;
@@ -22,8 +22,8 @@
   }
   .text-four {
     position: absolute;
-    width: 20rem;
-    height: 6rem;
+    //width: 20rem;
+    //height: 6rem;
     left: 1rem;
     top: 125.7rem;
     font-size: 5rem;
@@ -38,7 +38,7 @@
   }
   .text-five {
     position: absolute;
-    width: 10rem;
+    //width: 10rem;
     left: 2rem;
     top: 158.9rem;
     font-size: 5rem;
@@ -53,7 +53,7 @@
   }
   .text-six {
     position: absolute;
-    width: 10rem;
+    //width: 10rem;
     left: 19rem;
     top: 175.9rem;
     font-size: 5rem;
@@ -68,7 +68,7 @@
   }
   .text-seven {
     position: absolute;
-    width: 30rem;
+    //width: 30rem;
     left: 2.9rem;
     top: 216rem; //Editted
     font-size: 5rem;
@@ -83,7 +83,7 @@
   }
   .text-eight {
     position: absolute;
-    width: 10rem;
+    //width: 10rem;
     left: 2rem;
     top: 232rem;
     font-size: 5rem;
@@ -98,7 +98,7 @@
   }
   .text-nine {
     position: absolute;
-    width: 10rem;
+    //width: 10rem;
     left: 17.9rem;
     top: 232rem;
     font-size: 5rem;
@@ -113,7 +113,7 @@
   }
   .text-ten {
     position: absolute;
-    width: 10rem;
+    //width: 10rem;
     left: 1rem;
     top: 313.9rem;
     font-size: 5rem;
@@ -128,10 +128,10 @@
   }
   .text-eleven {
     position: absolute;
-    width: 10rem;
+    //width: 10rem;
     left: 12rem;
     top: 313.9rem;
-    font-size: 5rem;
+    font-size: 4rem;
     letter-spacing: -1.06px;
     @include respond-to("desktop") {
       width: 20.6rem;
@@ -143,10 +143,10 @@
   }
   .text-twelve {
     position: absolute;
-    width: 10rem;
+    //width: 10rem;
     left: 2.1rem;
     top: 366.4rem;
-    font-size: 5rem;
+    font-size: 3.5rem;
     letter-spacing: -0.73px;
     @include respond-to("desktop") {
       width: 34.2rem;
@@ -158,10 +158,10 @@
   }
   .text-thirteen {
     position: absolute;
-    width: 10rem;
+    //width: 10rem;
     left: 18rem;
     top: 366.4rem;
-    font-size: 5rem;
+    font-size: 3.5rem;
     letter-spacing: -0.73px;
     @include respond-to("desktop") {
       width: 36.3rem;
