@@ -11,6 +11,7 @@
     "start": "node __sapper__/build",
     "load-sheets": "node tools/load-sheets",
     "parse-assets": "node tools/parse-assets",
+    "postinstall": "patch-package",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run"
@@ -18,6 +19,7 @@
   "dependencies": {
     "compression": "^1.7.1",
     "nodemailer-smtp-transport": "^2.7.4",
+    "patch-package": "^6.2.2",
     "polka": "next",
     "ramda": "^0.27.0",
     "sirv": "^0.4.6",

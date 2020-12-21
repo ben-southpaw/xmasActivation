@@ -39,7 +39,6 @@
         companyData = data[comp];
         names = companyData.members;
         currentUser = names.find((user) => user.id === name);
-        console.log(currentUser, name, 'names');
         }
     );
 
@@ -187,7 +186,6 @@
       display: flex;
       pointer-events: none;
       opacity: 1;
-      z-index: 100;
       transition: opacity 1s 3s $ease-out-sine;
       &[data-transitionactive="true"] {
           opacity: 0;
@@ -226,7 +224,7 @@
         color: $font-white;
         font-size: 5rem;
         transition-delay: 0.5s;
-        z-index: 4;
+        z-index: 100;
         position: fixed;
         font-family: $main_cako;
         white-space: nowrap;
