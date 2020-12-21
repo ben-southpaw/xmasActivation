@@ -15,7 +15,6 @@
 :global(*) {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -35,15 +34,15 @@
   /*Base font size based of viewport width (1920px) for using rems*/
   font-size: calc(var(--base-fontsize) / var(--base-design-width) * 100vw);
   //font-size: 10px;
+  height: 100%;
   margin: 0;
 }
 
 :global(body) {
   background-color: $primary-bg;
+  height: 100%;
   overflow-x: hidden;
 }
-
-//For dynamically changing colours via JS
 
 //Globally used styles
 
@@ -78,7 +77,6 @@
   right: 2.5rem;
   top: 2.8rem;
   @include respond-to("desktop") {
-    width: 11rem;
     height: 1.1rem;
     right: 2rem;
     top: 4.1rem;

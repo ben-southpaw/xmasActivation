@@ -55,16 +55,16 @@ export const data = {
     lead_quote:
       "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
     stat1: {
-      number: "26",
-      text: "Experiments done",
+      number: "1",
+      text: "Really clear vision",
     },
     stat2: {
-      number: "1",
-      text: "Paul lost along the way",
+      number: "0",
+      text: "Haircuts",
     },
     stat3: {
-      number: "999",
-      text: "Video calls completed",
+      number: "500",
+      text: "Lekker G's",
     },
     stat4: {
       number: "26",
@@ -87,7 +87,8 @@ export const data = {
         id: "vinnie",
         name: "Vinnie Hendriks",
         from: "Adventure Club",
-        personal_quote: "Thanks for all the help last year. Merry Christmas!",
+        personal_quote:
+          "Vinnie, thank you for the trust in our team and we're looking forward to more endless nights and awesome projects for 2021",
       },
       {
         id: "john",
@@ -95,41 +96,6 @@ export const data = {
         from: "Thuy and Marten",
         personal_quote:
           "John, it's been a pleasure working with you in 2020. Wishing you happy holidays and fingers crossed for a less remote 2021!",
-      },
-      {
-        id: "niall",
-        name: "Niall O'Kelly",
-        from: "Thuy",
-        personal_quote:
-          "Thanks Niall for making me feel more than welcome in Browse and.. DELIGHT. I've thoroughly enjoyed our chats and look forward to many more of them in 2021. Happy holidays!",
-      },
-      {
-        id: "sara",
-        name: "Sara Macnab",
-        from: "Thuy",
-        personal_quote:
-          "Sara, you're my MAIN PO and forever will be ;) What a ride 2020 has been. Let's push the rollercoaster off its tracks next year!",
-      },
-      {
-        id: "birgit",
-        name: "Birgit Geiberger",
-        from: "Thuy",
-        personal_quote:
-          "Dear Birgit, what a year it's been. I want to thank you for your guidance and I wish you all the best for 2021. Enjoy many happy bubbles!",
-      },
-      {
-        id: "bastian",
-        name: "Bastian Althoff",
-        from: "Adventure Club",
-        personal_quote:
-          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
-      },
-      {
-        id: "derek",
-        name: "Derek Maaijen",
-        from: "Adventure Club",
-        personal_quote:
-          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
       },
     ],
   },
@@ -177,33 +143,91 @@ export const data = {
       },
     ],
   },
-  tommy: {
-    name: "Tommy Hilfiger",
+  adidas3: {
+    name: "adidas",
     lead_quote:
       "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
     stat1: {
-      number: "2",
-      text: "Big projects worked on together this year",
+      number: "26",
+      text: "Experiments done",
     },
     stat2: {
-      number: "4",
-      text: "Product launches, more to come!",
+      number: "1",
+      text: "Paul lost along the way",
     },
     stat3: {
-      number: "100%",
-      text: "Elevation of the UX for Acquisition and Enrichment",
+      number: "2",
+      text: "Many video calls",
     },
     stat4: {
-      number: "36",
-      text: "Case studies for Adidas Discovery",
+      number: "26",
+      text: "Million sales uplift",
     },
     members: [
       {
-        id: "mark",
-        name: "Mark",
+        id: "niall",
+        name: "Niall O'Kelly",
+        from: "Thuy",
+        personal_quote:
+          "Thanks Niall for making me feel more than welcome in Browse and.. DELIGHT. I've thoroughly enjoyed our chats and look forward to many more of them in 2021. Happy holidays!",
+      },
+      {
+        id: "sara",
+        name: "Sara Macnab",
+        from: "Thuy",
+        personal_quote:
+          "Sara, you're my MAIN PO and forever will be ;) What a ride 2020 has been. Let's push the rollercoaster off its tracks next year!",
+      },
+      {
+        id: "birgit",
+        name: "Birgit Geiberger",
+        from: "Thuy",
+        personal_quote:
+          "Dear Birgit, what a year it's been. I want to thank you for your guidance and I wish you all the best for 2021. Enjoy many happy bubbles!",
+      },
+      {
+        id: "bastian",
+        name: "Bastian Althoff",
         from: "Adventure Club",
         personal_quote:
-          "Thanks Mark for this year. Weird, yet successful year together",
+          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+      },
+      {
+        id: "derek",
+        name: "Derek Maaijen",
+        from: "Adventure Club",
+        personal_quote:
+          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+      },
+    ],
+  },
+  pvh: {
+    name: "PVH B2B",
+    lead_quote:
+      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
+    stat1: {
+      number: "1",
+      text: "Project worked on together",
+    },
+    stat2: {
+      number: "14",
+      text: "Team members involved",
+    },
+    stat3: {
+      number: "100%",
+      text: "Solid collaboration",
+    },
+    stat4: {
+      number: "1",
+      text: "PVH B2B Team!",
+    },
+    members: [
+      {
+        id: "nataliia",
+        name: "Nataliia",
+        from: "Tiina, Martijn & Mario",
+        personal_quote:
+          "Thank you Nataliia for involving us in such an important project of your team. Thank you for your trust and energy. Looking forward to next year and the awesome projects together!",
       },
       {
         id: "lauren",
@@ -215,6 +239,64 @@ export const data = {
       {
         id: "elisabeth",
         name: "Elisabeth",
+        from: "Tiina",
+        personal_quote:
+          "Thank you Elisabeth for trusting us with our sustainability page project. It was such a pleasure to work with you  and your team. Looking forward to our future projects.",
+      },
+    ],
+  },
+  tommy: {
+    name: "Tommy Hilfiger",
+    lead_quote:
+      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
+    stat1: {
+      number: "2",
+      text: "Amazing team outings",
+    },
+    stat2: {
+      number: "7",
+      text: "Successful projects together",
+    },
+    stat3: {
+      number: "435k",
+      text: "Unique users reached",
+    },
+    stat4: {
+      number: "99",
+      text: "More projects next year!",
+    },
+    members: [
+      {
+        id: "mark",
+        name: "Mark",
+        from: "Marten, Tiina and Kev",
+        personal_quote:
+          "Thanks Mark for this year. Weird, yet successful year together. It's been a pleasure working with you in 2020. Wishing you happy holidays and fingers crossed for a less remote 2021!",
+      },
+      {
+        id: "mihaela",
+        name: "Mihaela",
+        from: "Tiina and AC team",
+        personal_quote:
+          "Thank you Mihaela for this year and all the projects we've had together, it's been a pleasure. Looking forward our collaboration next year!",
+      },
+      {
+        id: "aaron",
+        name: "Aaron",
+        from: "Love Kev and the AC team.",
+        personal_quote:
+          "Aaron, thank you so much for making my life so easy, its been a pleasure working with you, I hope Santa knows what a good boy you've been.",
+      },
+      {
+        id: "farlayna",
+        name: "Farlayna",
+        from: "Adventure Club",
+        personal_quote:
+          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+      },
+      {
+        id: "noam",
+        name: "Noam",
         from: "Adventure Club",
         personal_quote:
           "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
@@ -226,47 +308,47 @@ export const data = {
     lead_quote:
       "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
     stat1: {
-      number: "2",
-      text: "Big projects worked on together this year",
+      number: "1",
+      text: "Great project together",
     },
     stat2: {
-      number: "4",
-      text: "Product launches, more to come!",
+      number: "10",
+      text: "Filters",
     },
     stat3: {
-      number: "100%",
-      text: "Elevation of the UX for Acquisition and Enrichment",
+      number: "200",
+      text: "Media hits",
     },
     stat4: {
-      number: "36",
-      text: "Case studies for Adidas Discovery",
+      number: "9",
+      text: "Million users",
     },
     members: [
       {
         id: "mathilde",
         name: "Mathilde",
-        from: "Adventure Club",
+        from: "Tiina and AC team",
         personal_quote:
-          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+          "What a year, what a project. Thank you Mathilde for pushing and pulling and making everything happen. It was a pleasure to work with you. Thank you for our collaboration, really looking forward to next year!",
       },
       {
         id: "alice",
         name: "Alice",
-        from: "Adventure Club",
+        from: "Tiina and AC team",
         personal_quote:
-          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+          "What a year, what a project. Thank you Alice for the collaboration! We are looking forward to work with you again. Happy holidays!",
       },
       {
         id: "pascal",
         name: "Pascal",
-        from: "Adventure Club",
+        from: "AC freaks",
         personal_quote:
-          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+          "Sinä olet Paskal! One of the most fantastic projects this year. Let's touch the sky next year as well. Happy holidays and avé Satanas.",
       },
     ],
   },
   robot_kittens: {
-    name: "Vice",
+    name: "Robot Kittens",
     lead_quote:
       "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
     stat1: {

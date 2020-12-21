@@ -30,6 +30,8 @@
     let y = '';
     let name;
     let comp;
+    let main;
+    let personal;
     let nameSlots = new Array(9).fill();
 
     onMount(async () => {
@@ -39,6 +41,9 @@
         companyData = data[comp];
         names = companyData.members;
         currentUser = names.find((user) => user.id === name);
+        y = 0;
+        main.style.opacity = 1;
+
         }
     );
 
@@ -59,6 +64,7 @@
         transitionActive = true;
         setTimeout(()=> {
            visible = !visible;
+
            y = 0;
         }, 2500)
     };
@@ -66,7 +72,7 @@
 </script>
 <svelte:window bind:scrollY={y}/>
 {#if !visible}
-<main data-introAnimation="{introAnimation}">
+<main data-introAnimation="{introAnimation}" bind:this={main} style="opacity: 0">
     <Background />
     <div class="header">
         <div class="lights">
@@ -163,7 +169,7 @@
 </main>
 {/if}
 {#if visible}
-<div class="personal-page__container" bind:this={visible}>
+<div class="personal-page__container" bind:this={personal}>
     <Personal {data} />
 </div>
 {/if}
@@ -183,6 +189,14 @@
     @import '../scss/trees'; //height: 989.1rem;
 
     .transition-container {
+      top: 0;
+      left: 0;
+      z-index: 100;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      max-width: 100%;
+      overflow: hidden;
       display: flex;
       pointer-events: none;
       opacity: 1;
@@ -192,8 +206,7 @@
         }
     }
       .transition-one, .transition-two {
-        z-index: 100;
-        position: fixed;
+        position: absolute;
         height: 200vh;
         width: 200vh;
         border-radius: 50%;
@@ -221,11 +234,11 @@
         transition-delay: 0.1s;
       }
       .transition-text {
+        position: absolute;
         color: $font-white;
         font-size: 5rem;
         transition-delay: 0.5s;
         z-index: 100;
-        position: fixed;
         font-family: $main_cako;
         white-space: nowrap;
         top: 50%;
@@ -268,6 +281,7 @@
     position: relative;
     width: 37.5rem;
     height: 598rem;
+    opacity: 0;
     @include respond-to('desktop') {
       width: 144rem;
       height: 828.1rem;

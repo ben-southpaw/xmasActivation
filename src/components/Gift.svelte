@@ -5,7 +5,6 @@
     // import dotenv from 'dotenv';
     // dotenv.config();
     // var formspree = process.env.FORMSPREE;
-   //https://formspree.io/f/xeqpryyj
 
 
     export let name;
@@ -48,6 +47,7 @@
         <div class="input-box">
         </div>
         <p class="input-box_name">{foundName.name}</p>
+<!--        https://formspree.io/f/xeqpryyj-->
 <!--        //{process.env.FORMSPREE}-->
         <form action="" method="POST">
                     <input class="input-box_address_1" type="text" placeholder="address" bind:value={$user.address_1} name="address_1"/>

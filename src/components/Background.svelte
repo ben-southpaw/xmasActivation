@@ -3,6 +3,7 @@
     import Background from '../../static/js/background.js';
     let root;
 
+
 onMount(async () => {
   const bg = new Background(root)
 });
@@ -18,24 +19,26 @@ onMount(async () => {
 
   .bg {
     position: fixed;
-    width: 100%;
-    height: 100%;
     z-index: 1;
     pointer-events: none;
   }
      :global(.snowflake) {
-       display: none;
-       @include respond-to('desktop') {
-       display: block;
+       //display: none;
+       //@include respond-to('desktop') {
+       //display: block;
        z-index: 1;
-       width: 3.5rem;
-       height: 3.5rem;
+       width: 1.5rem;
+       height: 1.5rem;
        background-image: url("/images/ac_wheel_big_fg.svg");
        background-repeat: no-repeat;
        background-position: center;
-       background-size: 3rem;
+       background-size: contain;
        position: absolute;
+       @include respond-to('desktop') {
+         width: 2rem;
+         height: 2rem;
        }
+       //}
   }
 
 </style>

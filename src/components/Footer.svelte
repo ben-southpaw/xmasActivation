@@ -31,11 +31,12 @@
     </div>
     <div class="contact-container">
         <a class="ac-logo" href="https://acdc.adventureclub.io" target="_blank">&nbsp;</a>
-        <div class="social"></div>
+        <div class="social">
             <a class="tw" href="https://twitter.com/advclb" target="_blank">Tw</a>
             <a class="in" href="https://www.instagram.com/adventureclub.io" target="_blank">In</a>
             <a class="fb" href="https://www.facebook.com/advclb/" target="_blank">Fb</a>
             <a class="li" href="https://www.linkedin.com/company/adventureclub/" target="_blank">Li</a>
+        </div>
 
     </div>
 
@@ -183,15 +184,15 @@
           left: 2rem;
           top: 587.3rem;
           border-top: 1px solid #979797;
+          display: flex;
           @include respond-to("desktop") {
           width: 98rem;
           height: 7.6rem;
           left: 13.9rem;
           top: 167.8rem;
           }
-        }
-        .tw {
-                position: absolute;
+          .tw {
+
                 font-family: $bold_gilroy;
                 color: $font-white;
                 font-size: 1.1rem;
@@ -200,16 +201,14 @@
                 font-weight: 600;
                 text-align: right;
                 text-decoration: none;
-                left: 25.4rem;
-                top: 591rem;
+                margin-top: 3.5rem;
+                margin-left: 22rem;
           @include respond-to("desktop") {
-                right: 21.64%;
-                top: 98.57%;
-                bottom: 0.29%;
+                    margin-top: 5.5rem;
+                    margin-left: 85rem;
           }
             }
         .in {
-                position: absolute;
                 font-family: $bold_gilroy;
                 color: $font-white;
                 font-size: 1.1rem;
@@ -218,16 +217,14 @@
                 font-weight: 600;
                 text-align: right;
                 text-decoration: none;
-                left: 28.4rem;
-                top: 591rem;
+                margin-top: 3.5rem;
+                margin-left: 2rem;
           @include respond-to("desktop") {
-                right: 18.64%;
-                top: 98.57%;
-                bottom: 0.29%;
+                margin-top: 5.5rem;
+                margin-left: 2rem;
           }
             }
         .fb {
-                position: absolute;
                 font-family: $bold_gilroy;
                 color: $font-white;
                 font-size: 1.1rem;
@@ -236,16 +233,14 @@
                 font-weight: 600;
                 text-align: right;
                 text-decoration: none;
-                left: 31.4rem;
-                top: 591rem;
+                margin-top: 3.5rem;
+                margin-left: 2rem;
           @include respond-to("desktop") {
-                right: 15.64%;
-                top: 98.57%;
-                bottom: 0.29%;
+                margin-top: 5.5rem;
+                margin-left: 2rem;
           }
             }
         .li {
-                position: absolute;
                 font-family: $bold_gilroy;
                 color: $font-white;
                 font-size: 1.1rem;
@@ -253,14 +248,15 @@
                 height: 1.1rem;
                 text-align: right;
                 text-decoration: none;
-                left: 34.4rem;
-                top: 591rem;
+                margin-top: 3.5rem;
+                margin-left: 2rem;
           @include respond-to("desktop") {
-                right: 12.64%;
-                top: 98.57%;
-                bottom: 0.29%;
+                margin-top: 5.5rem;
+                margin-left: 2rem;
           }
             }
+        }
+
       }
 }
 </style>

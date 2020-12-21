@@ -177,6 +177,7 @@
 
     .cracker-container {
         .cracker-1 {
+          z-index: 2;
           position: absolute;
           width: 51.6rem;
           height: 33.4rem;
@@ -193,6 +194,7 @@
           }
         }
        .cracker-2 {
+          z-index: 2;
           position: absolute;
           width: 51.6rem;
           height: 33.4rem;
