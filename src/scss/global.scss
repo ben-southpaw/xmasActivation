@@ -15,6 +15,7 @@
 :global(*) {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -71,11 +72,11 @@
   font-size: 1.1rem;
   line-height: 1.1rem;
   text-transform: uppercase;
-  text-align: center;
-  width: 11rem;
+  text-align: right;
+  width: 15rem;
   height: 1.1rem;
   right: 2.5rem;
-  top: 2.7rem;
+  top: 2.8rem;
   @include respond-to("desktop") {
     width: 11rem;
     height: 1.1rem;

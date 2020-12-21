@@ -108,7 +108,7 @@
     </div>
 
     <div class="text-blocks">
-        <h1 class="text-three">vrolik</h1>
+        <h1 class="text-three">vrolijk</h1>
         <h1 class="text-four">kerstfeest</h1>
         <h1 class="text-five">buon</h1>
         <h1 class="text-six">natale</h1>
@@ -183,6 +183,11 @@
     @import '../scss/trees'; //height: 989.1rem;
 
     .transition-container {
+        width: 37.5rem;
+        overflow-x: hidden;
+        @include respond-to('desktop') {
+            width: 144rem;
+        }
       display: flex;
       pointer-events: none;
       opacity: 1;
@@ -257,6 +262,7 @@
     .personal-page__container {
         height: 1033rem;
         width: 37.5rem;
+        overflow-x: hidden;
         @include respond-to('desktop') {
             height: 989.1rem;
             width: 144rem;
