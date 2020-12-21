@@ -1,7 +1,4 @@
-<script !src="">
-    export let y;
-</script>
-<footer style="--scroll-y : {y};">
+<footer>
     <div class="text-container">
         <h1 class="footer-text__one">From all of us..</h1>
         <h1 class="footer-text__two">..to all of you.</h1>
@@ -121,7 +118,8 @@
           top: 395.3rem;
           @include respond-to("desktop") {
             width: unset;
-          font-size: 11rem; //12 on figma
+            overflow: initial;
+          font-size: 11rem;
           left: 15.22%;
           right: 15.14%;
           top: calc(50% - 13.6rem/2 - 71.6rem);

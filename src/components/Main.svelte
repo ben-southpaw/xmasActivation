@@ -108,7 +108,7 @@
     </div>
 
     <div class="text-blocks">
-        <h1 class="text-three">vrolik</h1>
+        <h1 class="text-three">vrolijk</h1>
         <h1 class="text-four">kerstfeest</h1>
         <h1 class="text-five">buon</h1>
         <h1 class="text-six">natale</h1>
@@ -257,6 +257,7 @@
     .personal-page__container {
         height: 1033rem;
         width: 37.5rem;
+        overflow-x: hidden;
         @include respond-to('desktop') {
             height: 989.1rem;
             width: 144rem;
@@ -275,10 +276,7 @@
       .footer-container {
         position: absolute;
         z-index: 2;
-        //width: 37.5rem;
-        //height: 201.7rem;
-        //left: 0;
-        //top: 391.3rem;
+        overflow: initial;
         @include respond-to('desktop') {
         width: 125.8rem;
         height: 175.4rem;
@@ -286,8 +284,6 @@
         top: 646.9rem;
         }
       }
-
-
 
       //Lights
       .lights {
