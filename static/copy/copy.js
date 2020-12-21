@@ -221,4 +221,92 @@ export const data = {
       },
     ],
   },
+  vice: {
+    name: "Vice",
+    lead_quote:
+      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
+    stat1: {
+      number: "2",
+      text: "Big projects worked on together this year",
+    },
+    stat2: {
+      number: "4",
+      text: "Product launches, more to come!",
+    },
+    stat3: {
+      number: "100%",
+      text: "Elevation of the UX for Acquisition and Enrichment",
+    },
+    stat4: {
+      number: "36",
+      text: "Case studies for Adidas Discovery",
+    },
+    members: [
+      {
+        id: "mathilde",
+        name: "Mathilde",
+        from: "Adventure Club",
+        personal_quote:
+          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+      },
+      {
+        id: "alice",
+        name: "Alice",
+        from: "Adventure Club",
+        personal_quote:
+          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+      },
+      {
+        id: "pascal",
+        name: "Pascal",
+        from: "Adventure Club",
+        personal_quote:
+          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+      },
+    ],
+  },
+  robot_kittens: {
+    name: "Vice",
+    lead_quote:
+      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
+    stat1: {
+      number: "2",
+      text: "Big projects worked on together this year",
+    },
+    stat2: {
+      number: "4",
+      text: "Product launches, more to come!",
+    },
+    stat3: {
+      number: "100%",
+      text: "Elevation of the UX for Acquisition and Enrichment",
+    },
+    stat4: {
+      number: "36",
+      text: "Case studies for Adidas Discovery",
+    },
+    members: [
+      {
+        id: "tijmen",
+        name: "Tijmen",
+        from: "Adventure Club",
+        personal_quote:
+          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+      },
+      {
+        id: "niels",
+        name: "Niels",
+        from: "Adventure Club",
+        personal_quote:
+          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+      },
+      {
+        id: "patrick",
+        name: "Patrick",
+        from: "Adventure Club",
+        personal_quote:
+          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+      },
+    ],
+  },
 };
