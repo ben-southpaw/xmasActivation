@@ -16,11 +16,15 @@
   }
 
   .blank-ornaments__2 {
-    position: absolute;
-    width: 22rem;
-    height: 63.4rem;
-    left: 73rem;
-    top: 494.8rem;
+    display: none;
+    @include respond-to("desktop") {
+      display: block;
+      position: absolute;
+      width: 22rem;
+      height: 63.4rem;
+      left: 73rem;
+      top: 494.8rem;
+    }
   }
 
   .blank-ornaments__xxx {

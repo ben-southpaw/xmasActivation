@@ -1,3 +1,5 @@
+import { BrowserUtils } from "../../static/js/utils/BrowserUtils.js";
+
 export default class Background {
   constructor(el) {
     this.el = el;
@@ -5,10 +7,10 @@ export default class Background {
     this.h = 0;
 
     this.total = 0;
-    this.rows = 0;
-    this.columns = 0;
-    this.xSpacing = 200;
-    this.ySpacing = 260;
+    this.rows = BrowserUtils.isMobile() ? 15 : 10;
+    this.columns = BrowserUtils.isMobile() ? 4 : 7;
+    this.xSpacing = 0;
+    this.ySpacing = 0;
 
     this.rotation = 0;
     this.gravity = 0;
@@ -22,8 +24,6 @@ export default class Background {
 
     window.addEventListener("resize", this.onResize.bind(this));
   }
-
-  createSnowflake() {}
 
   createSnowFlakes() {
     // this.snowflakes.forEach(obj => {
@@ -45,13 +45,13 @@ export default class Background {
     this.rotation += 1;
     this.gravity += 1;
     this.snowflakes.forEach((obj, index) => {
-      const x = obj.xIndex * this.xSpacing;
+      const x = obj.xIndex * this.xSpacing + this.xSpacing / 2;
 
       const yStart = -this.ySpacing / 2;
 
-      const yOffset = obj.xIndex * 100;
+      const yOffset = obj.xIndex * this.xSpacing * 0.4;
       let y = obj.yIndex * this.ySpacing + this.gravity + yOffset;
-      y -= this.ySpacing * (this.rows + 2);
+      y -= this.ySpacing * (this.rows + 1);
       y %= this.rows * this.ySpacing;
       y += yStart;
 
@@ -70,8 +70,9 @@ export default class Background {
     this.w = window.innerWidth;
     this.h = window.innerHeight;
 
-    this.columns = Math.ceil(this.w / this.xSpacing);
-    this.rows = Math.ceil(this.h / this.ySpacing);
+    this.xSpacing = this.w / this.columns;
+    this.ySpacing = this.xSpacing * 1.5;
+    // this.rows = Math.ceil(this.h / this.ySpacing);
     this.total = this.columns * this.rows;
   }
 }

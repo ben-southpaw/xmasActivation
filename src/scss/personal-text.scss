@@ -2,9 +2,9 @@
   font-family: $main_cako;
   color: $purple;
   font-weight: 900;
-  line-height: 4.4rem;
+  //line-height: 4.4rem;
   @include respond-to("desktop") {
-    line-height: 10.6rem;
+    //line-height: 10.6rem;
   }
 
   .text-one {
@@ -35,7 +35,6 @@
     font-size: 2.2rem;
     @include respond-to("desktop") {
       width: 60rem;
-      height: 10.4rem;
       left: 25rem;
       top: 56.2rem;
     }
@@ -91,6 +90,7 @@
     top: 213.7rem;
     left: 4.5rem;
     width: 17rem;
+    overflow: initial;
     @include respond-to("desktop") {
       font-size: 30rem;
       line-height: 28rem;

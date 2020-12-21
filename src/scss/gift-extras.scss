@@ -177,13 +177,13 @@
     @include respond-to("desktop") {
       display: block;
       position: absolute;
-      height: 4rem;
+      height: 5rem;
       top: 68rem;
       right: 15rem;
       font-family: $main_cako;
       text-transform: capitalize;
       font-size: 6.2rem;
-      line-height: 4rem;
+      line-height: 5rem;
     }
   }
 
