@@ -68,7 +68,7 @@
 <svelte:window bind:scrollY={y}/>
 {#if !visible}
 <main data-introAnimation="{introAnimation}">
-    <Background data-transitionactive="{transitionActive}" />
+    <Background />
     <div class="header">
         <div class="lights">
              <img class="nav-lights" src="/images/lights/lights_1.1.svg" data-active="{lightActive}" alt="lights" >
@@ -187,14 +187,15 @@
       display: flex;
       pointer-events: none;
       opacity: 1;
+      z-index: 100;
       transition: opacity 1s 3s $ease-out-sine;
       &[data-transitionactive="true"] {
           opacity: 0;
         }
     }
       .transition-one, .transition-two {
+        z-index: 100;
         position: fixed;
-        z-index: 3;
         height: 200vh;
         width: 200vh;
         border-radius: 50%;

@@ -24,13 +24,18 @@ onMount(async () => {
     pointer-events: none;
   }
      :global(.snowflake) {
-       width: 3.5rem;
-       height: 3.5rem;
+       display: none;
+       @include respond-to('desktop') {
+       display: block;
+       z-index: 1;
+       width: 1.5rem;
+       height: 1.5rem;
        background-image: url("/images/ac_wheel_big_fg.svg");
        background-repeat: no-repeat;
        background-position: center;
        background-size: 3rem;
        position: absolute;
+       }
   }
 
 </style>

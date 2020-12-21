@@ -31,7 +31,7 @@
         stat4 = companyData.stat4;
         members = companyData.members;
         foundName = members.find((member) => member.name.toLowerCase().includes(name));
-        console.log(companyData, 'found name');
+        console.log(foundName, 'found name');
         }
     );
 
@@ -135,7 +135,7 @@
         <img class="trees-four" src="/images/trees/horizontal_tree_triangles_2.svg" alt="treeFour">
     </div>
     <div class="gift-container">
-        <Gift {name} {compName} {foundName}/>
+        <Gift {compName} {name} {foundName}/>
     </div>
     <div class="footer-container">
         <Footer />
