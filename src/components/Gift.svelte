@@ -10,7 +10,7 @@
 
     export let name;
     export let foundName;
-    export let comp;
+    export let compName;
 
     let user = writable({
         address_1: '',
@@ -23,7 +23,7 @@
     <div class="text-container">
         <h1 class="text-gift">We have a<br> gift for you</h1>
         <h1 class="gift-name">{name}</h1>
-        <h1 class="gift-company">{comp}</h1>
+        <h1 class="gift-company">{compName}</h1>
         <p class="stamp-text">
             Thanks for all your hard work this year! Please provide us with your postal address and we'll
             have one of our elves, who may also work for postNL, deliver it to you.

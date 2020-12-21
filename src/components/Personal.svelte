@@ -11,6 +11,7 @@
     let name = '';
     let comp = '';
     var companyData = {};
+    var compName = '';
     var members = [];
     let foundName = {};
     let stat1 = '';
@@ -23,6 +24,7 @@
         name = urlSearch.get('name');
         comp = urlSearch.get('company');
         companyData = data[comp];
+        compName = companyData.name;
         stat1 = companyData.stat1;
         stat2 = companyData.stat2;
         stat3 = companyData.stat3;
@@ -133,7 +135,7 @@
         <img class="trees-four" src="/images/trees/horizontal_tree_triangles_2.svg" alt="treeFour">
     </div>
     <div class="gift-container">
-        <Gift {comp} {name} {foundName}/>
+        <Gift {compName} {name} {foundName}/>
     </div>
     <div class="footer-container">
         <Footer />
