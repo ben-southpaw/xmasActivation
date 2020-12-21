@@ -28,8 +28,8 @@ onMount(async () => {
        @include respond-to('desktop') {
        display: block;
        z-index: 1;
-       width: 1.5rem;
-       height: 1.5rem;
+       width: 3.5rem;
+       height: 3.5rem;
        background-image: url("/images/ac_wheel_big_fg.svg");
        background-repeat: no-repeat;
        background-position: center;

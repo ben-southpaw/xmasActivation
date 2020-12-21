@@ -1,0 +1,13 @@
+diff --git a/node_modules/@lottiefiles/svelte-lottie-player/src/components/LottiePlayer.svelte b/node_modules/@lottiefiles/svelte-lottie-player/src/components/LottiePlayer.svelte
+index d9ac64e..7da44c7 100644
+--- a/node_modules/@lottiefiles/svelte-lottie-player/src/components/LottiePlayer.svelte
++++ b/node_modules/@lottiefiles/svelte-lottie-player/src/components/LottiePlayer.svelte
+@@ -129,7 +129,7 @@
+     }
+ 
+     // Remove the attached Visibility API's change event listener.
+-    document.removeEventListener("visibilitychange", onVisibilityChange);
++    // document.removeEventListener("visibilitychange", onVisibilityChange);
+   });
+ 
+   /**
