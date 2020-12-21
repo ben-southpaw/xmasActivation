@@ -40,10 +40,7 @@
 
 :global(body) {
   background-color: $primary-bg;
-  overflow-x: hidden;
 }
-
-//For dynamically changing colours via JS
 
 //Globally used styles
 
@@ -78,7 +75,6 @@
   right: 2.5rem;
   top: 2.8rem;
   @include respond-to("desktop") {
-    width: 11rem;
     height: 1.1rem;
     right: 2rem;
     top: 4.1rem;

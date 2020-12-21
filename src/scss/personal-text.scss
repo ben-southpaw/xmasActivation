@@ -4,7 +4,6 @@
   font-weight: 900;
   line-height: 4.4rem;
   @include respond-to("desktop") {
-    height: 10.6rem;
     line-height: 10.6rem;
   }
 
