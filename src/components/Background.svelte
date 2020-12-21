@@ -4,9 +4,6 @@
     let root;
 
 onMount(async () => {
-    // window.addEventListener('resize')
-    // console.log(root);
-
   const bg = new Background(root)
 });
 
@@ -25,7 +22,6 @@ onMount(async () => {
     height: 100%;
     z-index: 1;
     pointer-events: none;
-    display: none; //undo when bg is needed
   }
      :global(.snowflake) {
        width: 3.5rem;

@@ -53,11 +53,12 @@
     line-height: 25.1rem;
     color: $violet;
     top: 120rem;
-    left: 9.5rem;
+    left: 5rem;
+    width: 27rem;
     @include respond-to("desktop") {
-      font-size: 30rem;
-      line-height: 36rem;
-      top: 114.5rem;
+      font-size: 23rem;
+      line-height: 25rem;
+      top: 116.5rem;
       left: 11.4rem;
     }
   }
@@ -89,12 +90,14 @@
     line-height: 13.4rem;
     color: $mid-blue;
     top: 213.7rem;
-    left: 6.5rem;
+    left: 4.5rem;
+    width: 17rem;
     @include respond-to("desktop") {
       font-size: 30rem;
       line-height: 28rem;
       top: 193.6rem;
-      left: 82.5rem;
+      left: 80rem;
+      width: 32rem;
     }
   }
   .stats-text-2 {
@@ -103,9 +106,9 @@
     font-size: 2rem;
     line-height: 2.2rem;
     color: $font-white;
-    width: 25.6rem;
+    width: 20rem;
     top: 226.1rem;
-    left: 0.5rem;
+    left: 3rem;
     @include respond-to("desktop") {
       top: 221.1rem;
       left: 83.2rem;
@@ -123,7 +126,7 @@
     line-height: 10rem;
     color: $purple;
     top: 306.5rem;
-    left: 5rem;
+    left: 2rem;
     transform: rotate(9deg);
     @include respond-to("desktop") {
       top: 298rem;
@@ -134,19 +137,22 @@
   }
   .stats-text-3 {
     position: absolute;
-    left: 19rem;
+    left: 20rem;
     top: 311rem;
     z-index: 1;
     font-family: $main_gilroy;
-    font-size: 2rem;
+    font-size: 1.5rem;
     height: 7rem;
     width: 15rem;
     color: $font-white;
     transform: rotate(9deg); //TBC
     @include respond-to("desktop") {
-      width: 27.2rem;
-      left: 80.3rem;
-      top: 310.4rem;
+      display: flex;
+      align-items: center;
+      height: 22rem;
+      width: 28.2rem;
+      left: 85.3rem;
+      top: 307.4rem;
       font-size: 4rem;
       line-height: 4.7rem;
     }

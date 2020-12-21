@@ -5,6 +5,8 @@
     // import dotenv from 'dotenv';
     // dotenv.config();
     // var formspree = process.env.FORMSPREE;
+   //https://formspree.io/f/xeqpryyj
+
 
     export let name;
     export let foundName;
@@ -19,12 +21,12 @@
 
 <section>
     <div class="text-container">
-        <h1 class="text-gift">Lorem ipsum <br> gift for you</h1>
+        <h1 class="text-gift">We have a<br> gift for you</h1>
         <h1 class="gift-name">{name}</h1>
         <h1 class="gift-company">{comp}</h1>
         <p class="stamp-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Thanks for all your hard work this year! Please provide us with your postal address and we'll
+            have one of our elves, who may also work for postNL, deliver it to you.
         </p>
     </div>
     <div class="images-container">
@@ -50,6 +52,7 @@
         <form action="" method="POST">
                     <input class="input-box_address_1" type="text" placeholder="address" bind:value={$user.address_1} name="address_1"/>
                     <input class="input-box_address_2" type="text" placeholder="postcode" bind:value={$user.address_2} name="address_1" />
+                    <input type="hidden" name="sender" value={foundName.name}>
                     <button class="input-box_address_submit" type="submit">Submit address</button>
         </form>
 

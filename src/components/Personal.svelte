@@ -1,4 +1,5 @@
 <script>
+    import Background from "./Background.svelte";
     import StarOne from "./StarOne.svelte";
     import Tree from "./Tree.svelte";
     import Gift from "./Gift.svelte";
@@ -32,7 +33,7 @@
         }
     );
 
-        //lights animating
+    //lights animating
     let x = 1;
     let isActive = false;
     setInterval(() => {
@@ -42,6 +43,7 @@
 </script>
 
 <section class="personal-container">
+    <Background />
     <div class="personal-header">
         <a class="nav-ac" href="https://acdc.adventureclub.io" target="_blank">&nbsp;</a>
         <p class="nav-text">Merry Christmas</p>
@@ -62,14 +64,17 @@
 
     <div class="personal-text-blocks">
     <h1 class="text-one">Merry Christmas, <br> {name}</h1>
-        <p class="text-two">Lorem ipsum not sure what this extra quote is for</p>
+        <p class="text-two">After a somewhat diabolical year for all of us,
+        its time to look back at some of the highlights of the past twelve months. At least we had each other right?
+            Lets get a bit more merry and see what we achieved together this year!
+        </p>
 
     </div>
 
     <div class="cracker-container">
         <div class="personal-note"></div>
         <p class="personal-quote">{foundName.personal_quote}</p>
-        <p class="from-text">Love, Andre Taris</p>
+        <p class="from-text">Love, {foundName.from}</p>
         <img class="cracker-1" src="/images/cracker_1.svg" alt="cracker1">
         <img class="cracker-2" src="/images/cracker_2.svg" alt="cracker2">
     </div>
@@ -246,8 +251,8 @@
             right: 46.8rem;
             top: 552.3rem;
             opacity: 0;
-            -webkit-transition: opacity .5s ease-out;
-            transition: opacity .5s ease-out;
+            -webkit-transition: opacity .5s $ease-in-sine;
+            transition: opacity .5s $ease-in-sine;
           }
           }
         .from-text {
@@ -261,12 +266,12 @@
             width: 15rem;
             height: 4.8rem;
             left: 11.5rem;
-            top: 596rem;
+            top: 592rem;
           @include respond-to("desktop") {
           width: 20rem;
             height: 1.9rem;
             left: 62rem;
-            top: 566rem;
+            top: 564rem;
             opacity: 0;
             -webkit-transition: opacity .5s ease-out;
             transition: opacity .5s ease-out;

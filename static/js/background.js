@@ -8,7 +8,7 @@ export default class Background {
     this.rows = 0;
     this.columns = 0;
     this.xSpacing = 200;
-    this.ySpacing = 220;
+    this.ySpacing = 260;
 
     this.rotation = 0;
     this.gravity = 0;
@@ -39,8 +39,6 @@ export default class Background {
       const obj = { el, xIndex, yIndex };
       this.snowflakes.push(obj);
     }
-
-    // console.log(this.snowflakes);
   }
 
   updateSnowFlakes() {
@@ -75,7 +73,5 @@ export default class Background {
     this.columns = Math.ceil(this.w / this.xSpacing);
     this.rows = Math.ceil(this.h / this.ySpacing);
     this.total = this.columns * this.rows;
-
-    // console.log(this.columns, this.rows, this.total);
   }
 }

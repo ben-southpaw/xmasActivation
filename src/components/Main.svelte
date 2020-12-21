@@ -68,7 +68,7 @@
 <svelte:window bind:scrollY={y}/>
 {#if !visible}
 <main data-introAnimation="{introAnimation}">
-    <Background />
+    <Background data-transitionactive="{transitionActive}" />
     <div class="header">
         <div class="lights">
              <img class="nav-lights" src="/images/lights/lights_1.1.svg" data-active="{lightActive}" alt="lights" >
@@ -78,14 +78,18 @@
         <a class="nav-ac" href="https://acdc.adventureclub.io" target="_blank">&nbsp;</a>
         <p class="nav-text">Merry Christmas</p>
         <h1 class="text-one">
+            {#if companyData.name}
             <span class="text-one-inner">Hey, you beautiful<br> people at {companyData.name}, <br>Merry Christmas!</span>
+            {:else}
+            <span class="text-one-inner">Hey, you beautiful people<br>, <br>Merry Christmas!</span>
+            {/if}
         </h1>
 
         <p class="text-two">{companyData.lead_quote}</p>
     </div>
 
     <div class="blank-ornaments">
-        <img class="blank-ornaments__1" src="/images/ornaments/ornament_round.svg" alt="ornament-one">
+        <img class="blank-ornaments__1 swing" src="/images/ornaments/ornament_round.svg" alt="ornament-one">
         <img class="blank-ornaments__2" src="/images/ornaments/ornament_round_2.svg" alt="ornament-two">
         <img class="blank-ornaments__xxx" src="/images/ornaments/ornament_xxx.svg" alt="ornament-xxx">
     </div>
