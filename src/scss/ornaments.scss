@@ -1,0 +1,188 @@
+//Blank Ornament
+.blank-ornaments {
+  .blank-ornaments__1 {
+    position: absolute;
+    width: 11rem;
+    height: 50.8rem;
+    left: 2.1rem;
+    top: 300.2rem;
+    z-index: 1;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 63.4rem;
+      left: 25.3rem;
+      top: 459.1rem;
+    }
+  }
+
+  .blank-ornaments__2 {
+    position: absolute;
+    width: 22rem;
+    height: 63.4rem;
+    left: 73rem;
+    top: 494.8rem;
+  }
+
+  .blank-ornaments__xxx {
+    position: absolute;
+    width: 11rem;
+    height: 50rem;
+    left: 24.3rem;
+    top: 181.7rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 48rem;
+      left: 49rem;
+      top: 283.3rem;
+    }
+  }
+}
+
+//Name Ornament Class
+.name-ornaments {
+  > * {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 31.7rem;
+    width: 11rem;
+  }
+  .name-ornaments__1-1 {
+    position: absolute;
+    left: 2.1rem;
+    top: 333rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 63.4rem;
+      left: 1rem;
+      top: 435.9rem;
+    }
+  }
+
+  .name-ornaments__1-3 {
+    position: absolute;
+    left: 13.3rem;
+    top: 140.7rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 63.4rem;
+      left: 97rem;
+      top: 215rem;
+    }
+  }
+
+  .name-ornaments__1-5 {
+    position: absolute;
+    left: 13.3rem;
+    top: 238.6rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 63.4rem;
+      left: 26rem;
+      top: 307rem;
+    }
+  }
+
+  .name-ornaments__2-2 {
+    position: absolute;
+    left: 2rem;
+    top: 83.2rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 63.4rem;
+      left: 24.9rem;
+      top: 93.6rem;
+    }
+  }
+
+  .name-ornaments__2-4 {
+    position: absolute;
+    left: 24.6rem;
+    top: 291rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 63.4rem;
+      left: 73rem;
+      top: 325rem;
+    }
+  }
+
+  .name-ornaments__2-6 {
+    position: absolute;
+    left: 2rem;
+    top: 220.9rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 63.4rem;
+      left: 1rem;
+      top: 243.9rem;
+    }
+  }
+
+  .name-ornaments__3-2 {
+    position: absolute;
+    left: 13.3rem;
+    top: 300rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 63.4rem;
+      left: 97rem;
+      top: 378.4rem;
+    }
+  }
+
+  .name-ornaments__3-4 {
+    position: absolute;
+    left: 13.3rem;
+    top: 87.1rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 63.4rem;
+      left: 48.9rem;
+      top: 125.3rem;
+    }
+  }
+
+  .name-ornaments__4-1 {
+    position: absolute;
+    left: 24.6rem;
+    top: 140.8rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 63.4rem;
+      left: 120.9rem;
+      top: 188.8rem;
+    }
+  }
+
+  .client {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: $main_cako;
+    line-height: 1.7rem;
+    color: $font-white;
+    font-size: 1.5rem;
+    width: 9.5rem;
+    height: 3.4rem;
+    bottom: 2.8rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    @include respond-to("desktop") {
+      font-size: 3rem;
+      line-height: 3.4rem;
+      width: 19rem;
+      height: 6.8rem;
+      bottom: 5rem;
+    }
+
+    &.isActive {
+      cursor: pointer;
+      pointer-events: auto;
+    }
+  }
+  .client.isActive {
+  }
+}

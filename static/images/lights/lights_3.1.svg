@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="261px" height="61px" viewBox="0 0 261 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>lights_3.1</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lights_3.1" transform="translate(0.000000, 1.000000)">
+            <g id="light-copy-19" transform="translate(60.000000, 0.000000)">
+                <path d="M12.8,4 L8.6248,4 C8.6248,4 0,13.1052 0,26.0064 C0,44.1752 8.1572,55.1228 12.8,60 C17.4428,55.1228 25.6,44.1752 25.6,26.0064 C25.6,13.1052 16.9752,4 16.9752,4 L12.8,4 Z" id="Stroke-1" fill="#B79A52"></path>
+                <path d="M19.6,0.0004 L12.8,0 L6,0.0004 L6,2.458 C6,5.9604 9.0444,8.8 12.8,8.8 C16.5556,8.8 19.6,5.9604 19.6,2.458 L19.6,0.0004 Z" id="Fill-3" fill="#9DB2F6"></path>
+            </g>
+            <g id="light-copy-20" transform="translate(175.000000, 0.000000)">
+                <path d="M12.8,4 L8.6248,4 C8.6248,4 0,13.1052 0,26.0064 C0,44.1752 8.1572,55.1228 12.8,60 C17.4428,55.1228 25.6,44.1752 25.6,26.0064 C25.6,13.1052 16.9752,4 16.9752,4 L12.8,4 Z" id="Stroke-1" fill="#6685E8"></path>
+                <path d="M19.6,0.0004 L12.8,0 L6,0.0004 L6,2.458 C6,5.9604 9.0444,8.8 12.8,8.8 C16.5556,8.8 19.6,5.9604 19.6,2.458 L19.6,0.0004 Z" id="Fill-3" fill="#9DB2F6"></path>
+            </g>
+            <line x1="0" y1="0" x2="260" y2="1" id="Path" stroke="#9DB2F6" stroke-width="2"></line>
+        </g>
+    </g>
+</svg>

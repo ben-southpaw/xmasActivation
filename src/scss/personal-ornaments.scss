@@ -1,0 +1,101 @@
+.name-ornaments {
+  .name-ornaments__2-4 {
+    position: absolute;
+    width: 11rem;
+    height: 26.2rem;
+    left: 18.6rem;
+    top: 61.1rem;
+    -webkit-animation: slide-bottom 1.5s cubic-bezier(0.47, 0, 0.745, 0.715)
+      both;
+    animation: slide-bottom 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 72.5rem;
+      left: 109rem;
+      top: -5rem;
+    }
+  }
+}
+.blank-ornaments {
+  .blank-ornaments__1 {
+    position: absolute;
+    width: 22rem;
+    height: 35.6rem;
+    left: 13.3rem;
+    top: 148.1rem;
+    @include respond-to("desktop") {
+      height: 63.4rem;
+      left: 37rem;
+      top: 145.6rem;
+    }
+  }
+  .blank-ornaments__2 {
+    position: absolute;
+    width: 22rem;
+    height: 35.6rem;
+    left: 7.6rem;
+    top: 236.2rem;
+    -webkit-animation: slide-bottom 2s infinite
+      cubic-bezier(0.47, 0, 0.745, 0.715) both alternate;
+    animation: slide-bottom 2s infinite cubic-bezier(0.47, 0, 0.745, 0.715) both
+      alternate;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 63.4rem;
+      left: 85rem;
+      top: 211.9rem;
+    }
+  }
+  .blank-ornaments__3 {
+    position: absolute;
+    width: 22rem;
+    height: 35.6rem;
+    left: 2rem;
+    top: 315rem;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 63.4rem;
+      left: 25rem;
+      top: 300rem;
+    }
+  }
+  .blank-ornaments__4 {
+    position: absolute;
+    width: 22rem;
+    height: 35.6rem;
+    left: 7.7rem;
+    top: 468.5rem;
+    -webkit-animation: slide-bottom 2s infinite
+      cubic-bezier(0.47, 0, 0.745, 0.715) both alternate;
+    animation: slide-bottom 2s infinite cubic-bezier(0.47, 0, 0.745, 0.715) both
+      alternate;
+    @include respond-to("desktop") {
+      width: 22rem;
+      height: 63.4rem;
+      left: 37rem;
+      top: 440.5rem;
+    }
+  }
+  .blank-ornaments__5 {
+    display: none;
+    @include respond-to("desktop") {
+      display: block;
+      position: absolute;
+      width: 22rem;
+      height: 65.5rem;
+      left: 85rem;
+      top: 462.5rem;
+    }
+  }
+
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-15rem);
+      transform: translateY(-15rem);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+}

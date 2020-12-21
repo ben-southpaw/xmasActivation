@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="222px" height="635px" viewBox="0 0 222 635" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ornament_name_3.2</title>
+    <defs>
+        <path d="M219.784183,523.970211 C219.784183,584.662324 170.583197,633.86331 109.892634,633.86331 C49.2005211,633.86331 -0.000464788732,584.662324 -0.000464788732,523.970211 C-0.000464788732,463.278099 49.2005211,414.078662 109.892634,414.078662 C170.583197,414.078662 219.784183,463.278099 219.784183,523.970211 Z" id="path-1"></path>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ornament_name_3.2" transform="translate(1.000000, 0.000000)">
+            <polyline id="Stroke-3" stroke="#6685E8" stroke-width="2" fill="#6685E8" points="78.911831 418.594704 78.911831 395.403296 140.872817 395.403296 140.872817 418.594704"></polyline>
+            <path d="M98.0434648,395.402986 C97.662338,394.210028 97.457831,392.939606 97.457831,391.619606 C97.457831,384.751577 103.024451,379.184958 109.892479,379.184958 C116.758958,379.184958 122.327127,384.751577 122.327127,391.619606 C122.327127,392.939606 122.12107,394.210028 121.739944,395.402986" id="Stroke-5" stroke="#6685E8" stroke-width="2"></path>
+            <line x1="109.892479" y1="379.185268" x2="110" y2="4.05009034e-13" id="Stroke-7" stroke="#6685E8" stroke-width="2"></line>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Stroke-1" stroke="#6685E8" stroke-width="2" fill="#9DB2F6" xlink:href="#path-1"></use>
+            <g id="top" mask="url(#mask-2)" fill="#6685E8">
+                <g transform="translate(2.000000, 413.000000)">
+                    <polygon id="Triangle" transform="translate(21.500000, 47.000000) scale(1, -1) translate(-21.500000, -47.000000) " points="21.5 31 43 63 0 63"></polygon>
+                    <polygon id="Triangle-Copy-8" transform="translate(43.500000, 16.000000) scale(1, -1) translate(-43.500000, -16.000000) " points="43.5 0 65 32 22 32"></polygon>
+                    <polygon id="Triangle-Copy-5" transform="translate(107.500000, 47.000000) scale(1, -1) translate(-107.500000, -47.000000) " points="107.5 31 129 63 86 63"></polygon>
+                    <polygon id="Triangle-Copy-9" transform="translate(129.500000, 16.000000) scale(1, -1) translate(-129.500000, -16.000000) " points="129.5 0 151 32 108 32"></polygon>
+                    <polygon id="Triangle-Copy-4" transform="translate(64.500000, 47.000000) scale(1, -1) translate(-64.500000, -47.000000) " points="64.5 31 86 63 43 63"></polygon>
+                    <polygon id="Triangle-Copy-10" transform="translate(86.500000, 16.000000) scale(1, -1) translate(-86.500000, -16.000000) " points="86.5 0 108 32 65 32"></polygon>
+                    <polygon id="Triangle-Copy-6" transform="translate(150.500000, 47.000000) scale(1, -1) translate(-150.500000, -47.000000) " points="150.5 31 172 63 129 63"></polygon>
+                    <polygon id="Triangle-Copy-11" transform="translate(172.500000, 16.000000) scale(1, -1) translate(-172.500000, -16.000000) " points="172.5 0 194 32 151 32"></polygon>
+                    <polygon id="Triangle-Copy-7" transform="translate(193.500000, 47.000000) scale(1, -1) translate(-193.500000, -47.000000) " points="193.5 31 215 63 172 63"></polygon>
+                    <polygon id="Triangle-Copy-12" transform="translate(215.500000, 16.000000) scale(1, -1) translate(-215.500000, -16.000000) " points="215.5 0 237 32 194 32"></polygon>
+                </g>
+            </g>
+            <g id="bott" mask="url(#mask-2)" fill="#6685E8">
+                <g transform="translate(120.500000, 603.500000) scale(1, -1) translate(-120.500000, -603.500000) translate(2.000000, 572.000000)">
+                    <polygon id="Triangle" transform="translate(21.500000, 47.000000) scale(1, -1) translate(-21.500000, -47.000000) " points="21.5 31 43 63 0 63"></polygon>
+                    <polygon id="Triangle-Copy-8" transform="translate(43.500000, 16.000000) scale(1, -1) translate(-43.500000, -16.000000) " points="43.5 0 65 32 22 32"></polygon>
+                    <polygon id="Triangle-Copy-5" transform="translate(107.500000, 47.000000) scale(1, -1) translate(-107.500000, -47.000000) " points="107.5 31 129 63 86 63"></polygon>
+                    <polygon id="Triangle-Copy-9" transform="translate(129.500000, 16.000000) scale(1, -1) translate(-129.500000, -16.000000) " points="129.5 0 151 32 108 32"></polygon>
+                    <polygon id="Triangle-Copy-4" transform="translate(64.500000, 47.000000) scale(1, -1) translate(-64.500000, -47.000000) " points="64.5 31 86 63 43 63"></polygon>
+                    <polygon id="Triangle-Copy-10" transform="translate(86.500000, 16.000000) scale(1, -1) translate(-86.500000, -16.000000) " points="86.5 0 108 32 65 32"></polygon>
+                    <polygon id="Triangle-Copy-6" transform="translate(150.500000, 47.000000) scale(1, -1) translate(-150.500000, -47.000000) " points="150.5 31 172 63 129 63"></polygon>
+                    <polygon id="Triangle-Copy-11" transform="translate(172.500000, 16.000000) scale(1, -1) translate(-172.500000, -16.000000) " points="172.5 0 194 32 151 32"></polygon>
+                    <polygon id="Triangle-Copy-7" transform="translate(193.500000, 47.000000) scale(1, -1) translate(-193.500000, -47.000000) " points="193.5 31 215 63 172 63"></polygon>
+                    <polygon id="Triangle-Copy-12" transform="translate(215.500000, 16.000000) scale(1, -1) translate(-215.500000, -16.000000) " points="215.5 0 237 32 194 32"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

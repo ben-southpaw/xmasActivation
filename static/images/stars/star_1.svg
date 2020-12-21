@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="110px" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>star</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Start" transform="translate(-120.000000, -3862.000000)" stroke="#B79A52" stroke-width="2">
+            <g id="star" transform="translate(120.000000, 3862.000000)">
+                <line x1="54.7608171" y1="0.170463415" x2="54.7608171" y2="109.691561" id="Stroke-1"></line>
+                <line x1="93.4824939" y1="16.2094024" x2="16.0391402" y2="93.6527561" id="Stroke-4"></line>
+                <line x1="109.521433" y1="54.9313476" x2="-0.000335365854" y2="54.9313476" id="Stroke-5"></line>
+                <line x1="93.4824939" y1="93.6530244" x2="16.0391402" y2="16.2096707" id="Stroke-8"></line>
+            </g>
+        </g>
+    </g>
+</svg>

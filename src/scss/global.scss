@@ -1,95 +1,132 @@
 // global.scss
 @import "./theme.scss";
 //global values
-@import "config/normalize";
-
-//fonts
-@import 'base/fonts';
+@import "normalize";
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-
-//optional
-body::-webkit-scrollbar {
+:global(body::-webkit-scrollbar) {
   display: none;
 }
 
-* {
+::-webkit-scrollbar {
+  display: none;
+}
+
+:global(*) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
- //Uncomment where needed
-
-body {
-  background-color: #000;
 }
 
-//For dynamically changing colours via JS
-#sapper{
-  //--beige : #{$beige-main};
-  //--blue : #{$blue-font};
-  //--gold : #{$gold-light};
-  //--grey : #{$grey-main};
-
-  --mobile : 1;
-  @include respond-to('desktop') {
-    --mobile : 0;
+:root {
+  background: $primary-bg;
+  --base-fontsize: 10 !important;
+  --base-design-width: 375;
+  @include respond-to("desktop") {
+    --base-fontsize: 10 !important;
+    --base-design-width: 1440; //Desktop width
   }
 }
 
+:global(html) {
+  /*Base font size based of viewport width (1920px) for using rems*/
+  font-size: calc(var(--base-fontsize) / var(--base-design-width) * 100vw);
+  //font-size: 10px;
+  margin: 0;
+}
 
-//Font face, add fonts here, < 10 preferable. Can be used as mixins. Gilroy is standard AC font.
+:global(body) {
+  background-color: $primary-bg;
+  overflow-x: hidden;
+}
 
+//For dynamically changing colours via JS
+
+//Globally used styles
+
+.nav-ac {
+  position: absolute;
+  background-image: url(/images/ac-logo.svg);
+  background-repeat: no-repeat;
+  width: 11rem;
+  height: 1.7rem;
+  left: 2rem;
+  top: 2.4rem;
+  background-size: 11rem;
+  @include respond-to("desktop") {
+    width: 11rem;
+    height: 1.7rem;
+    left: 1rem;
+    top: 4rem;
+    background-size: 11rem;
+  }
+}
+.nav-text {
+  position: absolute;
+  color: $font-white;
+  font-family: $bold_gilroy;
+  font-weight: 900;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 11rem;
+  height: 1.1rem;
+  right: 2.5rem;
+  top: 2.7rem;
+  @include respond-to("desktop") {
+    width: 11rem;
+    height: 1.1rem;
+    right: 2rem;
+    top: 4.1rem;
+  }
+}
+
+.swing {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  @for $i from 1 through 16 {
+    &:nth-child(#{$i}) {
+      animation-delay: random() + s;
+    }
+  }
+}
+.swing:after {
+  transform: rotate(45deg);
+}
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+//Font face, add fonts here, < 10 preferable. Can be used as mixins..
 @font-face {
-  font-family: 'Gilroy Regular';
-  src: url('../fonts/Gilroy-Regular.woff') format('woff'),
-  url('../fonts/Gilroy-Regular.woff2') format('woff2'),
-  url('../fonts/Gilroy-Regular.otf') format('otf');
-  font-weight: 800;
+  font-family: "Cako Black";
+  src: url("../fonts/Cako Black.otf") format("opentype");
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy Medium';
-  src: url('../fonts/Gilroy-Medium.woff') format('woff'),
-  url('../fonts/Gilroy-Medium.woff2') format('woff2'),
-  url('../fonts/Gilroy-Medium.otf') format('otf');
-  font-weight: 800;
+  font-family: "Gilroy Regular";
+  src: url("../fonts/Gilroy-Regular.woff") format("woff"),
+    url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy-Regular.otf") format("opentype");
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy Semibold';
-  src: url('../fonts/Gilroy-Semibold.woff') format('woff'),
-  url('../fonts/Gilroy-Semibold.otf') format('otf'),
-  url('./fonts/Gilroy-Semibold.ttf') format('ttf');
-  font-weight: 800;
+  font-family: "Gilroy Semibold";
+  src: url("../fonts/Gilroy-Semibold.woff") format("woff"),
+    url("../fonts/Gilroy-Semibold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Semibold.otf") format("opentype");
+  font-weight: 500;
   font-style: normal;
 }
-
-@font-face {
-  font-family: 'Gilroy Bold';
-  src: url('../fonts/Gilroy-Bold.woff') format('woff'),
-  url('../fonts/Gilroy-Bold.woff2') format('woff2'),
-  url('../fonts/Gilroy-Bold.otf') format('otf');
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy Extrabold Italic';
-  src: url('../fonts/Gilroy-ExtraboldItalic.woff') format('woff'),
-  url('../fonts/Gilroy-ExtraboldItalic.woff2') format('woff2'),
-  url('../fonts/Gilroy-ExtraboldItalic.otf') format('otf');
-  font-weight: 800;
-  font-style: italic;
-}
-
-
-
-
-
-
-
-
-

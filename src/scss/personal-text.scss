@@ -1,0 +1,200 @@
+.personal-text-blocks {
+  font-family: $main_cako;
+  color: $purple;
+  font-weight: 900;
+  line-height: 4.4rem;
+  @include respond-to("desktop") {
+    height: 10.6rem;
+    line-height: 10.6rem;
+  }
+
+  .text-one {
+    position: absolute;
+    width: 36rem;
+    height: 9.4rem;
+    left: 2rem;
+    top: 26rem;
+    font-size: 3.6rem;
+    text-transform: capitalize;
+    @include respond-to("desktop") {
+      width: 90.5rem;
+      height: 22.8rem;
+      left: 23rem;
+      top: 31.2rem;
+      font-size: 9rem;
+    }
+  }
+  .text-two {
+    position: absolute;
+    width: 33.4rem;
+    height: 19.1rem;
+    left: 2rem;
+    top: 36.5rem;
+    font-family: $main_gilroy;
+    color: $font-white;
+    line-height: 3.6rem;
+    font-size: 2.2rem;
+    @include respond-to("desktop") {
+      width: 60rem;
+      height: 10.4rem;
+      left: 25rem;
+      top: 56.2rem;
+    }
+  }
+}
+
+.stats-text {
+  text-align: center;
+  .stats-1 {
+    position: absolute;
+    font-family: $main_cako;
+    font-weight: 900;
+    font-size: 20rem;
+    line-height: 25.1rem;
+    color: $violet;
+    top: 120rem;
+    left: 5rem;
+    width: 27rem;
+    @include respond-to("desktop") {
+      font-size: 23rem;
+      line-height: 25rem;
+      top: 116.5rem;
+      left: 11.4rem;
+    }
+  }
+  .stats-text-1 {
+    position: absolute;
+    font-family: $main_gilroy;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: $font-white;
+    width: 21rem;
+    height: 6.6rem;
+    top: 144.1rem;
+    left: 8.1rem;
+    @include respond-to("desktop") {
+      font-size: 3rem;
+      line-height: 4.7rem;
+      color: $font-white;
+      width: 30.4rem;
+      height: 9.4rem;
+      top: 146rem;
+      left: 9.8rem;
+    }
+  }
+  .stats-2 {
+    position: absolute;
+    font-family: $main_cako;
+    font-weight: 900;
+    font-size: 14.4rem;
+    line-height: 13.4rem;
+    color: $mid-blue;
+    top: 213.7rem;
+    left: 4.5rem;
+    width: 17rem;
+    @include respond-to("desktop") {
+      font-size: 30rem;
+      line-height: 28rem;
+      top: 193.6rem;
+      left: 80rem;
+      width: 32rem;
+    }
+  }
+  .stats-text-2 {
+    position: absolute;
+    font-family: $main_gilroy;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    color: $font-white;
+    width: 20rem;
+    top: 226.1rem;
+    left: 3rem;
+    @include respond-to("desktop") {
+      top: 221.1rem;
+      left: 83.2rem;
+      font-size: 3rem;
+      line-height: 3.7rem;
+      width: 25.6rem;
+      height: 3.7rem;
+    }
+  }
+  .stats-3 {
+    position: absolute;
+    font-family: $main_cako;
+    font-weight: 900;
+    font-size: 8rem;
+    line-height: 10rem;
+    color: $purple;
+    top: 306.5rem;
+    left: 2rem;
+    transform: rotate(9deg);
+    @include respond-to("desktop") {
+      top: 298rem;
+      left: 33rem;
+      font-size: 20rem;
+      line-height: 24rem;
+    }
+  }
+  .stats-text-3 {
+    position: absolute;
+    left: 20rem;
+    top: 311rem;
+    z-index: 1;
+    font-family: $main_gilroy;
+    font-size: 1.5rem;
+    height: 7rem;
+    width: 15rem;
+    color: $font-white;
+    transform: rotate(9deg); //TBC
+    @include respond-to("desktop") {
+      display: flex;
+      align-items: center;
+      height: 22rem;
+      width: 28.2rem;
+      left: 85.3rem;
+      top: 307.4rem;
+      font-size: 4rem;
+      line-height: 4.7rem;
+    }
+  }
+  .stats-4 {
+    position: absolute;
+    width: 15.8rem;
+    height: 12.2rem;
+    font-family: $main_cako;
+    font-size: 10.1rem;
+    line-height: 12.2rem;
+    color: $font-white;
+    left: 10.8rem;
+    top: 402rem;
+    @include respond-to("desktop") {
+      width: 21.7rem;
+      height: 16.8rem;
+      font-size: 12rem;
+      line-height: 16.8rem;
+      left: 37rem;
+      top: 422rem;
+    }
+  }
+  .stats-text-4 {
+    position: absolute;
+    width: 20rem;
+    height: 7.5rem;
+    left: 8.8rem;
+    top: 444rem;
+    z-index: 1;
+    font-family: $main_gilroy;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: $font-white;
+    @include respond-to("desktop") {
+      width: 33.5rem;
+      height: 10.2rem;
+      left: 79.3rem;
+      top: 455rem;
+      font-size: 2rem;
+      line-height: 3.4rem;
+    }
+  }
+}

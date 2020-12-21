@@ -1,11 +1,9 @@
-//variables all go in here...
-
 //----------------------------BREAKPOINTS---------------------------
 
 $breakpoints: (
-        'min': 375px,
-        'desktop': 767px,
-        'max': 1200px
+  "min": 375px,
+  "desktop": 767px,
+  "max": 1200px,
 ) !default;
 
 @mixin respond-to($breakpoint) {
@@ -16,7 +14,7 @@ $breakpoints: (
       @content;
     }
   }
-    // If the key doesn't exist in the map
+  // If the key doesn't exist in the map
   @else {
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
         + "Available breakpoints are: #{map-keys($breakpoints)}.";
@@ -30,32 +28,64 @@ $article-max: 1400px;
 $screen-width: 100vw;
 
 //------------------cookiewall-------------------------
-$small: '(max-width: 736px)';
-
+$small: "(max-width: 736px)";
 
 //-----------------------COLOURS------------------------------
 
-// Legacy
 /* Primary colors */
-$th-blue: #00174f;
-$th-red: #cc0c2f;
-$BLUE_TRANSPARENT: rgba(0, 23, 79, 0.9);
-$TOMMY_BLUE: $th-blue;
-$TOMMY_RED: $th-red;
-$GREY_LIGHT: #969696;
-$GREY_LIGHTER: #f8f8f8;
-$GREEN: #14be82;
-
+$primary-bg: #1e3546;
+$mid-blue: #4064d6;
+$purple: #6685e8;
+$violet: #9eb0f6;
+$font-white: white;
+$font-grey: #d8d8d8;
+$gold: #d6bd89;
 
 //--------------------------TEXT------------------------------
 // *-- use mixins
 //font styles
-$main_font--bold: 'FuturaLTPro-Bold', Arial, Helvetica, sans-serif; // 300, 400, 700
-$main_font--normal: 'FuturaLTPro-Book', Arial, Helvetica, sans-serif; // 300, 400, 700
+$main_cako: "Cako Black", Arial, Helvetica, sans-serif; // 300, 400, 700
+$main_gilroy: "Gilroy Regular", Arial, Helvetica, sans-serif;
+$bold_gilroy: "Gilroy Semibold", Arial, Helvetica, sans-serif;
 
 //Z-indexing
 $nav-index: 1000;
 $menu-index: 1001;
 
 //@import 'mixins';
-
+// Easings
+// -------
+// Linear
+$ease-linear: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+// Sine
+$ease-in-sine: cubic-bezier(0.47, 0, 0.745, 0.715);
+$ease-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1);
+$ease-in-out-sine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+// Quad
+$ease-in-quad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+// Cubic
+$ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+// Quart
+$ease-in-quart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$ease-in-out-quart: cubic-bezier(0.77, 0, 0.175, 1);
+// Quint
+$ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+$ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+// Expo
+$ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+$ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+// Circ
+$ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+$ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+$ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+// Back
+$ease-in-back: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+$ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$ease-in-out-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);

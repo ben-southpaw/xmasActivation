@@ -9,3 +9,4 @@ dist
 
 /.idea
 /sketch-kit/node_modules
+.env

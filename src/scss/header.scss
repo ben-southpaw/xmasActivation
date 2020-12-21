@@ -1,0 +1,86 @@
+.header {
+  .text-one {
+    position: absolute;
+    color: $violet;
+    font-family: $main_cako;
+    width: 36rem;
+    height: 14.4rem;
+    left: 2rem;
+    top: 20.6rem;
+    font-size: 3.6rem;
+    text-transform: none;
+    overflow: hidden;
+    transition: transform 1s ease-in-out;
+    transition-delay: 0.5s;
+    [data-introAnimation="true"] & {
+      transform: translateX(0);
+    }
+    transform: translateX(-100%);
+    @include respond-to("desktop") {
+      width: 100rem;
+      height: 33.6rem;
+      left: 23rem;
+      top: 31.2rem;
+      font-size: 9rem;
+    }
+  }
+  .text-one-inner {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 1s 0.5s ease-in-out;
+    [data-introAnimation="true"] & {
+      transform: translateX(0);
+    }
+  }
+
+  .text-two {
+    position: absolute;
+    color: $font-grey;
+    font-family: $main_gilroy;
+    width: 33.4rem;
+    height: 19.1rem;
+    left: 2rem;
+    top: 36.1rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    opacity: 0;
+    transition: opacity 1s 1.3s ease-in;
+    [data-introAnimation="true"] & {
+      opacity: 1;
+    }
+    @include respond-to("desktop") {
+      width: 46rem;
+      height: 18.4rem;
+      left: 73rem;
+      top: 71.7rem;
+      line-height: 3.6rem;
+      font-size: 2.2rem;
+    }
+  }
+  .nav-lights {
+    position: absolute;
+    width: 75.2rem;
+    height: 15.5rem;
+    left: -4.2rem;
+    top: 0;
+    opacity: 0;
+    @include respond-to("desktop") {
+      width: 190.5rem;
+      height: 44.2rem;
+      left: -12.2rem;
+      top: -9.9rem;
+    }
+    &[data-active="true"] {
+      opacity: 1;
+    }
+  }
+  .lights {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    [data-introAnimation="true"] & {
+      opacity: 1;
+    }
+  }
+}
