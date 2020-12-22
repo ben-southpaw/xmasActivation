@@ -23,7 +23,7 @@
     transform: translateX(-100%);
     @include respond-to("desktop") {
       width: 100rem;
-      height: 33.6rem;
+      //height: 33.6rem;
       left: 23rem;
       top: 31.2rem;
       font-size: 9rem;
@@ -58,8 +58,8 @@
     @include respond-to("desktop") {
       width: 46rem;
       height: 18.4rem;
-      left: 73rem;
-      top: 67rem;
+      left: 23rem;
+      top: 79rem;
       line-height: 3.6rem;
       font-size: 2.2rem;
     }
