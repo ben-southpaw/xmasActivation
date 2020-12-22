@@ -177,7 +177,7 @@ export const data = {
         name: "Lauren",
         from: "Tiina, Martijn & Mario",
         personal_quote:
-          "Thank you Lauren for the positive energy you bring to our meeting every time. You made our part really easy by taking care of all details and clear communication. We enjoyed working with you! Love",
+          "Thank you Lauren for the positive energy you bring to our meeting every time. You made our part really easy by taking care of all details and clear communication. We enjoyed working with you!",
       },
       {
         id: "elisabeth",
@@ -226,7 +226,7 @@ export const data = {
       {
         id: "aaron",
         name: "Aaron",
-        from: "Love Kev and the AC team.",
+        from: "Kev and the AC team.",
         personal_quote:
           "Aaron, thank you so much for making my life so easy, its been a pleasure working with you, I hope Santa knows what a good boy you've been.",
       },
