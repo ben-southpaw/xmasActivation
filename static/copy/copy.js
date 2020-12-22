@@ -2,7 +2,7 @@ export const data = {
   adidas1: {
     name: "adidas",
     lead_quote:
-      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
+      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year.",
     stat1: {
       number: "2",
       text: "Big projects worked on together this year",
@@ -53,7 +53,7 @@ export const data = {
   adidas2: {
     name: "adidas",
     lead_quote:
-      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
+      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year.",
     stat1: {
       number: "1",
       text: "Really clear vision",
@@ -102,7 +102,7 @@ export const data = {
   pvh_b2b: {
     name: "PVH",
     lead_quote:
-      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
+      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year.",
     stat1: {
       number: "1",
       text: "Project worked on together this year",
@@ -146,7 +146,7 @@ export const data = {
   adidas3: {
     name: "adidas",
     lead_quote:
-      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
+      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year.",
     stat1: {
       number: "26",
       text: "Experiments done",
@@ -202,9 +202,9 @@ export const data = {
     ],
   },
   pvh: {
-    name: "PVH B2B",
+    name: "PVH",
     lead_quote:
-      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
+      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year.",
     stat1: {
       number: "1",
       text: "Project worked on together",
@@ -248,7 +248,7 @@ export const data = {
   tommy: {
     name: "Tommy Hilfiger",
     lead_quote:
-      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
+      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year.",
     stat1: {
       number: "2",
       text: "Amazing team outings",
@@ -352,42 +352,42 @@ export const data = {
     lead_quote:
       "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year. Click your name and unlock your present!",
     stat1: {
-      number: "2",
-      text: "Big projects worked on together this year",
+      number: "1",
+      text: "Amazing adidas collaboration",
     },
     stat2: {
-      number: "4",
-      text: "Product launches, more to come!",
+      number: "1",
+      text: "Vote for creative technologist of the year",
     },
     stat3: {
-      number: "100%",
-      text: "Elevation of the UX for Acquisition and Enrichment",
+      number: "3.5k",
+      text: "Calories of McDonalds for lunch",
     },
     stat4: {
-      number: "36",
-      text: "Case studies for Adidas Discovery",
+      number: "3",
+      text: "Pretty big hugs",
     },
     members: [
       {
         id: "tijmen",
         name: "Tijmen",
-        from: "Adventure Club",
+        from: "Marten + team",
         personal_quote:
-          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+          "Dear Tijmen, thank you for this year! Pretty sad statistics for a relationship this strong. Let's make 2021 a year full of successful collaborations!",
       },
       {
         id: "niels",
         name: "Niels",
-        from: "Adventure Club",
+        from: "Marten + team",
         personal_quote:
-          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+          "Dear Niels, thank you for this year! Pretty sad statistics for a relationship this strong. Let's make 2021 a year full of successful collaborations!",
       },
       {
         id: "patrick",
         name: "Patrick",
-        from: "Adventure Club",
+        from: "Marten + team",
         personal_quote:
-          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+          "Dear Patrick, thank you for this year! Pretty sad statistics for a relationship this strong. Let's make 2021 a year full of successful collaborations!",
       },
     ],
   },

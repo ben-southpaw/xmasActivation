@@ -31,7 +31,6 @@
         stat4 = companyData.stat4;
         members = companyData.members;
         foundName = members.find((member) => member.name.toLowerCase().includes(name));
-        console.log(data, 'found name');
         }
     );
 
