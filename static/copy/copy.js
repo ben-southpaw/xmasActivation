@@ -231,8 +231,8 @@ export const data = {
           "Aaron, thank you so much for making my life so easy, its been a pleasure working with you, I hope Santa knows what a good boy you've been.",
       },
       {
-        id: "farlayna",
-        name: "Farlayna",
+        id: "farleyna",
+        name: "Farleyna",
         from: "Adventure Club",
         personal_quote:
           "Farleyna, Thanks you for trusting us with something special like Looney Tunes. We are looking forward to next year.",
