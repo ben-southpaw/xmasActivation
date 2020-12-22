@@ -91,6 +91,7 @@
         </h1>
 
         <p class="text-two">{companyData.lead_quote}</p>
+        <h1 class="text-cta">Find your name and unlock your present!</h1>
     </div>
 
     <div class="blank-ornaments">

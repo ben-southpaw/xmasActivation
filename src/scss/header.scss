@@ -60,9 +60,32 @@
       width: 46rem;
       height: 18.4rem;
       left: 73rem;
-      top: 71.7rem;
+      top: 67rem;
       line-height: 3.6rem;
       font-size: 2.2rem;
+    }
+  }
+  .text-cta {
+    position: absolute;
+    color: darkgoldenrod;
+    font-family: $main_cako;
+    width: 33.4rem;
+    height: 19.1rem;
+    left: 2rem;
+    top: 50rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    opacity: 0;
+    transition: opacity 1s 1.3s ease-in;
+    [data-introAnimation="true"] & {
+      opacity: 1;
+    }
+    @include respond-to("desktop") {
+      width: 53rem;
+      left: 73rem;
+      top: 79rem;
+      line-height: 5rem;
+      font-size: 5rem;
     }
   }
   .nav-lights {
