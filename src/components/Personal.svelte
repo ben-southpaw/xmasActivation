@@ -174,7 +174,7 @@
         z-index: 2;
         max-width: 37.5rem;
         width: 37.5rem;
-        overflow-x: hidden;
+        overflow: hidden;
         left: 0;
         top: 652rem;
       height: 144.9rem;
@@ -182,7 +182,7 @@
         width: 143rem;
         max-width: unset;
         left: 0;
-        //top: 652rem;
+        overflow: initial;
       }
     }
 
