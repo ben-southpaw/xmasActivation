@@ -4,20 +4,20 @@ export const data = {
     lead_quote:
       "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year.",
     stat1: {
-      number: "2",
-      text: "Big projects worked on together this year",
+      number: "1",
+      text: "Connection Studio MVP",
     },
     stat2: {
-      number: "4",
-      text: "Product launches, more to come!",
+      number: "2",
+      text: "New Team Mates",
     },
     stat3: {
-      number: "100%",
-      text: "Elevation of the UX for Acquisition and Enrichment",
+      number: "3",
+      text: "Product owners",
     },
     stat4: {
-      number: "36",
-      text: "Case studies for Adidas Discovery",
+      number: "4",
+      text: "Product launches, more to come!",
     },
     members: [
       {
