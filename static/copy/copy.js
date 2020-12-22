@@ -5,18 +5,18 @@ export const data = {
       "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year.",
     stat1: {
       number: "1",
-      text: "Connection Studio MVP",
+      text: "Acquisition Strategy",
     },
     stat2: {
-      number: "2",
-      text: "New Team Mates",
+      number: "1",
+      text: "Acquisition Portfolio Map",
     },
     stat3: {
       number: "10+",
       text: "Successful workshops and expert sessions",
     },
     stat4: {
-      number: "4",
+      number: "4+",
       text: "Product launches, more to come!",
     },
     members: [

@@ -71,7 +71,7 @@
     <div class="personal-text-blocks">
     <h1 class="text-one">Merry Christmas, <br> {name}</h1>
         <p class="text-two">After a somewhat diabolical year for all of us,
-        its time to look back at some of the highlights of the past twelve months. At least we had each other right?
+        it's time to look back at some of the highlights of the past twelve months. At least we had each other right?
             Lets get a bit more merry and see what we achieved together this year!
         </p>
 
@@ -154,7 +154,7 @@
      @import '../scss/personal-ornaments.scss';
 
   section {
-    overflow-x: hidden;
+    //overflow-x: hidden;
     .footer-container {
       position: absolute;
       z-index: 2;
