@@ -1,7 +1,5 @@
 <script>
-	import Mobile from "../components/Mobile.svelte";
 	import Main from "../components/Main.svelte";
-
 </script>
 <svelte:head>
 	<title>Merry Xmas Ya Filthy Animal</title>
@@ -10,6 +8,7 @@
 </svelte:head>
 
 <Main />
+
 
 <style type="scss">
 		@import './src/scss/global';

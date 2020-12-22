@@ -52,7 +52,6 @@
                     <input type="hidden" name="sender" value={foundName.name}>
                     <button class="input-box_address_submit" type="submit">Submit address</button>
         </form>
-
     </div>
 
 </section>

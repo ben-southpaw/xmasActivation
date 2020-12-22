@@ -42,6 +42,11 @@
     }, 500);
 
 </script>
+<svelte:head>
+	<title>Merry Xmas Ya Filthy Animal</title>
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+</svelte:head>
 
 <section class="personal-container">
     <Background />
@@ -134,7 +139,7 @@
         <img class="trees-four" src="/images/trees/horizontal_tree_triangles_2.svg" alt="treeFour">
     </div>
     <div class="gift-container">
-        <Gift {compName} {name} {foundName}/>
+        <Gift {compName} {name} {foundName} />
     </div>
     <div class="footer-container">
         <Footer />
