@@ -55,16 +55,16 @@ export const data = {
     lead_quote:
       "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year.",
     stat1: {
-      number: "1",
-      text: "Beyoncé managed",
+      number: "12",
+      text: "New components",
     },
     stat2: {
       number: "2",
       text: "Golden Shovels awarded",
     },
     stat3: {
-      number: "532",
-      text: "Lekker G's",
+      number: "62",
+      text: "Inappropriate jokes",
     },
     stat4: {
       number: "288",
