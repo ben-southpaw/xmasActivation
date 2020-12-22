@@ -173,12 +173,14 @@
         position: absolute;
         z-index: 2;
         max-width: 37.5rem;
+        width: 37.5rem;
         overflow-x: hidden;
         left: 0;
         top: 652rem;
+      height: 144.9rem;
       @include respond-to("desktop") {
         width: 143rem;
-        height: 144.9rem;
+        //height: 144.9rem;
         left: 0;
         //top: 652rem;
       }
