@@ -184,7 +184,7 @@ export const data = {
         name: "Elisabeth",
         from: "Adventure Club",
         personal_quote:
-          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+          "Thank you Elisabeth for trusting us in sustainability page project. It was such a pleasure to work with you  and your team. Looking forward to our future projects.",
       },
     ],
   },
