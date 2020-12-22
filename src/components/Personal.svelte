@@ -154,8 +154,7 @@
      @import '../scss/personal-ornaments.scss';
 
   section {
-    //width: 144rem;
-
+    overflow-x: hidden;
     .footer-container {
       position: absolute;
       z-index: 2;
@@ -173,15 +172,20 @@
     .gift-container {
         position: absolute;
         z-index: 2;
+        max-width: 37.5rem;
+        overflow-x: hidden;
+        left: 0;
+        top: 652rem;
+      @include respond-to("desktop") {
         width: 143rem;
         height: 144.9rem;
         left: 0;
-        top: 652rem;
+        //top: 652rem;
+      }
     }
 
     .cracker-container {
         .cracker-1 {
-          z-index: 2;
           position: absolute;
           width: 51.6rem;
           height: 33.4rem;
@@ -191,6 +195,7 @@
           @include respond-to("desktop") {
           transform: rotate(0);
           transition: transform 0.5s;
+          z-index: 2;
           width: 40.8rem;
           height: 26.3rem;
           left: 33.3rem;
@@ -198,7 +203,6 @@
           }
         }
        .cracker-2 {
-          z-index: 2;
           position: absolute;
           width: 51.6rem;
           height: 33.4rem;
@@ -208,6 +212,7 @@
          @include respond-to("desktop") {
           transform: rotate(0);
           transition: transform 0.5s;
+           z-index: 2;
            width: 40.8rem;
           height: 26.3rem;
           right: 33.3rem;
@@ -304,11 +309,13 @@
     0 0 0 $primary-bg inset;
     }
     .personal-lights {
+
       .lights-4 {
         position: absolute;
-        width: 52.6rem;
+        overflow-x: hidden;
+        width: 40rem;//52.6rem;
         height: 13rem;
-        left: -9rem;
+        left: -1rem;
         top: 278.4rem;
         transform: matrix(-1, 0, 0, 1, 0, 0);
         opacity: 0;

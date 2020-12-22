@@ -12,8 +12,8 @@ export const data = {
       text: "New Team Mates",
     },
     stat3: {
-      number: "3",
-      text: "Product owners",
+      number: "10+",
+      text: "Successful workshops and expert sessions",
     },
     stat4: {
       number: "4",
