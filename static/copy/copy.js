@@ -272,7 +272,7 @@ export const data = {
         name: "Carole",
         from: "Tiina and AC team",
         personal_quote:
-          "What a year, what a project. Thank you Carole for the collaboration! We are looking forward to work with you again. Happy holidays!",
+          "What a year, what a project. Thank you Carole for the collaboration and your creativity! We are looking forward to work with you again. Happy holidays!",
       },
       {
         id: "pascal",
