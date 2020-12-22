@@ -56,19 +56,19 @@ export const data = {
       "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year.",
     stat1: {
       number: "1",
-      text: "Really clear vision",
+      text: "Beyoncé managed",
     },
     stat2: {
-      number: "0",
-      text: "Haircuts",
+      number: "2",
+      text: "Golden Shovels awarded",
     },
     stat3: {
-      number: "500",
+      number: "532",
       text: "Lekker G's",
     },
     stat4: {
-      number: "26",
-      text: "Million € sales uplift",
+      number: "288",
+      text: 'times rennaming of a file "Final"',
     },
     members: [
       {
@@ -81,7 +81,8 @@ export const data = {
         id: "ashley",
         name: "Ashley Reid",
         from: "Adventure Club",
-        personal_quote: "Thanks for all the help last year. Merry Christmas!",
+        personal_quote:
+          "Merry Christmas Ashley. It has been a pleasure to work with you and thanks for all the help. Kind wishes for the holiday season!",
       },
       {
         id: "vinnie",
@@ -99,50 +100,6 @@ export const data = {
       },
     ],
   },
-  pvh_b2b: {
-    name: "PVH",
-    lead_quote:
-      "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year.",
-    stat1: {
-      number: "1",
-      text: "Project worked on together this year",
-    },
-    stat2: {
-      number: "14",
-      text: "Team members involved",
-    },
-    stat3: {
-      number: "100%",
-      text: "Elevation of the UX for Acquisition and Enrichment",
-    },
-    stat4: {
-      number: "36",
-      text: "Case studies for Adidas Discovery",
-    },
-    members: [
-      {
-        id: "nataliia",
-        name: "Nataliia",
-        from: "Tiina and Mario",
-        personal_quote:
-          "Thank you Nataliia for involving us in such an important project of your team. Thank you for your trust and energy! Looking forward to next year and the awesome projects together!",
-      },
-      {
-        id: "lauren",
-        name: "Lauren",
-        from: "Tiina, Martijn & Mario",
-        personal_quote:
-          "Thank you Lauren for the positive energy you bring to our meeting every time. You made our part really easy by taking care of all details and clear communication. We enjoyed working with you! Love",
-      },
-      {
-        id: "elisabeth",
-        name: "Elisabeth",
-        from: "Adventure Club",
-        personal_quote:
-          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
-      },
-    ],
-  },
   adidas3: {
     name: "adidas",
     lead_quote:
@@ -156,8 +113,8 @@ export const data = {
       text: "Paul lost along the way",
     },
     stat3: {
-      number: "2",
-      text: "Many video calls",
+      number: "3345",
+      text: "Video calls",
     },
     stat4: {
       number: "26",
@@ -185,20 +142,6 @@ export const data = {
         personal_quote:
           "Dear Birgit, what a year it's been. I want to thank you for your guidance and I wish you all the best for 2021. Enjoy many happy bubbles!",
       },
-      {
-        id: "bastian",
-        name: "Bastian Althoff",
-        from: "Adventure Club",
-        personal_quote:
-          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
-      },
-      {
-        id: "derek",
-        name: "Derek Maaijen",
-        from: "Adventure Club",
-        personal_quote:
-          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
-      },
     ],
   },
   pvh: {
@@ -207,7 +150,7 @@ export const data = {
       "By sending this digital christmas card we want to thank you for this year and wish you merry christmas and all the best for next year.",
     stat1: {
       number: "1",
-      text: "Project worked on together",
+      text: "Project worked on together this year",
     },
     stat2: {
       number: "14",
@@ -219,15 +162,15 @@ export const data = {
     },
     stat4: {
       number: "1",
-      text: "PVH B2B Team!",
+      text: "Best B2B team of all time",
     },
     members: [
       {
         id: "nataliia",
         name: "Nataliia",
-        from: "Tiina, Martijn & Mario",
+        from: "Tiina and Mario",
         personal_quote:
-          "Thank you Nataliia for involving us in such an important project of your team. Thank you for your trust and energy. Looking forward to next year and the awesome projects together!",
+          "Thank you Nataliia for involving us in such an important project of your team. Thank you for your trust and energy! Looking forward to next year and the awesome projects together!",
       },
       {
         id: "lauren",
@@ -239,9 +182,9 @@ export const data = {
       {
         id: "elisabeth",
         name: "Elisabeth",
-        from: "Tiina",
+        from: "Adventure Club",
         personal_quote:
-          "Thank you Elisabeth for trusting us with our sustainability page project. It was such a pleasure to work with you  and your team. Looking forward to our future projects.",
+          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
       },
     ],
   },
@@ -262,8 +205,8 @@ export const data = {
       text: "Unique users reached",
     },
     stat4: {
-      number: "99",
-      text: "More projects next year!",
+      number: "2",
+      text: "Very inappropriate jokes",
     },
     members: [
       {
@@ -292,14 +235,7 @@ export const data = {
         name: "Farlayna",
         from: "Adventure Club",
         personal_quote:
-          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
-      },
-      {
-        id: "noam",
-        name: "Noam",
-        from: "Adventure Club",
-        personal_quote:
-          "Thanks for all the help last year. Merry Christmas from the Adventure Club Design team!",
+          "Farleyna, Thanks you for trusting us with something special like Looney Tunes. We are looking forward to next year.",
       },
     ],
   },
@@ -361,11 +297,11 @@ export const data = {
     },
     stat3: {
       number: "3.5k",
-      text: "Calories of McDonalds for lunch",
+      text: "Calories of McDonald's for lunch",
     },
     stat4: {
       number: "3",
-      text: "Pretty big hugs",
+      text: "Great nights out",
     },
     members: [
       {
