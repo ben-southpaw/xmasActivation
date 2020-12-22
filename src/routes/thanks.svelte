@@ -7,7 +7,7 @@
     <div class="thanks-container">
         <h1>Thanks for submitting and merry xmas!</h1>
         <p>We hope to deliver your gift to you asap!<br>
-        Be sure to keep an eye on your mailbox first week of january</p>
+        Be sure to keep an eye out for our delivery elf in the first week of january</p>
     </div>
 </section>
 
