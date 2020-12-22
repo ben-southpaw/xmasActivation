@@ -180,7 +180,7 @@
       height: 144.9rem;
       @include respond-to("desktop") {
         width: 143rem;
-        //height: 144.9rem;
+        max-width: unset;
         left: 0;
         //top: 652rem;
       }
