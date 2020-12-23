@@ -25,12 +25,13 @@
         comp = urlSearch.get('company');
         companyData = data[comp];
         compName = companyData.name;
-        stat1 = companyData.stat1;
-        stat2 = companyData.stat2;
-        stat3 = companyData.stat3;
-        stat4 = companyData.stat4;
         members = companyData.members;
         foundName = members.find((member) => member.name.toLowerCase().includes(name));
+        stat1 = foundName.stat1;
+        stat2 = foundName.stat2;
+        stat3 = foundName.stat3;
+        stat4 = foundName.stat4;
+        console.log(foundName.stat1, 'name here?')
         }
     );
 
